@@ -1,0 +1,35 @@
+// MAIN :: START
+
+.main {
+  &__wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 445px;
+    box-shadow: 0 5px 14px 0 rgba($c-black, 0.45);
+    background-image: url("../img/img__bg-main.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+
+    &-text {
+      line-height: 1.3;
+      text-align: center;
+      color: $c-white;
+    }
+  }
+
+
+  &__title {
+    padding-bottom: 23px;
+    font-size: 45px;
+    font-weight: 700;
+  }
+
+
+  &__subtitle {
+    font-size: 22px;
+  }
+}
+
+// MAIN :: END

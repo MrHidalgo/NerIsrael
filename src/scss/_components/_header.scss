@@ -1,12 +1,10 @@
 // HEADER :: START
 
 .header {
-  min-height: 122px;
-
-
   &__wrapper {
     display: flex;
     min-height: 122px;
+    box-shadow: 0 2px 5px 0 rgba($c-black, 0.14);
   }
 
 
