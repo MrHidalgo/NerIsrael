@@ -1,0 +1,24 @@
+// FEATURED :: START
+
+.featured {
+  padding-top: 50px;
+  padding-bottom: 50px;
+
+  &__wrapper {
+    width: 100%;
+    max-width: 940px;
+    margin-left: auto;
+    margin-right: auto;
+    padding-top: 50px;
+    padding-bottom: 20px;
+    border-radius: 14px;
+    box-shadow: 0 2px 10px 0 rgba($c-black, 0.27);
+  }
+
+
+  &__title {
+    padding-bottom: 20px;
+  }
+}
+
+// FEATURED :: END
