@@ -80,6 +80,12 @@
     border-radius: 4px;
     background-color: $c-darkCerulean;
 
+    &:hover,
+    &:focus {
+      background-color: $c-putty;
+      @include transition(background-color);
+    }
+
     &-icon {
       @include retina-sprite($sp-search-group)
     }

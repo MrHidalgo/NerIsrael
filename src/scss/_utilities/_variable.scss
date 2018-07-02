@@ -32,6 +32,7 @@ $object: (
 
     darkCerulean          : #184478,
     putty                 : #cbae6a,
+    charcoal              : #4a4a4a,
   ),
   dimension : (
     all                   : 100%,
@@ -70,6 +71,7 @@ $c-aliceBlue              : return-value(colors, aliceBlue);
 
 $c-darkCerulean           : return-value(colors, darkCerulean);
 $c-putty                  : return-value(colors, putty);
+$c-charcoal               : return-value(colors, charcoal);
 
 $d-all                    : return-value(dimension, all);
 $d-fhd                    : return-value(dimension, fhd);

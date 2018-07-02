@@ -1,6 +1,6 @@
 // COMMON :: START
 
-.btn {
+.button {
   cursor: pointer;
   display: inline-flex;
   align-items: center;
@@ -13,6 +13,15 @@
   color: $c-white;
   font-size: 12px;
   font-weight: bold;
+  @include transition(color, background-color);
+
+  &:hover,
+  &:focus {
+    text-decoration: none;
+    color: $c-white;
+    background-color:  $c-darkCerulean;
+    @include transition(color, background-color)
+  }
 
   &--primary {
     background-color: $c-putty;

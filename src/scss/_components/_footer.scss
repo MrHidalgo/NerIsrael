@@ -1,5 +1,39 @@
 // FOOTER :: START
 
-.footer {}
+.footer {
+  min-height: 176px;
+
+
+  &__bar {
+    height: 8px;
+    background-color: $c-putty;
+  }
+
+
+  &__wrapper {
+    display: flex;
+    height: calc(176px - 8px);
+    padding-top: 28px;
+    background-color: $c-charcoal;
+  }
+
+
+  &__left {
+    width: 100%;
+    max-width: 184px;
+  }
+
+
+  &__middle {
+    width: 100%;
+    max-width: 369px;
+  }
+
+
+  &__right {
+    width: 100%;
+    max-width: calc(100% - (184px + 369px));
+  }
+}
 
 // FOOTER :: END
