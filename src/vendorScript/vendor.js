@@ -1,5 +1,7 @@
 /*!
 *
-* Include... :
+* Include :
+* - bootstrap;
+* - jquery;
 *
 * */
