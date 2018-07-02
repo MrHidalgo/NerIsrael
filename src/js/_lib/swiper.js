@@ -48,7 +48,7 @@ function initSwiper() {
 
     on: {
       "slideChange": function () {
-        console.log("slideChange");
+        // console.log("slideChange");
       },
     }
   });
