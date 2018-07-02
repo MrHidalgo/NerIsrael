@@ -1,0 +1,33 @@
+# FOLDER
+# ==========
+.idea/*
+.gulp/*
+.cache/*
+.sass-cache/*
+.tmp/*
+_tmp/*
+node_modules/*
+vendor/*
+dest/css/*
+dest/js/*
+dest/font/*
+dest/*.html
+dest/img/*
+
+# FILES
+# ==========
+package-lock.json
+
+
+# EXTENSIONS
+# ==========
+*.diff
+*.err
+*.orig
+*.log
+*.rej
+*.swo
+*.swp
+*.zip
+*.vi
+*~
