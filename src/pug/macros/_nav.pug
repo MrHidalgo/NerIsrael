@@ -1,5 +1,43 @@
 // NAV :: START
 
+-
+  var navItem = [
+    {
+      name: "Gemara",
+      href: "#"
+    },
+    {
+      name: "Halacha",
+      href: "#"
+    },
+    {
+      name: "Moadim",
+      href: "#"
+    },
+    {
+      name: "Parsha/Nach",
+      href: "#"
+    },
+    {
+      name: "Machshava/Hashkafa",
+      href: "#"
+    },
+    {
+      name: "Occasions",
+      href: "#"
+    }
+  ];
+
 nav.nav
+  ul.nav__list
+    each val, idx in navItem
+      li.nav__item(
+        class!= (idx === 0) ? "is-active": ""
+        menu-item-js
+      )
+        a.nav__link(
+          href!= navItem[idx].href
+          title!= ""
+        )!= navItem[idx].name
 
 // NAV :: END

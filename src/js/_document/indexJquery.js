@@ -16,5 +16,15 @@ $(document).ready((ev) => {
   /**
    * @description Method call for execution
    */
+
+  /**
+   * @description Main navigation
+   */
+  $("[menu-item-js]").on("click", (e) => {
+    const elem = $(e.currentTarget);
+
+    $("[menu-item-js]").removeClass("is-active");
+    elem.addClass("is-active");
+  });
 });
 

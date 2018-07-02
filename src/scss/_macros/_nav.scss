@@ -1,5 +1,52 @@
 // NAV :: START
 
-.nav {}
+.nav {
+  &__list {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    height: 24px;
+  }
+
+
+  &__item {}
+
+
+  &__link {
+    position: relative;
+    color: $c-darkGrey;
+    font-size: 12px;
+    font-weight: 700;
+    @include transition(color);
+
+    .is-active & {
+      color: $c-black;
+      @include transition(color);
+
+      &:after {
+        background-color: $c-putty;
+        @include transition(background-color);
+      }
+    }
+
+    &:hover,
+    &:focus {
+      text-decoration: none;
+      color: $c-black;
+      @include transition(color);
+    }
+
+    &:after {
+      content: "";
+      position: absolute;
+      left: 0;
+      bottom: -8px;
+      width: 26px;
+      height: 4px;
+      background-color: transparent;
+      @include transition(background-color);
+    }
+  }
+}
 
 // NAV :: END

@@ -1,5 +1,12 @@
 // LOGOTYPE :: START
 
-.logo {}
+.logo {
+  &__link {}
+  &__img {
+    display: block;
+    max-width: 100%;
+    height: auto;
+  }
+}
 
 // LOGOTYPE :: END

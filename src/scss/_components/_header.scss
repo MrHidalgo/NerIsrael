@@ -1,5 +1,54 @@
 // HEADER :: START
 
-.header {}
+.header {
+  min-height: 122px;
+
+
+  &__wrapper {
+    display: flex;
+    min-height: 122px;
+  }
+
+
+  &__left {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    max-width: 125px;
+  }
+
+
+  &__middle {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    max-width: calc(100% - (125px + 203px));
+    padding-top: 24px;
+    padding-left: 40px;
+    padding-right: 52px;
+  }
+
+
+  &__right {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    max-width: 203px;
+    background-color: rgba($c-darkCerulean, 0.93);
+  }
+
+
+  &__top {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-bottom: 16px;
+  }
+
+
+  &__bottom {}
+}
 
 // HEADER :: END

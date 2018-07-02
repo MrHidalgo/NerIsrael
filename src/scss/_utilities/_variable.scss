@@ -28,7 +28,10 @@ $object: (
     gainsboro             : #dcdcdc,
     silver                : #c0c0c0,
     yellow                : #ffff00,
-    aliceBlue             : #f0f8ff
+    aliceBlue             : #f0f8ff,
+
+    darkCerulean          : #184478,
+    putty                 : #cbae6a,
   ),
   dimension : (
     all                   : 100%,
@@ -64,6 +67,9 @@ $c-gainsboro              : return-value(colors, gainsboro);
 $c-silver                 : return-value(colors, silver);
 $c-yellow                 : return-value(colors, yellow);
 $c-aliceBlue              : return-value(colors, aliceBlue);
+
+$c-darkCerulean           : return-value(colors, darkCerulean);
+$c-putty                  : return-value(colors, putty);
 
 $d-all                    : return-value(dimension, all);
 $d-fhd                    : return-value(dimension, fhd);
