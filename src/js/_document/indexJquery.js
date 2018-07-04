@@ -29,6 +29,19 @@ $(document).ready((ev) => {
 
 
   /**
+   *
+   */
+  $('body').on('click', function (e) {
+    const className = ".swiper-slide-menu, .swiper-slide-drop";
+
+    if (!$(e.target).closest(className).length) {
+      $("[featured-menu-js]").removeClass("is-show");
+      $(".swiper-slide-drop").removeClass("is-open");
+    }
+  });
+
+
+  /**
    * @description Main navigation
    */
   $("[menu-item-js]").on("click", (e) => {

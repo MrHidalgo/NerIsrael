@@ -89,6 +89,8 @@
       border-radius: 11px;
       background-color: $c-white;
       box-shadow: 0 2px 10px 0 rgba($c-black, 0.27);
+      animation-name: fadeIn;
+      animation-duration: 0.5s;
 
       &.is-open {
         display: block;
@@ -175,6 +177,14 @@
 
       i {
         @include retina-sprite($sp-play-group);
+        @include transition(transform);
+      }
+
+      &:hover {
+        i {
+          transform: scale(0.9);
+          @include transition(transform);
+        }
       }
     }
 
