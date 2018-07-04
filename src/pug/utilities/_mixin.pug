@@ -1,6 +1,45 @@
 //- MIXIN :: START
+
+
+//- SVG SPRITE
 mixin iconSVG(name, mod)
   - var mod = mod || ''
   svg(class="icon icon-" + name + ' ' + mod)
     use(xlink:href="./img/sprite.svg#" + name)
+//- end SVG SPRITE
+
+
+//- TABLE
+mixin table(classMod, headerDataArr, bodyDataArr)
+  .table(class="table--" + classMod)
+    .table__header
+      .table__row.table__row-0
+        -for(var j = 0, countHeader = j, len = headerDataArr.length; j < len; j++)
+            .table__col(class!= "table__col-" + (j))
+              p!= headerDataArr[j]
+    .table__body
+      -for(var i = 0, countBody = 1, len = bodyDataArr.length; i < len; i++, countBody++)
+        .table__row(class="table__row-" + (countBody))
+          .table__col.table__col-0
+            a.table__play(href="#" title="" class="")
+              i
+          .table__col.table__col-1
+            p!= bodyDataArr[i].nameVal
+          .table__col.table__col-2
+            p!= bodyDataArr[i].speakerVal
+          .table__col.table__col-3
+            p!= bodyDataArr[i].categoryVal
+          .table__col.table__col-4
+            p!= bodyDataArr[i].lengthVal
+          .table__col.table__col-5
+            a.table__add(href="#" title="" class="")
+              i
+            a.table__download(href="#" title="" class="")
+              i
+            a.table__share(href="#" title="" class="")
+              i
+            a.table__send(href="#" title="" class="")
+              i
+//- end TABLE
+
 //- MIXIN :: END

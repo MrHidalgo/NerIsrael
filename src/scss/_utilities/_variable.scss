@@ -35,6 +35,8 @@ $object: (
     charcoal              : #4a4a4a,
     midnightExpress       : #061437,
     darkSlate             : #464747,
+    nobel                 : #979797,
+    matterhorn            : #515151,
   ),
   dimension : (
     all                   : 100%,
@@ -77,6 +79,8 @@ $c-putty                  : return-value(colors, putty);
 $c-charcoal               : return-value(colors, charcoal);
 $c-midnightExpress        : return-value(colors, midnightExpress);
 $c-darkSlate              : return-value(colors, darkSlate);
+$c-nobel                  : return-value(colors, nobel);
+$c-matterhorn             : return-value(colors, matterhorn);
 
 $d-all                    : return-value(dimension, all);
 $d-fhd                    : return-value(dimension, fhd);

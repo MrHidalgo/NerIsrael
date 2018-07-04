@@ -1,0 +1,27 @@
+// TIMELY :: START
+
+.timely {
+  .c-grid {
+    position: relative;
+    min-height: 547px;
+    padding-top: 51px;
+    padding-bottom: 51px;
+  }
+
+
+  &__wrapper {
+    z-index: 0;
+    position: absolute;
+    left: 15px;
+    top: 0;
+    width: calc(100% - 30px);
+    height: 100%;
+    box-shadow: 0 5px 14px 0 rgba(0, 0, 0, 0.45);
+    background-image: url("../img/img-bg__timely.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+  }
+}
+
+// TIMELY :: END
