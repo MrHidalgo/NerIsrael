@@ -8,11 +8,6 @@
 _tmp/*
 node_modules/*
 vendor/*
-dest/css/*
-dest/js/*
-dest/font/*
-dest/*.html
-dest/img/*
 
 # FILES
 # ==========
