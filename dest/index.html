@@ -17,7 +17,64 @@
     <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script><![endif]-->
   </head>
   <body data-file="index">
-    <!--include ../components/_header-->
+    <!-- HEADER :: START-->
+    <header class="header" id="header">
+      <div class="c-grid">
+        <div class="header__wrapper">
+          <div class="header__left">
+            <!-- LOGOTYPE :: START-->
+            <div class="logo"><a class="logo__link" href="#" title=""><img class="logo__img logo__img--desktop" src="./img/img-logotype.png" srcset="./img/img-logotype@2x.png 2x" title="" alt=""><img class="logo__img logo__img--mobile" src="./img/img-logotype--mobile.png" srcset="./img/img-logotype--mobile@2x.png 2x" title="" alt=""></a></div>
+            <!-- LOGOTYPE :: END-->
+          </div>
+          <div class="header__middle">
+            <div class="header__top"><a class="button button__speakers button--primary" href="#" title="" role="button">All Speakers</a>
+              <!-- SEARCH :: START-->
+              <div class="search">
+                <form class="search__form" action="" method="" autocomplete="off">
+                  <div class="search__field">
+                    <input class="search__input" type="text" name="search" id="" placeholder="Search">
+                    <label class="search__label"><i class="search__label-icon"></i></label>
+                  </div>
+                  <div class="search__field">
+                    <button class="search__btn" type="button"><i class="search__btn-icon"></i></button>
+                  </div>
+                </form>
+              </div>
+              <!-- SEARCH :: END--><a class="button button__donate button--primary" href="#" title="" role="button">Donate</a>
+            </div>
+            <div class="header__bottom">
+              <!-- NAV :: START-->
+              <nav class="nav">
+                <ul class="nav__list">
+                  <li class="nav__item is-active" menu-item-js><a class="nav__link" href="#" title="">Gemara</a></li>
+                  <li class="nav__item" menu-item-js><a class="nav__link" href="#" title="">Halacha</a></li>
+                  <li class="nav__item" menu-item-js><a class="nav__link" href="#" title="">Moadim</a></li>
+                  <li class="nav__item" menu-item-js><a class="nav__link" href="#" title="">Parsha/Nach</a></li>
+                  <li class="nav__item" menu-item-js><a class="nav__link" href="#" title="">Machshava/Hashkafa</a></li>
+                  <li class="nav__item" menu-item-js><a class="nav__link" href="#" title="">Occasions</a></li>
+                </ul>
+              </nav>
+              <!-- NAV :: END-->
+            </div>
+          </div>
+          <div class="header__right">
+            <!-- SUB LOGOTYPE :: START-->
+            <div class="logo"><a class="logo__link" href="#" title=""><img class="logo__img" src="./img/img-sublogotype.png" srcset="./img/img-sublogotype@2x.png 2x" title="" alt=""></a></div>
+            <!-- SUB LOGOTYPE :: END-->
+          </div>
+          <div class="header__mobile">
+            <!-- HAMBURGER :: START-->
+            <div class="hamburger hamburger--squeeze" hamburger-btn-js>
+              <div class="hamburger-box">
+                <div class="hamburger-inner"></div>
+              </div>
+            </div>
+            <!-- HAMBURGER :: END-->
+          </div>
+        </div>
+      </div>
+    </header>
+    <!-- HEADER :: END-->
     <div id="barba-wrapper">
       <div class="barba-container">
         <div class="home">
@@ -33,14 +90,518 @@
             </div>
           </div>
           <!-- MAIN :: END-->
-          <!--include components/_featured-->
-          <!--include components/_timely-->
-          <!--include components/_popular-->
-          <!--include components/_recently-->
+          <!-- FEATURED :: START-->
+          <div class="featured" id="featured">
+            <div class="c-grid">
+              <div class="featured__wrapper">
+                <h1 class="featured__title title">Featured</h1>
+                <div class="featured__row">
+                  <!-- SWIPER :: START-->
+                  <div class="swiper-container">
+                    <div class="swiper-wrapper">
+                      <div class="swiper-slide">
+                        <div class="swiper-slide-top"><a class="swiper-slide-menu" href="#" title="" data-id="0" featured-menu-js><span></span><span></span><span></span></a>
+                          <div class="swiper-slide-drop animated" data-drop="0">
+                            <ul>
+                              <li><a href="#" title=""><i></i><span>Add</span></a></li>
+                              <li><a href="#" title=""><i></i><span>Download</span></a></li>
+                              <li><a href="#" title=""><i></i><span>Share</span></a></li>
+                              <li><a href="#" title=""><i></i><span>Send</span></a></li>
+                            </ul>
+                          </div><a class="swiper-slide-play" href="#" title="" featured-play-js><i class="icon"></i></a><img class="swiper-slide-img" src="./img/img-ava-0__featured.png" srcset="./img/img-ava-0__featured@2x.png 2x" title="" alt="" objectFit-js>
+                        </div>
+                        <div class="swiper-slide-bottom">
+                          <p class="swiper-slide-title">The Beit Hamikdash - <br>Conslusion of Leil Lyun</p>
+                          <p class="swiper-slide-pos">Rabbi Aron Feldman</p>
+                        </div>
+                      </div>
+                      <div class="swiper-slide">
+                        <div class="swiper-slide-top"><a class="swiper-slide-menu" href="#" title="" data-id="1" featured-menu-js><span></span><span></span><span></span></a>
+                          <div class="swiper-slide-drop animated" data-drop="1">
+                            <ul>
+                              <li><a href="#" title=""><i></i><span>Add</span></a></li>
+                              <li><a href="#" title=""><i></i><span>Download</span></a></li>
+                              <li><a href="#" title=""><i></i><span>Share</span></a></li>
+                              <li><a href="#" title=""><i></i><span>Send</span></a></li>
+                            </ul>
+                          </div><a class="swiper-slide-play" href="#" title="" featured-play-js><i class="icon"></i></a><img class="swiper-slide-img" src="./img/img-ava-1__featured.png" srcset="./img/img-ava-1__featured@2x.png 2x" title="" alt="" objectFit-js>
+                        </div>
+                        <div class="swiper-slide-bottom">
+                          <p class="swiper-slide-title">The Beit Hamikdash - <br>Conslusion of Leil Lyun</p>
+                          <p class="swiper-slide-pos">Rabbi Aron Feldman</p>
+                        </div>
+                      </div>
+                      <div class="swiper-slide">
+                        <div class="swiper-slide-top"><a class="swiper-slide-menu" href="#" title="" data-id="2" featured-menu-js><span></span><span></span><span></span></a>
+                          <div class="swiper-slide-drop animated" data-drop="2">
+                            <ul>
+                              <li><a href="#" title=""><i></i><span>Add</span></a></li>
+                              <li><a href="#" title=""><i></i><span>Download</span></a></li>
+                              <li><a href="#" title=""><i></i><span>Share</span></a></li>
+                              <li><a href="#" title=""><i></i><span>Send</span></a></li>
+                            </ul>
+                          </div><a class="swiper-slide-play" href="#" title="" featured-play-js><i class="icon"></i></a><img class="swiper-slide-img" src="./img/img-ava-2__featured.png" srcset="./img/img-ava-2__featured@2x.png 2x" title="" alt="" objectFit-js>
+                        </div>
+                        <div class="swiper-slide-bottom">
+                          <p class="swiper-slide-title">The Beit Hamikdash - <br>Conslusion of Leil Lyun</p>
+                          <p class="swiper-slide-pos">Rabbi Aron Feldman</p>
+                        </div>
+                      </div>
+                      <div class="swiper-slide">
+                        <div class="swiper-slide-top"><a class="swiper-slide-menu" href="#" title="" data-id="3" featured-menu-js><span></span><span></span><span></span></a>
+                          <div class="swiper-slide-drop animated" data-drop="3">
+                            <ul>
+                              <li><a href="#" title=""><i></i><span>Add</span></a></li>
+                              <li><a href="#" title=""><i></i><span>Download</span></a></li>
+                              <li><a href="#" title=""><i></i><span>Share</span></a></li>
+                              <li><a href="#" title=""><i></i><span>Send</span></a></li>
+                            </ul>
+                          </div><a class="swiper-slide-play" href="#" title="" featured-play-js><i class="icon"></i></a><img class="swiper-slide-img" src="./img/img-ava-3__featured.png" srcset="./img/img-ava-3__featured@2x.png 2x" title="" alt="" objectFit-js>
+                        </div>
+                        <div class="swiper-slide-bottom">
+                          <p class="swiper-slide-title">The Beit Hamikdash - <br>Conslusion of Leil Lyun</p>
+                          <p class="swiper-slide-pos">Rabbi Aron Feldman</p>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="swiper-button-prev"><i class="icon"></i></div>
+                    <div class="swiper-button-next"><i class="icon"></i></div>
+                  </div>
+                  <!-- SWIPER :: END-->
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- FEATURED :: END-->
+          <!-- TIMELY :: START-->
+          <div class="timely" id="timely">
+            <div class="c-grid">
+              <div class="timely__wrapper"></div>
+              <div class="table table--timely">
+                <div class="table__header">
+                  <div class="table__row table__row-0">
+                    <div class="table__col table__col-0">
+                      <p>Timely</p>
+                    </div>
+                    <div class="table__col table__col-1">
+                      <p>Name</p>
+                    </div>
+                    <div class="table__col table__col-2">
+                      <p>Speaker</p>
+                    </div>
+                    <div class="table__col table__col-3">
+                      <p>Category</p>
+                    </div>
+                    <div class="table__col table__col-4">
+                      <p>Length</p>
+                    </div>
+                    <div class="table__col table__col-5">
+                      <p>Action</p>
+                    </div>
+                  </div>
+                </div>
+                <div class="table__body">
+                  <div class="table__row table__row-1">
+                    <div class="table__col table__col-0"><a class="table__play" href="#" title=""><i></i></a></div>
+                    <div class="table__col table__col-1">
+                      <p>Protecting Intellectual Property In Jewish Law <br>(2017 - 02 - 15) (B)</p>
+                    </div>
+                    <div class="table__col table__col-2">
+                      <p>Rabbi Aron Feldman</p>
+                    </div>
+                    <div class="table__col table__col-3">
+                      <p>Halacha</p>
+                    </div>
+                    <div class="table__col table__col-4">
+                      <p>13 min</p>
+                    </div>
+                    <div class="table__col table__col-5"><a class="table__add" href="#" title=""><i></i></a><a class="table__download" href="#" title=""><i></i></a><a class="table__share" href="#" title=""><i></i></a><a class="table__send" href="#" title=""><i></i></a></div>
+                  </div>
+                  <div class="table__row table__row-2">
+                    <div class="table__col table__col-0"><a class="table__play" href="#" title=""><i></i></a></div>
+                    <div class="table__col table__col-1">
+                      <p>Protecting Intellectual Property In Jewish Law <br>(2017 - 02 - 15) (B)</p>
+                    </div>
+                    <div class="table__col table__col-2">
+                      <p>Rabbi Aron Feldman</p>
+                    </div>
+                    <div class="table__col table__col-3">
+                      <p>Halacha</p>
+                    </div>
+                    <div class="table__col table__col-4">
+                      <p>13 min</p>
+                    </div>
+                    <div class="table__col table__col-5"><a class="table__add" href="#" title=""><i></i></a><a class="table__download" href="#" title=""><i></i></a><a class="table__share" href="#" title=""><i></i></a><a class="table__send" href="#" title=""><i></i></a></div>
+                  </div>
+                  <div class="table__row table__row-3">
+                    <div class="table__col table__col-0"><a class="table__play" href="#" title=""><i></i></a></div>
+                    <div class="table__col table__col-1">
+                      <p>Protecting Intellectual Property In Jewish Law <br>(2017 - 02 - 15) (B)</p>
+                    </div>
+                    <div class="table__col table__col-2">
+                      <p>Rabbi Aron Feldman</p>
+                    </div>
+                    <div class="table__col table__col-3">
+                      <p>Halacha</p>
+                    </div>
+                    <div class="table__col table__col-4">
+                      <p>13 min</p>
+                    </div>
+                    <div class="table__col table__col-5"><a class="table__add" href="#" title=""><i></i></a><a class="table__download" href="#" title=""><i></i></a><a class="table__share" href="#" title=""><i></i></a><a class="table__send" href="#" title=""><i></i></a></div>
+                  </div>
+                  <div class="table__row table__row-4">
+                    <div class="table__col table__col-0"><a class="table__play" href="#" title=""><i></i></a></div>
+                    <div class="table__col table__col-1">
+                      <p>Protecting Intellectual Property In Jewish Law <br>(2017 - 02 - 15) (B)</p>
+                    </div>
+                    <div class="table__col table__col-2">
+                      <p>Rabbi Aron Feldman</p>
+                    </div>
+                    <div class="table__col table__col-3">
+                      <p>Halacha</p>
+                    </div>
+                    <div class="table__col table__col-4">
+                      <p>13 min</p>
+                    </div>
+                    <div class="table__col table__col-5"><a class="table__add" href="#" title=""><i></i></a><a class="table__download" href="#" title=""><i></i></a><a class="table__share" href="#" title=""><i></i></a><a class="table__send" href="#" title=""><i></i></a></div>
+                  </div>
+                  <div class="table__row table__row-5">
+                    <div class="table__col table__col-0"><a class="table__play" href="#" title=""><i></i></a></div>
+                    <div class="table__col table__col-1">
+                      <p>Protecting Intellectual Property In Jewish Law <br>(2017 - 02 - 15) (B)</p>
+                    </div>
+                    <div class="table__col table__col-2">
+                      <p>Rabbi Aron Feldman</p>
+                    </div>
+                    <div class="table__col table__col-3">
+                      <p>Halacha</p>
+                    </div>
+                    <div class="table__col table__col-4">
+                      <p>13 min</p>
+                    </div>
+                    <div class="table__col table__col-5"><a class="table__add" href="#" title=""><i></i></a><a class="table__download" href="#" title=""><i></i></a><a class="table__share" href="#" title=""><i></i></a><a class="table__send" href="#" title=""><i></i></a></div>
+                  </div>
+                  <div class="table__row table__row-6">
+                    <div class="table__col table__col-0"><a class="table__play" href="#" title=""><i></i></a></div>
+                    <div class="table__col table__col-1">
+                      <p>Protecting Intellectual Property In Jewish Law <br>(2017 - 02 - 15) (B)</p>
+                    </div>
+                    <div class="table__col table__col-2">
+                      <p>Rabbi Aron Feldman</p>
+                    </div>
+                    <div class="table__col table__col-3">
+                      <p>Halacha</p>
+                    </div>
+                    <div class="table__col table__col-4">
+                      <p>13 min</p>
+                    </div>
+                    <div class="table__col table__col-5"><a class="table__add" href="#" title=""><i></i></a><a class="table__download" href="#" title=""><i></i></a><a class="table__share" href="#" title=""><i></i></a><a class="table__send" href="#" title=""><i></i></a></div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- TIMELY :: END-->
+          <!-- POPULAR :: START-->
+          <div class="popular" id="popular">
+            <div class="c-grid">
+              <div class="popular__wrapper"></div>
+              <div class="table table--popular">
+                <div class="table__header">
+                  <div class="table__row table__row-0">
+                    <div class="table__col table__col-0">
+                      <p>Popular</p>
+                    </div>
+                    <div class="table__col table__col-1">
+                      <p>Name</p>
+                    </div>
+                    <div class="table__col table__col-2">
+                      <p>Speaker</p>
+                    </div>
+                    <div class="table__col table__col-3">
+                      <p>Category</p>
+                    </div>
+                    <div class="table__col table__col-4">
+                      <p>Length</p>
+                    </div>
+                    <div class="table__col table__col-5">
+                      <p>Action</p>
+                    </div>
+                  </div>
+                </div>
+                <div class="table__body">
+                  <div class="table__row table__row-1">
+                    <div class="table__col table__col-0"><a class="table__play" href="#" title=""><i></i></a></div>
+                    <div class="table__col table__col-1">
+                      <p>Protecting Intellectual Property In Jewish Law <br>(2017 - 02 - 15) (B)</p>
+                    </div>
+                    <div class="table__col table__col-2">
+                      <p>Rabbi Aron Feldman</p>
+                    </div>
+                    <div class="table__col table__col-3">
+                      <p>Halacha</p>
+                    </div>
+                    <div class="table__col table__col-4">
+                      <p>13 min</p>
+                    </div>
+                    <div class="table__col table__col-5"><a class="table__add" href="#" title=""><i></i></a><a class="table__download" href="#" title=""><i></i></a><a class="table__share" href="#" title=""><i></i></a><a class="table__send" href="#" title=""><i></i></a></div>
+                  </div>
+                  <div class="table__row table__row-2">
+                    <div class="table__col table__col-0"><a class="table__play" href="#" title=""><i></i></a></div>
+                    <div class="table__col table__col-1">
+                      <p>Protecting Intellectual Property In Jewish Law <br>(2017 - 02 - 15) (B)</p>
+                    </div>
+                    <div class="table__col table__col-2">
+                      <p>Rabbi Aron Feldman</p>
+                    </div>
+                    <div class="table__col table__col-3">
+                      <p>Halacha</p>
+                    </div>
+                    <div class="table__col table__col-4">
+                      <p>13 min</p>
+                    </div>
+                    <div class="table__col table__col-5"><a class="table__add" href="#" title=""><i></i></a><a class="table__download" href="#" title=""><i></i></a><a class="table__share" href="#" title=""><i></i></a><a class="table__send" href="#" title=""><i></i></a></div>
+                  </div>
+                  <div class="table__row table__row-3">
+                    <div class="table__col table__col-0"><a class="table__play" href="#" title=""><i></i></a></div>
+                    <div class="table__col table__col-1">
+                      <p>Protecting Intellectual Property In Jewish Law <br>(2017 - 02 - 15) (B)</p>
+                    </div>
+                    <div class="table__col table__col-2">
+                      <p>Rabbi Aron Feldman</p>
+                    </div>
+                    <div class="table__col table__col-3">
+                      <p>Halacha</p>
+                    </div>
+                    <div class="table__col table__col-4">
+                      <p>13 min</p>
+                    </div>
+                    <div class="table__col table__col-5"><a class="table__add" href="#" title=""><i></i></a><a class="table__download" href="#" title=""><i></i></a><a class="table__share" href="#" title=""><i></i></a><a class="table__send" href="#" title=""><i></i></a></div>
+                  </div>
+                  <div class="table__row table__row-4">
+                    <div class="table__col table__col-0"><a class="table__play" href="#" title=""><i></i></a></div>
+                    <div class="table__col table__col-1">
+                      <p>Protecting Intellectual Property In Jewish Law <br>(2017 - 02 - 15) (B)</p>
+                    </div>
+                    <div class="table__col table__col-2">
+                      <p>Rabbi Aron Feldman</p>
+                    </div>
+                    <div class="table__col table__col-3">
+                      <p>Halacha</p>
+                    </div>
+                    <div class="table__col table__col-4">
+                      <p>13 min</p>
+                    </div>
+                    <div class="table__col table__col-5"><a class="table__add" href="#" title=""><i></i></a><a class="table__download" href="#" title=""><i></i></a><a class="table__share" href="#" title=""><i></i></a><a class="table__send" href="#" title=""><i></i></a></div>
+                  </div>
+                  <div class="table__row table__row-5">
+                    <div class="table__col table__col-0"><a class="table__play" href="#" title=""><i></i></a></div>
+                    <div class="table__col table__col-1">
+                      <p>Protecting Intellectual Property In Jewish Law <br>(2017 - 02 - 15) (B)</p>
+                    </div>
+                    <div class="table__col table__col-2">
+                      <p>Rabbi Aron Feldman</p>
+                    </div>
+                    <div class="table__col table__col-3">
+                      <p>Halacha</p>
+                    </div>
+                    <div class="table__col table__col-4">
+                      <p>13 min</p>
+                    </div>
+                    <div class="table__col table__col-5"><a class="table__add" href="#" title=""><i></i></a><a class="table__download" href="#" title=""><i></i></a><a class="table__share" href="#" title=""><i></i></a><a class="table__send" href="#" title=""><i></i></a></div>
+                  </div>
+                  <div class="table__row table__row-6">
+                    <div class="table__col table__col-0"><a class="table__play" href="#" title=""><i></i></a></div>
+                    <div class="table__col table__col-1">
+                      <p>Protecting Intellectual Property In Jewish Law <br>(2017 - 02 - 15) (B)</p>
+                    </div>
+                    <div class="table__col table__col-2">
+                      <p>Rabbi Aron Feldman</p>
+                    </div>
+                    <div class="table__col table__col-3">
+                      <p>Halacha</p>
+                    </div>
+                    <div class="table__col table__col-4">
+                      <p>13 min</p>
+                    </div>
+                    <div class="table__col table__col-5"><a class="table__add" href="#" title=""><i></i></a><a class="table__download" href="#" title=""><i></i></a><a class="table__share" href="#" title=""><i></i></a><a class="table__send" href="#" title=""><i></i></a></div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- POPULAR :: END-->
+          <!-- RECENTLY :: START-->
+          <div class="recently" id="recently">
+            <div class="c-grid">
+              <div class="recently__wrapper"></div>
+              <div class="table table--recently">
+                <div class="table__header">
+                  <div class="table__row table__row-0">
+                    <div class="table__col table__col-0">
+                      <p>Recently Added</p>
+                    </div>
+                    <div class="table__col table__col-1">
+                      <p>Name</p>
+                    </div>
+                    <div class="table__col table__col-2">
+                      <p>Speaker</p>
+                    </div>
+                    <div class="table__col table__col-3">
+                      <p>Category</p>
+                    </div>
+                    <div class="table__col table__col-4">
+                      <p>Length</p>
+                    </div>
+                    <div class="table__col table__col-5">
+                      <p>Action</p>
+                    </div>
+                  </div>
+                </div>
+                <div class="table__body">
+                  <div class="table__row table__row-1">
+                    <div class="table__col table__col-0"><a class="table__play" href="#" title=""><i></i></a></div>
+                    <div class="table__col table__col-1">
+                      <p>Protecting Intellectual Property In Jewish Law <br>(2017 - 02 - 15) (B)</p>
+                    </div>
+                    <div class="table__col table__col-2">
+                      <p>Rabbi Aron Feldman</p>
+                    </div>
+                    <div class="table__col table__col-3">
+                      <p>Halacha</p>
+                    </div>
+                    <div class="table__col table__col-4">
+                      <p>13 min</p>
+                    </div>
+                    <div class="table__col table__col-5"><a class="table__add" href="#" title=""><i></i></a><a class="table__download" href="#" title=""><i></i></a><a class="table__share" href="#" title=""><i></i></a><a class="table__send" href="#" title=""><i></i></a></div>
+                  </div>
+                  <div class="table__row table__row-2">
+                    <div class="table__col table__col-0"><a class="table__play" href="#" title=""><i></i></a></div>
+                    <div class="table__col table__col-1">
+                      <p>Protecting Intellectual Property In Jewish Law <br>(2017 - 02 - 15) (B)</p>
+                    </div>
+                    <div class="table__col table__col-2">
+                      <p>Rabbi Aron Feldman</p>
+                    </div>
+                    <div class="table__col table__col-3">
+                      <p>Halacha</p>
+                    </div>
+                    <div class="table__col table__col-4">
+                      <p>13 min</p>
+                    </div>
+                    <div class="table__col table__col-5"><a class="table__add" href="#" title=""><i></i></a><a class="table__download" href="#" title=""><i></i></a><a class="table__share" href="#" title=""><i></i></a><a class="table__send" href="#" title=""><i></i></a></div>
+                  </div>
+                  <div class="table__row table__row-3">
+                    <div class="table__col table__col-0"><a class="table__play" href="#" title=""><i></i></a></div>
+                    <div class="table__col table__col-1">
+                      <p>Protecting Intellectual Property In Jewish Law <br>(2017 - 02 - 15) (B)</p>
+                    </div>
+                    <div class="table__col table__col-2">
+                      <p>Rabbi Aron Feldman</p>
+                    </div>
+                    <div class="table__col table__col-3">
+                      <p>Halacha</p>
+                    </div>
+                    <div class="table__col table__col-4">
+                      <p>13 min</p>
+                    </div>
+                    <div class="table__col table__col-5"><a class="table__add" href="#" title=""><i></i></a><a class="table__download" href="#" title=""><i></i></a><a class="table__share" href="#" title=""><i></i></a><a class="table__send" href="#" title=""><i></i></a></div>
+                  </div>
+                  <div class="table__row table__row-4">
+                    <div class="table__col table__col-0"><a class="table__play" href="#" title=""><i></i></a></div>
+                    <div class="table__col table__col-1">
+                      <p>Protecting Intellectual Property In Jewish Law <br>(2017 - 02 - 15) (B)</p>
+                    </div>
+                    <div class="table__col table__col-2">
+                      <p>Rabbi Aron Feldman</p>
+                    </div>
+                    <div class="table__col table__col-3">
+                      <p>Halacha</p>
+                    </div>
+                    <div class="table__col table__col-4">
+                      <p>13 min</p>
+                    </div>
+                    <div class="table__col table__col-5"><a class="table__add" href="#" title=""><i></i></a><a class="table__download" href="#" title=""><i></i></a><a class="table__share" href="#" title=""><i></i></a><a class="table__send" href="#" title=""><i></i></a></div>
+                  </div>
+                  <div class="table__row table__row-5">
+                    <div class="table__col table__col-0"><a class="table__play" href="#" title=""><i></i></a></div>
+                    <div class="table__col table__col-1">
+                      <p>Protecting Intellectual Property In Jewish Law <br>(2017 - 02 - 15) (B)</p>
+                    </div>
+                    <div class="table__col table__col-2">
+                      <p>Rabbi Aron Feldman</p>
+                    </div>
+                    <div class="table__col table__col-3">
+                      <p>Halacha</p>
+                    </div>
+                    <div class="table__col table__col-4">
+                      <p>13 min</p>
+                    </div>
+                    <div class="table__col table__col-5"><a class="table__add" href="#" title=""><i></i></a><a class="table__download" href="#" title=""><i></i></a><a class="table__share" href="#" title=""><i></i></a><a class="table__send" href="#" title=""><i></i></a></div>
+                  </div>
+                  <div class="table__row table__row-6">
+                    <div class="table__col table__col-0"><a class="table__play" href="#" title=""><i></i></a></div>
+                    <div class="table__col table__col-1">
+                      <p>Protecting Intellectual Property In Jewish Law <br>(2017 - 02 - 15) (B)</p>
+                    </div>
+                    <div class="table__col table__col-2">
+                      <p>Rabbi Aron Feldman</p>
+                    </div>
+                    <div class="table__col table__col-3">
+                      <p>Halacha</p>
+                    </div>
+                    <div class="table__col table__col-4">
+                      <p>13 min</p>
+                    </div>
+                    <div class="table__col table__col-5"><a class="table__add" href="#" title=""><i></i></a><a class="table__download" href="#" title=""><i></i></a><a class="table__share" href="#" title=""><i></i></a><a class="table__send" href="#" title=""><i></i></a></div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- RECENTLY :: END-->
         </div>
       </div>
     </div>
-    <!--include ../components/_footer-->
+    <!-- FOOTER :: START-->
+    <footer class="footer" id="footer">
+      <div class="c-grid">
+        <div class="footer__bar"></div>
+        <div class="footer__wrapper">
+          <div class="footer__left col-3 col-md-3">
+            <p class="footer__title">site map</p>
+            <div class="footer__menu">
+              <ul class="footer__menu-list">
+                <li class="footer__menu-item"><a class="footer__menu-link" href="#" title="">Categories</a></li>
+                <li class="footer__menu-item"><a class="footer__menu-link" href="#" title="">Speakers</a></li>
+                <li class="footer__menu-item"><a class="footer__menu-link" href="#" title="">Donate</a></li>
+              </ul>
+            </div>
+          </div>
+          <div class="footer__middle col-9 col-md-4">
+            <p class="footer__title">contact us</p>
+            <p class="footer__text">If you are in the market for a computer, there are a number of factors to consider. Will it be used for your home, your office or perhaps even your home office combo? First off, you will need to set a budget for your new purchase before deciding whether to shop for notebook...</p>
+          </div>
+          <div class="footer__right col-12 col-md-5">
+            <form class="footer__form" action="" method="" autocomplete="off">
+              <div class="footer__form-field">
+                <input type="text" name="name" placeholder="Name">
+              </div>
+              <div class="footer__form-field">
+                <input type="text" name="email" placeholder="E-mail">
+              </div>
+              <div class="footer__form-field">
+                <input type="text" name="text" placeholder="Put your text here">
+              </div>
+              <div class="footer__form-field">
+                <button class="footer__form-btn" type="submit">Send</button>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <!-- FOOTER :: END-->
   </body>
   <!-- SCRIPT :: START-->
   <script src="js/vendor.js"></script>

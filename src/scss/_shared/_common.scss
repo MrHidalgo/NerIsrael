@@ -14,12 +14,13 @@
   height: 40px;
   padding: 0 20px;
   border-radius: 2em;
+  border: 1px solid transparent;;
   box-shadow: 0 2px 4px 0 rgba($c-black, 0.1);
   letter-spacing: 1.1px;
   color: $c-white;
   font-size: 12px;
   font-weight: bold;
-  @include transition(color, background-color);
+  @include transition(border-color, color, background-color);
 
   &:hover,
   &:focus {

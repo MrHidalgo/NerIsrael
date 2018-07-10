@@ -10,14 +10,14 @@ html(lang="en")
     data-file!= dataPageName
   )
     block header
-      //include ../components/_header
+      include ../components/_header
 
       #barba-wrapper
         .barba-container
           block content
 
       block footer
-        //include ../components/_footer
+        include ../components/_footer
 
   block script
     include _script

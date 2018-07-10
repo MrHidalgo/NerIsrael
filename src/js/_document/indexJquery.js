@@ -75,5 +75,15 @@ $(document).ready((ev) => {
       $(".swiper-slide-drop[data-drop='" + elemAttrId + "']").addClass("is-open");
     }
   });
+
+
+  $("[hamburger-btn-js]").on("click", (e) => {
+    const mobileMenuContainer = $(".header__middle"),
+      hideScrollElem = $("html, body");
+
+    $(e.currentTarget).toggleClass("is-active");
+    mobileMenuContainer.toggleClass("is-show");
+    hideScrollElem.toggleClass("is-hideScroll");
+  });
 });
 

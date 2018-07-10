@@ -133,6 +133,15 @@ $(document).ready(function (ev) {
       $(".swiper-slide-drop[data-drop='" + elemAttrId + "']").addClass("is-open");
     }
   });
+
+  $("[hamburger-btn-js]").on("click", function (e) {
+    var mobileMenuContainer = $(".header__middle"),
+        hideScrollElem = $("html, body");
+
+    $(e.currentTarget).toggleClass("is-active");
+    mobileMenuContainer.toggleClass("is-show");
+    hideScrollElem.toggleClass("is-hideScroll");
+  });
 });
 
 /*!

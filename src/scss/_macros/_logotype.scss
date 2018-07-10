@@ -6,6 +6,18 @@
     display: block;
     max-width: 100%;
     height: auto;
+
+    &--desktop {
+      @include respond(m_m) {
+        display: none;
+      }
+    }
+    &--mobile {
+      display: none;
+      @include respond(m_m) {
+        display: block;
+      }
+    }
   }
 }
 

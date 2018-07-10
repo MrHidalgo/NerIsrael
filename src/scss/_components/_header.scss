@@ -3,8 +3,10 @@
 .header {
   &__wrapper {
     display: flex;
-    min-height: 122px;
-    //box-shadow: 0 2px 5px 0 rgba($c-black, 0.14);
+    height: 122px;
+    @include respond(m_m) {
+      height: 52px;
+    }
   }
 
 
@@ -15,17 +17,52 @@
     width: 100%;
     max-width: 165px;
     padding-left: 40px;
+    @include respond(m_m) {
+      max-width: 100px;
+      padding-left: 0;
+      background-color: rgba($c-darkCerulean, 0.93);
+    }
+    @include respond(m) {
+      padding-left: 0;
+    }
+    @include respond(l) {
+      padding-left: 40px;
+    }
   }
 
 
   &__middle {
-    display: flex;
     flex-direction: column;
     width: 100%;
     max-width: calc(100% - (165px + 203px));
     padding-top: 24px;
     padding-left: 40px;
     padding-right: 52px;
+    @include respond(es) {
+      display: none;
+    }
+    @include respond(m) {
+      display: none;
+    }
+    @include respond(l) {
+      display: flex;
+    }
+    @include respond(m_m) {
+      &.is-show {
+        z-index: 100;
+        overflow-y: auto;
+        display: flex;
+        position: fixed;
+        top: 52px;
+        left: 0;
+        width: 100%;
+        max-width: 100%;
+        height: calc(100% - 52px);
+        padding: 15px;
+        border-top: 1px solid $c-white;
+        background-color: rgba($c-darkCerulean, 0.93);
+      }
+    }
   }
 
 
@@ -34,8 +71,22 @@
     align-items: center;
     justify-content: center;
     width: 100%;
-    max-width: 203px;
     background-color: rgba($c-darkCerulean, 0.93);
+    @include respond(m_m) {
+      justify-content: flex-end;
+      .logo__img {
+        height: 37px;
+      }
+    }
+    @include respond(es) {
+      max-width: calc(100% - (100px + 70px));
+    }
+    @include respond(m) {
+      max-width: calc(100% - (165px * 2));
+    }
+    @include respond(l) {
+      max-width: 203px;
+    }
   }
 
 
@@ -44,10 +95,51 @@
     align-items: center;
     justify-content: space-between;
     padding-bottom: 16px;
+    @include respond(m_m) {
+      .is-show & {
+        flex-wrap: wrap;
+        padding-bottom: 15px;
+        margin-bottom: 15px;
+        border-bottom: 1px solid $c-white;
+
+        .button {
+          width: calc(50% - 7.5px);
+
+          &:hover {
+            color: rgba($c-darkCerulean, 0.93);
+            background-color: $c-white;
+          }
+
+          &__speakers {
+            order: 2;
+            margin-right: 7.5px;
+          }
+          &__donate {
+            order: 3;
+            margin-left: 7.5px;
+          }
+        }
+      }
+    }
   }
 
 
-  &__bottom {}
+  &__mobile {
+    width: 100%;
+    background-color: rgba($c-darkCerulean, 0.93);
+    @include respond(es) {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      max-width: 70px;
+    }
+    @include respond(m) {
+      max-width: 165px;
+    }
+    @include respond(l) {
+      display: none;
+    }
+  }
 }
 
 // HEADER :: END

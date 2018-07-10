@@ -8,17 +8,20 @@ header#header.header
 
       .header__middle
         .header__top
-          a.button.button--primary(href="#" title="" role="button")!= "All Speakers"
+          a.button.button__speakers.button--primary(href="#" title="" role="button")!= "All Speakers"
 
           include ../macros/_search
 
-          a.button.button--primary(href="#" title="" role="button")!= "Donate"
+          a.button.button__donate.button--primary(href="#" title="" role="button")!= "Donate"
 
         .header__bottom
           include ../macros/_nav
 
       .header__right
         include ../macros/_subLogotype
+
+      .header__mobile
+        include ../macros/_hamburger
 
 
 // HEADER :: END
