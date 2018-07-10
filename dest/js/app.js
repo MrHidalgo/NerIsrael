@@ -134,6 +134,9 @@ $(document).ready(function (ev) {
     }
   });
 
+  /**
+   *
+   */
   $("[hamburger-btn-js]").on("click", function (e) {
     var mobileMenuContainer = $(".header__middle"),
         hideScrollElem = $("html, body");
@@ -141,6 +144,28 @@ $(document).ready(function (ev) {
     $(e.currentTarget).toggleClass("is-active");
     mobileMenuContainer.toggleClass("is-show");
     hideScrollElem.toggleClass("is-hideScroll");
+  });
+
+  /**
+   *
+   */
+  $("[table-head-js]").on("click", function (e) {
+    var elem = $(e.currentTarget),
+        bodyContainer = elem.closest(".table__row").find("[talbe-body-js]");
+
+    if (_window.width() < 768) {
+
+      if (elem.hasClass("is-open")) {
+        elem.removeClass("is-open");
+        bodyContainer.removeClass("is-show");
+      } else {
+        elem.closest(".table").find("[talbe-body-js]").removeClass("is-show");
+        elem.closest(".table").find("[table-head-js]").removeClass("is-open");
+
+        elem.toggleClass("is-open");
+        bodyContainer.toggleClass("is-show");
+      }
+    }
   });
 });
 

@@ -14,32 +14,50 @@ mixin table(classMod, headerDataArr, bodyDataArr)
   .table(class="table--" + classMod)
     .table__header
       .table__row.table__row-0
-        -for(var j = 0, countHeader = j, len = headerDataArr.length; j < len; j++)
-            .table__col(class!= "table__col-" + (j))
-              p!= headerDataArr[j]
+        .table__row-head
+          .table__col.table__col-0
+            p!= headerDataArr[0]
+          .table__col.table__col-1
+            p!= headerDataArr[1]
+        .table__row-body
+          .table__col.table__col-2
+            p!= headerDataArr[2]
+          .table__col.table__col-3
+            p!= headerDataArr[3]
+          .table__col.table__col-4
+            p!= headerDataArr[4]
+          .table__col.table__col-5
+            p!= headerDataArr[5]
+
     .table__body
       -for(var i = 0, countBody = 1, len = bodyDataArr.length; i < len; i++, countBody++)
         .table__row(class="table__row-" + (countBody))
-          .table__col.table__col-0
-            a.table__play(href="#" title="" class="")
-              i
-          .table__col.table__col-1
-            p!= bodyDataArr[i].nameVal
-          .table__col.table__col-2
-            p!= bodyDataArr[i].speakerVal
-          .table__col.table__col-3
-            p!= bodyDataArr[i].categoryVal
-          .table__col.table__col-4
-            p!= bodyDataArr[i].lengthVal
-          .table__col.table__col-5
-            a.table__add(href="#" title="" class="")
-              i
-            a.table__download(href="#" title="" class="")
-              i
-            a.table__share(href="#" title="" class="")
-              i
-            a.table__send(href="#" title="" class="")
-              i
+          .table__row-head(table-head-js class!= (i === 0) ? "is-open": "" )
+            .table__col.table__col-0
+              a.table__play(href="#" title="" class="")
+                i
+            .table__col.table__col-1
+              p!= bodyDataArr[i].nameVal
+          .table__row-body(talbe-body-js class!= (i === 0) ? "is-show": "" )
+            .table__col.table__col-2
+              span!="Speaker"
+              p!= bodyDataArr[i].speakerVal
+            .table__col.table__col-3
+              span!="Category"
+              p!= bodyDataArr[i].categoryVal
+            .table__col.table__col-4
+              span!="Length"
+              p!= bodyDataArr[i].lengthVal
+            .table__col.table__col-5
+              span!="Action"
+              a.table__add(href="#" title="" class="")
+                i
+              a.table__download(href="#" title="" class="")
+                i
+              a.table__share(href="#" title="" class="")
+                i
+              a.table__send(href="#" title="" class="")
+                i
 //- end TABLE
 
 //- MIXIN :: END
