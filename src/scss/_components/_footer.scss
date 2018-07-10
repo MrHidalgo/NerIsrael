@@ -12,29 +12,27 @@
 
   &__wrapper {
     display: flex;
-    height: calc(176px - 8px);
+    flex-wrap: wrap;
+    min-height: calc(176px - 8px);
     padding-top: 28px;
     background-color: $c-charcoal;
   }
 
 
   &__left {
-    width: 100%;
-    max-width: (184px + 78px);
     padding-left: 78px;
-  }
-
-
-  &__middle {
-    width: 100%;
-    max-width: 369px;
+    @include respond(m_m) {
+      padding-left: 15px;
+    }
   }
 
 
   &__right {
-    width: 100%;
-    max-width: calc(100% - (184px + 369px + 80px));
     padding-right: 80px;
+    @include respond(m_m) {
+      padding-top: 15px;
+      padding-right: 15px;
+    }
   }
 
 
@@ -44,6 +42,9 @@
     text-transform: uppercase;
     font-size: 12px;
     font-weight: 700;
+    @include respond(m_m) {
+      font-size: 9px;
+    }
   }
 
 
@@ -58,11 +59,17 @@
   &__menu {
     &-item {
       padding-bottom: 5px;
+      @include respond(m_m) {
+        display: flex;
+      }
     }
     &-link {
       color: $c-white;
       font-size: 12px;
       @include transition(color);
+      @include respond(m_m) {
+        font-size: 9px;
+      }
 
       &:hover,
       &:focus {
