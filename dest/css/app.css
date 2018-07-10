@@ -1422,6 +1422,8 @@ input[type="text"] {
       -ms-flex-pack: center;
           justify-content: center;
   min-height: 445px;
+  padding-left: 15px;
+  padding-right: 15px;
   -webkit-box-shadow: 0 5px 14px 0 rgba(0, 0, 0, 0.45);
           box-shadow: 0 5px 14px 0 rgba(0, 0, 0, 0.45);
   background-image: url("../img/img__bg-main.png");
@@ -1429,6 +1431,13 @@ input[type="text"] {
   background-position: center;
   -webkit-background-size: cover;
           background-size: cover;
+}
+
+@media screen and (max-width: 767px) {
+  
+  .main__wrapper {
+    min-height: 280px;
+  }
 }
 
 
@@ -1445,9 +1454,27 @@ input[type="text"] {
   font-weight: 700;
 }
 
+@media screen and (max-width: 767px) {
+  
+  .main__title {
+    font-size: 25px;
+  }
+}
+
 
 .main__subtitle {
   font-size: 22px;
+}
+
+@media screen and (max-width: 767px) {
+  
+  .main__subtitle {
+    width: 100%;
+    max-width: 244px;
+    margin-left: auto;
+    margin-right: auto;
+    font-size: 13px;
+  }
 }
 
 

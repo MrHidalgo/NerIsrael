@@ -6,11 +6,16 @@
     align-items: center;
     justify-content: center;
     min-height: 445px;
+    padding-left: 15px;
+    padding-right: 15px;
     box-shadow: 0 5px 14px 0 rgba($c-black, 0.45);
     background-image: url("../img/img__bg-main.png");
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
+    @include respond(m_m) {
+      min-height: 280px;
+    }
 
     &-text {
       line-height: 1.3;
@@ -24,11 +29,21 @@
     padding-bottom: 23px;
     font-size: 45px;
     font-weight: 700;
+    @include respond(m_m) {
+      font-size: 25px;
+    }
   }
 
 
   &__subtitle {
     font-size: 22px;
+    @include respond(m_m) {
+      width: 100%;
+      max-width: 244px;
+      margin-left: auto;
+      margin-right: auto;
+      font-size: 13px;
+    }
   }
 }
 
