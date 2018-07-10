@@ -19,8 +19,8 @@ function initSwiper() {
     // lazy: {
     //   loadPrevNext: true,
     // },
-    slidesPerView: 4,
-    spaceBetween: 17,
+    slidesPerView: 1,
+    spaceBetween: 0,
     // width: 192,
     breakpoints: {
       // when window width is <= 320px
