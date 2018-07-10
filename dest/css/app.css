@@ -191,6 +191,13 @@ body {
   -moz-osx-font-smoothing: grayscale;
 }
 
+@media screen and (max-width: 767px) {
+  
+  body {
+    padding-top: 52px;
+  }
+}
+
 
 * {
   -webkit-box-sizing: border-box;
@@ -1716,7 +1723,14 @@ input[type="text"] {
 @media screen and (max-width: 767px) {
   
   .header__wrapper {
+    z-index: 100;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
     height: 52px;
+    -webkit-box-shadow: 0 0 10px 0 rgba(151, 151, 151, 0.25);
+            box-shadow: 0 0 10px 0 rgba(151, 151, 151, 0.25);
   }
 }
 
@@ -1819,7 +1833,7 @@ input[type="text"] {
     height: calc(100% - 52px);
     padding: 15px;
     border-top: 1px solid #fff;
-    background-color: rgba(24, 68, 120, 0.93);
+    background-color: #184478;
   }
 }
 
