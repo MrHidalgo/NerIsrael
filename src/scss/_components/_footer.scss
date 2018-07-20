@@ -108,6 +108,8 @@
         width: 100%;
         background-color: transparent;
         border: none;
+        border-radius: 0;
+        box-shadow: none;
         border-bottom: 1px solid $c-white;
         color: $c-white;
         font-size: 10px;
@@ -140,6 +142,8 @@
       padding-left: 25px;
       padding-right: 25px;
       border-radius: 2em;
+      box-shadow: none;
+      border: 1px solid $c-white;
       background-color: transparent;
       color: $c-white;
       font-size: 8px;
