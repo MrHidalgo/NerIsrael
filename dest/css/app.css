@@ -2355,6 +2355,7 @@ input[type="text"] {
   .timely__wrapper {
     left: 0;
     width: 100%;
+    background-attachment: fixed;
   }
 }
 
@@ -2400,6 +2401,7 @@ input[type="text"] {
   .recently__wrapper {
     left: 0;
     width: 100%;
+    background-attachment: fixed;
   }
 }
 
