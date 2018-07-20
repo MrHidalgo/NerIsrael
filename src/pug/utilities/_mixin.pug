@@ -16,7 +16,8 @@ mixin table(classMod, headerDataArr, bodyDataArr)
       .table__row.table__row-0
         .table__row-head
           .table__col.table__col-0
-            p!= headerDataArr[0]
+            p
+              a(href="#" title!="" class!="")!= headerDataArr[0]
           .table__col.table__col-1
             p
               a(href="#" title!="" class!="")!= headerDataArr[1]
@@ -40,7 +41,10 @@ mixin table(classMod, headerDataArr, bodyDataArr)
               a.table__play(href="#" title="" class="")
                 i
             .table__col.table__col-1
-              p!= bodyDataArr[i].nameVal
+              p
+                != bodyDataArr[i].nameVal
+              a(href="#" title!="" class!="")
+                i
           .table__row-body(talbe-body-js class!= (i === 0) ? "is-show": "" )
             .table__col.table__col-2
               span!="Speaker"

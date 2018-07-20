@@ -135,6 +135,16 @@
           cursor: pointer;
           min-height: 62px;
         }
+
+        &.is-open {
+          .table__col-1 {
+            a {
+              i {
+                transform: rotate(180deg);
+              }
+            }
+          }
+        }
       }
 
       &-body {
@@ -165,9 +175,30 @@
       align-items: center;
 
       &-1 {
+        position: relative;
+
         p {
           color: $c-matterhorn;
           font-weight: 600;
+        }
+
+        a {
+          display: none;
+          position: absolute;
+          align-items: center;
+          justify-content: center;
+          top: 50%;
+          right: 0;
+          transform: translateY(-50%);
+          width: 71px;
+          height: 100%;
+          @include respond(m_m) {
+            display: flex;
+          }
+
+          i {
+            @include retina-sprite($sp-arrow-group);
+          }
         }
       }
 
@@ -244,6 +275,10 @@
     }
     &-1 {
       max-width: 298px;
+      @include respond(m_m) {
+        max-width: 100%;
+        padding-right: 71px;
+      }
     }
     &-2 {
       max-width: 178px;
