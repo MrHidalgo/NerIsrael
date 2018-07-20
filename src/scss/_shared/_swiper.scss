@@ -91,21 +91,26 @@
       position: absolute;
       top: 0;
       right: 0;
-      width: 19px;
-      height: 41px;
+      width: 100%;
+      height: 100%;
       padding-top: 19px;
       padding-right: 14px;
-      @include transition(z-index);
+      @include transition(z-index, padding-top);
       @include respond(m_s) {
-        width: 10px;
-        height: 23px;
         padding-top: 7px;
         padding-right: 7px;
       }
 
       &.is-show {
         z-index: 2;
-        @include transition(z-index);
+        width: 19px;
+        height: 41px;
+        padding-top: 24px;
+        @include transition(z-index, padding-top);
+        @include respond(m_s) {
+          padding-top: 9px;
+        }
+
 
         span {
           background-color: $c-darkSlate;
@@ -117,6 +122,7 @@
         display: block;
         width: 5px;
         height: 5px;
+        margin-left: auto;
         border-radius: 100%;
         background-color: $c-white;
         @include transition(background-color);
@@ -150,8 +156,8 @@
       @include respond(m_s) {
         top: 2px;
         left: -1px;
-        padding-top: 5px;
-        padding-bottom: 5px;
+        padding-top: 10px;
+        padding-bottom: 10px;
       }
 
       &.is-open {
@@ -205,8 +211,8 @@
             @include transition(color);
             @include respond(m_s) {
               height: calc(110px / 4);
-              padding-left: 5px;
-              font-size: 10px;
+              padding-left: 15px;
+              font-size: 8px;
             }
 
             &:hover,
@@ -232,6 +238,9 @@
 
             i {
               @include transition(opacity);
+              @include respond(m_s) {
+                transform: scale(0.75);
+              }
             }
           }
         }
