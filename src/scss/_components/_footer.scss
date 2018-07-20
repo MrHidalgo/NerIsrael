@@ -42,8 +42,8 @@
     text-transform: uppercase;
     font-size: 12px;
     font-weight: 700;
-    @include respond(m_m) {
-      font-size: 9px;
+    @include respond(m_s) {
+      font-size: 8.4px;
     }
   }
 
@@ -53,6 +53,9 @@
     max-width: 249px;
     color: $c-white;
     font-size: 7px;
+    @include respond(m_s) {
+      font-size: 5px;
+    }
   }
 
 
@@ -67,8 +70,8 @@
       color: $c-white;
       font-size: 12px;
       @include transition(color);
-      @include respond(m_m) {
-        font-size: 9px;
+      @include respond(m_s) {
+        font-size: 8px;
       }
 
       &:hover,
@@ -113,22 +116,37 @@
         border-bottom: 1px solid $c-white;
         color: $c-white;
         font-size: 10px;
+        @include respond(m_s) {
+          font-size: 7px;
+        }
 
         &::-webkit-input-placeholder {
           color: $c-white;
-          font-size: 8px;
+          font-size: 7px;
+          @include respond(m_s) {
+            font-size: 6px;
+          }
         }
         &::-moz-placeholder {
           color: $c-white;
-          font-size: 8px;
+          font-size: 7px;
+          @include respond(m_s) {
+            font-size: 6px;
+          }
         }
         &:-ms-input-placeholder {
           color: $c-white;
-          font-size: 8px;
+          font-size: 7px;
+          @include respond(m_s) {
+            font-size: 6px;
+          }
         }
         &:-moz-placeholder {
           color: $c-white;
-          font-size: 8px;
+          font-size: 7px;
+          @include respond(m_s) {
+            font-size: 6px;
+          }
         }
       }
     }
@@ -147,6 +165,12 @@
       background-color: transparent;
       color: $c-white;
       font-size: 8px;
+      @include respond(m_s) {
+        height: 18px;
+        padding-left: 20px;
+        padding-right: 20px;
+        font-size: 6.7px;
+      }
     }
   }
 }

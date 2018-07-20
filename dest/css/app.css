@@ -2082,10 +2082,10 @@ input[type="text"] {
   font-weight: 700;
 }
 
-@media screen and (max-width: 767px) {
+@media screen and (max-width: 575px) {
   
   .footer__title {
-    font-size: 9px;
+    font-size: 8.4px;
   }
 }
 
@@ -2095,6 +2095,13 @@ input[type="text"] {
   max-width: 249px;
   color: #fff;
   font-size: 7px;
+}
+
+@media screen and (max-width: 575px) {
+  
+  .footer__text {
+    font-size: 5px;
+  }
 }
 
 
@@ -2121,10 +2128,10 @@ input[type="text"] {
   transition: color 0.3s ease-in-out;
 }
 
-@media screen and (max-width: 767px) {
+@media screen and (max-width: 575px) {
   
   .footer__menu-link {
-    font-size: 9px;
+    font-size: 8px;
   }
 }
 
@@ -2189,28 +2196,63 @@ input[type="text"] {
   font-size: 10px;
 }
 
+@media screen and (max-width: 575px) {
+  
+  .footer__form-field input {
+    font-size: 7px;
+  }
+}
+
 
 .footer__form-field input::-webkit-input-placeholder {
   color: #fff;
-  font-size: 8px;
+  font-size: 7px;
+}
+
+@media screen and (max-width: 575px) {
+  
+  .footer__form-field input::-webkit-input-placeholder {
+    font-size: 6px;
+  }
 }
 
 
 .footer__form-field input::-moz-placeholder {
   color: #fff;
-  font-size: 8px;
+  font-size: 7px;
+}
+
+@media screen and (max-width: 575px) {
+  
+  .footer__form-field input::-moz-placeholder {
+    font-size: 6px;
+  }
 }
 
 
 .footer__form-field input:-ms-input-placeholder {
   color: #fff;
-  font-size: 8px;
+  font-size: 7px;
+}
+
+@media screen and (max-width: 575px) {
+  
+  .footer__form-field input:-ms-input-placeholder {
+    font-size: 6px;
+  }
 }
 
 
 .footer__form-field input:-moz-placeholder {
   color: #fff;
-  font-size: 8px;
+  font-size: 7px;
+}
+
+@media screen and (max-width: 575px) {
+  
+  .footer__form-field input:-moz-placeholder {
+    font-size: 6px;
+  }
 }
 
 
@@ -2239,6 +2281,16 @@ input[type="text"] {
   background-color: transparent;
   color: #fff;
   font-size: 8px;
+}
+
+@media screen and (max-width: 575px) {
+  
+  .footer__form-btn {
+    height: 18px;
+    padding-left: 20px;
+    padding-right: 20px;
+    font-size: 6.7px;
+  }
 }
 
 
