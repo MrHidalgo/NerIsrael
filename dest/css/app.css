@@ -376,6 +376,24 @@ input[type="text"] {
 }
 
 
+.table__header p a {
+  display: block;
+  color: #979797;
+  -webkit-transition: color 0.3s ease-in-out;
+  -o-transition: color 0.3s ease-in-out;
+  transition: color 0.3s ease-in-out;
+}
+
+
+.table__header p a:hover {
+  text-decoration: none;
+  color: rgba(0, 0, 0, 0.93);
+  -webkit-transition: color 0.3s ease-in-out;
+  -o-transition: color 0.3s ease-in-out;
+  transition: color 0.3s ease-in-out;
+}
+
+
 .table__header .table__row {
   background-color: rgba(255, 255, 255, 0.93);
 }

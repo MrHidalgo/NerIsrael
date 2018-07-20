@@ -62,6 +62,18 @@
       color: $c-nobel;
       font-size: 12px;
       font-weight: bold;
+
+      a {
+        display: block;
+        color: $c-nobel;
+        @include transition(color);
+
+        &:hover {
+          text-decoration: none;
+          color: rgba($c-black, 0.93);
+          @include transition(color);
+        }
+      }
     }
 
     .table__row {

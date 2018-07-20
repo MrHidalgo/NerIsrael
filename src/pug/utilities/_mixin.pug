@@ -18,12 +18,15 @@ mixin table(classMod, headerDataArr, bodyDataArr)
           .table__col.table__col-0
             p!= headerDataArr[0]
           .table__col.table__col-1
-            p!= headerDataArr[1]
+            p
+              a(href="#" title!="" class!="")!= headerDataArr[1]
         .table__row-body
           .table__col.table__col-2
-            p!= headerDataArr[2]
+            p
+              a(href="#" title!="" class!="")!= headerDataArr[2]
           .table__col.table__col-3
-            p!= headerDataArr[3]
+            p
+              a(href="#" title!="" class!="")!= headerDataArr[3]
           .table__col.table__col-4
             p!= headerDataArr[4]
           .table__col.table__col-5
