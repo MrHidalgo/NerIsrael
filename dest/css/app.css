@@ -370,22 +370,17 @@ input[type="text"] {
 
 
 .table__header p {
+  cursor: pointer;
   color: #979797;
   font-size: 12px;
   font-weight: bold;
-}
-
-
-.table__header p a {
-  display: block;
-  color: #979797;
   -webkit-transition: color 0.3s ease-in-out;
   -o-transition: color 0.3s ease-in-out;
   transition: color 0.3s ease-in-out;
 }
 
 
-.table__header p a:hover {
+.table__header p:hover {
   text-decoration: none;
   color: rgba(0, 0, 0, 0.93);
   -webkit-transition: color 0.3s ease-in-out;
@@ -421,11 +416,6 @@ input[type="text"] {
     max-width: 91px;
     padding-left: 15px;
   }
-}
-
-
-.table__header .table__col-0 p {
-  color: rgba(0, 0, 0, 0.93);
 }
 
 @media screen and (max-width: 767px) {
@@ -528,7 +518,7 @@ input[type="text"] {
 }
 
 
-.table__body .table__col-1 a {
+.table__body .table__col-1 .table__col-arr {
   display: none;
   position: absolute;
   -webkit-box-align: center;
@@ -550,7 +540,7 @@ input[type="text"] {
 
 @media screen and (max-width: 767px) {
   
-  .table__body .table__col-1 a {
+  .table__body .table__col-1 .table__col-arr {
     display: -webkit-box;
     display: -webkit-flex;
     display: -ms-flexbox;
@@ -559,7 +549,7 @@ input[type="text"] {
 }
 
 
-.table__body .table__col-1 a i {
+.table__body .table__col-1 .table__col-arr i {
   background-image: url(../img/sprite.png);
   background-position: -91px -48px;
   width: 11px;
@@ -568,7 +558,7 @@ input[type="text"] {
 
 @media (-webkit-min-device-pixel-ratio: 2), (-o-min-device-pixel-ratio: 2/1), (min-resolution: 192dpi) {
   
-  .table__body .table__col-1 a i {
+  .table__body .table__col-1 .table__col-arr i {
     background-image: url(../img/sprite@2x.png);
     -webkit-background-size: 107px 82px;
             background-size: 107px 82px;
@@ -602,8 +592,12 @@ input[type="text"] {
 
 
 .table__body .table__col p {
-  color: rgba(81, 81, 81, 0.93);
   font-size: 10px;
+}
+
+
+.table__body .table__col p a {
+  color: rgba(81, 81, 81, 0.93);
 }
 
 

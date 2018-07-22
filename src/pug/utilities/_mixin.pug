@@ -16,18 +16,14 @@ mixin table(classMod, headerDataArr, bodyDataArr)
       .table__row.table__row-0
         .table__row-head
           .table__col.table__col-0
-            p
-              a(href="#" title!="" class!="")!= headerDataArr[0]
+            p!= headerDataArr[0]
           .table__col.table__col-1
-            p
-              a(href="#" title!="" class!="")!= headerDataArr[1]
+            p!= headerDataArr[1]
         .table__row-body
           .table__col.table__col-2
-            p
-              a(href="#" title!="" class!="")!= headerDataArr[2]
+            p!= headerDataArr[2]
           .table__col.table__col-3
-            p
-              a(href="#" title!="" class!="")!= headerDataArr[3]
+            p!= headerDataArr[3]
           .table__col.table__col-4
             p!= headerDataArr[4]
           .table__col.table__col-5
@@ -42,16 +38,18 @@ mixin table(classMod, headerDataArr, bodyDataArr)
                 i
             .table__col.table__col-1
               p
-                != bodyDataArr[i].nameVal
-              a(href="#" title!="" class!="")
+                a(href="#" title!="" class!="")!= bodyDataArr[i].nameVal
+              a.table__col-arr(href="#" title!="" class!="")
                 i
           .table__row-body(talbe-body-js class!= (i === 0) ? "is-show": "" )
             .table__col.table__col-2
               span!="Speaker"
-              p!= bodyDataArr[i].speakerVal
+              p
+                a(href="#" title!="" class!="")!= bodyDataArr[i].speakerVal
             .table__col.table__col-3
               span!="Category"
-              p!= bodyDataArr[i].categoryVal
+              p
+                a(href="#" title!="" class!="")!= bodyDataArr[i].categoryVal
             .table__col.table__col-4
               span!="Length"
               p!= bodyDataArr[i].lengthVal
