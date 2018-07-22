@@ -8,6 +8,7 @@
     height: 24px;
     @include respond(m_m) {
       flex-wrap: wrap;
+      height: auto;
     }
   }
 

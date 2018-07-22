@@ -18,6 +18,7 @@ $(document).ready((ev) => {
    */
   initSwiper();
   initObjectFitImages();
+  closeMobileMenu();
 
 
   /**
@@ -88,6 +89,19 @@ $(document).ready((ev) => {
     mobileMenuContainer.toggleClass("is-show");
     hideScrollElem.toggleClass("is-hideScroll");
   });
+
+  function closeMobileMenu() {
+    $(".header__middle-wrap").on("click", (e) => {
+      const hamburgerBtn = $("[hamburger-btn-js]"),
+        mobileMenuContainer = $(".header__middle"),
+        hideScrollElem = $("html, body");
+
+      hamburgerBtn.removeClass("is-active");
+      mobileMenuContainer.removeClass("is-show");
+      hideScrollElem.removeClass("is-hideScroll");
+    });
+  }
+
 
 
   /**

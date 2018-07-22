@@ -81,6 +81,7 @@ $(document).ready(function (ev) {
    */
   initSwiper();
   initObjectFitImages();
+  closeMobileMenu();
 
   /**
    *
@@ -145,6 +146,18 @@ $(document).ready(function (ev) {
     mobileMenuContainer.toggleClass("is-show");
     hideScrollElem.toggleClass("is-hideScroll");
   });
+
+  function closeMobileMenu() {
+    $(".header__middle-wrap").on("click", function (e) {
+      var hamburgerBtn = $("[hamburger-btn-js]"),
+          mobileMenuContainer = $(".header__middle"),
+          hideScrollElem = $("html, body");
+
+      hamburgerBtn.removeClass("is-active");
+      mobileMenuContainer.removeClass("is-show");
+      hideScrollElem.removeClass("is-hideScroll");
+    });
+  }
 
   /**
    *

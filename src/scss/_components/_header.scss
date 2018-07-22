@@ -57,16 +57,33 @@
       &.is-show {
         z-index: 100;
         overflow-y: auto;
-        display: flex;
+        display: block;
         position: fixed;
-        top: 52px;
-        left: 0;
+        top: 0;
+        right: 0;
         width: 100%;
         max-width: 100%;
-        height: calc(100% - 52px);
-        padding: 15px;
-        border-top: 1px solid $c-white;
-        background-color: rgba($c-darkCerulean, 1);
+        height: 100%;
+        padding: 0 15px 0 115px;
+
+        &:before {
+          content: "";
+          position: absolute;
+          top: 0;
+          right: 0;
+          width: calc(100% - 100px);
+          height: 100%;
+          background-color: rgba($c-eclipse, 1);
+        }
+
+        .header__middle-wrap {
+          z-index: 0;
+          position: absolute;
+          top: 0;
+          right: 0;
+          width: 100%;
+          height: 100%;
+        }
       }
     }
   }
@@ -103,26 +120,63 @@
     padding-bottom: 16px;
     @include respond(m_m) {
       .is-show & {
+        z-index: 1;
+        position: relative;
         flex-wrap: wrap;
-        padding-bottom: 15px;
-        margin-bottom: 15px;
-        border-bottom: 1px solid $c-white;
 
         .button {
-          width: calc(50% - 7.5px);
+          width: 100%;
+          justify-content: flex-start;
+          padding-left: 0;
+          border: none;
+          box-shadow: none;
+          background-color: transparent;
+          color: $c-putty;
+          font-size: 15px;
 
           &:hover {
-            color: rgba($c-darkCerulean, 0.93);
-            background-color: $c-white;
+            color: $c-white;
           }
 
           &__speakers {
             order: 2;
-            margin-right: 7.5px;
           }
           &__donate {
             order: 3;
-            margin-left: 7.5px;
+          }
+        }
+      }
+    }
+  }
+
+
+  &__bottom {
+    @include respond(m_m) {
+      .is-show & {
+        z-index: 1;
+        position: relative;
+      }
+    }
+
+
+    &--mobile {
+      display: none;
+      @include respond(m_m) {
+        display: block;
+
+        .button {
+          width: 100%;
+          justify-content: flex-start;
+          padding-left: 0;
+          margin-bottom: 15px;
+          border: none;
+          box-shadow: none;
+          background-color: transparent;
+          color: #cbae6a;
+          font-size: 15px;
+
+          &:hover {
+            color: $c-white;
           }
         }
       }

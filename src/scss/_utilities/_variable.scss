@@ -37,6 +37,7 @@ $object: (
     darkSlate             : #464747,
     nobel                 : #979797,
     matterhorn            : #515151,
+    eclipse               : #3c3c3c,
   ),
   dimension : (
     all                   : 100%,
@@ -81,6 +82,7 @@ $c-midnightExpress        : return-value(colors, midnightExpress);
 $c-darkSlate              : return-value(colors, darkSlate);
 $c-nobel                  : return-value(colors, nobel);
 $c-matterhorn             : return-value(colors, matterhorn);
+$c-eclipse                : return-value(colors, eclipse);
 
 $d-all                    : return-value(dimension, all);
 $d-fhd                    : return-value(dimension, fhd);
