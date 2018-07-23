@@ -53,7 +53,7 @@
     @include respond(l) {
       display: flex;
     }
-    @include respond(m_m) {
+    @include respond(m_l) {
       &.is-show {
         z-index: 100;
         overflow-y: auto;
@@ -95,7 +95,7 @@
     justify-content: center;
     width: 100%;
     background-color: rgba($c-darkCerulean, 0.93);
-    @include respond(m_m) {
+    @include respond(m_l) {
       justify-content: flex-end;
       .logo__img {
         height: 37px;
@@ -118,7 +118,7 @@
     align-items: center;
     justify-content: space-between;
     padding-bottom: 16px;
-    @include respond(m_m) {
+    @include respond(m_l) {
       .is-show & {
         z-index: 1;
         position: relative;
@@ -151,7 +151,7 @@
 
 
   &__bottom {
-    @include respond(m_m) {
+    @include respond(m_l) {
       .is-show & {
         z-index: 1;
         position: relative;
@@ -161,7 +161,7 @@
 
     &--mobile {
       display: none;
-      @include respond(m_m) {
+      @include respond(m_l) {
         display: block;
 
         .button {
