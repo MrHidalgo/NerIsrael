@@ -370,19 +370,9 @@ input[type="text"] {
 
 
 .table__header p {
-  cursor: pointer;
   color: #979797;
   font-size: 12px;
   font-weight: bold;
-  -webkit-transition: color 0.3s ease-in-out;
-  -o-transition: color 0.3s ease-in-out;
-  transition: color 0.3s ease-in-out;
-}
-
-
-.table__header p:hover {
-  text-decoration: none;
-  color: rgba(0, 0, 0, 0.93);
   -webkit-transition: color 0.3s ease-in-out;
   -o-transition: color 0.3s ease-in-out;
   transition: color 0.3s ease-in-out;
@@ -512,12 +502,6 @@ input[type="text"] {
 }
 
 
-.table__body .table__col-1 p {
-  color: #515151;
-  font-weight: 600;
-}
-
-
 .table__body .table__col-1 .table__col-arr {
   display: none;
   position: absolute;
@@ -598,6 +582,18 @@ input[type="text"] {
 
 .table__body .table__col p a {
   color: rgba(81, 81, 81, 0.93);
+  -webkit-transition: color 0.3s ease-in-out;
+  -o-transition: color 0.3s ease-in-out;
+  transition: color 0.3s ease-in-out;
+}
+
+
+.table__body .table__col p a:hover {
+  text-decoration: none;
+  color: #000;
+  -webkit-transition: color 0.3s ease-in-out;
+  -o-transition: color 0.3s ease-in-out;
+  transition: color 0.3s ease-in-out;
 }
 
 

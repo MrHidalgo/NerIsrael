@@ -59,17 +59,10 @@
 
   &__header {
     p {
-      cursor: pointer;
       color: $c-nobel;
       font-size: 12px;
       font-weight: bold;
       @include transition(color);
-
-      &:hover {
-        text-decoration: none;
-        color: rgba($c-black, 0.93);
-        @include transition(color);
-      }
     }
 
     .table__row {
@@ -169,11 +162,6 @@
       &-1 {
         position: relative;
 
-        p {
-          color: $c-matterhorn;
-          font-weight: 600;
-        }
-
         .table__col-arr {
           display: none;
           position: absolute;
@@ -223,6 +211,13 @@
 
         a {
           color: rgba($c-matterhorn, 0.93);
+          @include transition(color);
+
+          &:hover {
+            text-decoration: none;
+            color: $c-black;
+            @include transition(color);
+          }
         }
       }
     }
