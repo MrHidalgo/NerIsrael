@@ -27,6 +27,9 @@
     font-size: 12px;
     font-weight: 700;
     @include transition(color);
+    @include respond(m_l) {
+      font-size: 14px;
+    }
 
     .is-active & {
       color: $c-black;

@@ -1564,6 +1564,13 @@ input[type="text"] {
   transition: color 0.3s ease-in-out;
 }
 
+@media screen and (max-width: 991px) {
+  
+  .nav__link {
+    font-size: 14px;
+  }
+}
+
 
 .is-active .nav__link {
   color: #000;
