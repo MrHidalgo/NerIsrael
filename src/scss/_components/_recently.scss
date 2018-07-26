@@ -26,6 +26,10 @@
       left: 0;
       width: 100%;
       background-attachment: fixed;
+
+      .is-iOS & {
+        background-attachment: scroll;
+      }
     }
   }
 }

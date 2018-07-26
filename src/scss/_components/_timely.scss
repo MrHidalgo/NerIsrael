@@ -22,10 +22,15 @@
     background-position: center;
     background-size: cover;
     @include transition(background-size, background-position);
+
     @include respond(m_m) {
       left: 0;
       width: 100%;
       background-attachment: fixed;
+
+      .is-iOS & {
+        background-attachment: scroll;
+      }
     }
   }
 }
