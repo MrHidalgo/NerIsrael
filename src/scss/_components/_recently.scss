@@ -1,6 +1,23 @@
 // RECENTLY :: START
 
 .recently {
+  &__bg {
+    display: none;
+    @include respond(m_m) {
+      z-index: -100;
+      position: fixed;
+      display: block;
+      left: 0;
+      width: 100%;
+      background-image: url("../img/img-bg__recently.jpg");
+      background-repeat: no-repeat;
+      background-position: center;
+      background-size: cover;
+      background-attachment: fixed;
+    }
+  }
+
+
   .c-grid {
     position: relative;
     min-height: 547px;
@@ -21,15 +38,10 @@
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
-    @include transition(background-size, background-position);
     @include respond(m_m) {
       left: 0;
       width: 100%;
-      background-attachment: fixed;
-
-      .is-iOS & {
-        background-attachment: scroll;
-      }
+      background-image: none;
     }
   }
 }

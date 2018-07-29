@@ -2542,6 +2542,28 @@ input[type="text"] {
 }
 
 
+.timely__bg {
+  display: none;
+}
+
+@media screen and (max-width: 767px) {
+  
+  .timely__bg {
+    z-index: -100;
+    position: fixed;
+    display: block;
+    left: 0;
+    width: 100%;
+    background-image: url("../img/img-bg__timely.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+    -webkit-background-size: cover;
+            background-size: cover;
+    background-attachment: fixed;
+  }
+}
+
+
 .timely .c-grid {
   position: relative;
   min-height: 547px;
@@ -2565,11 +2587,6 @@ input[type="text"] {
   background-position: center;
   -webkit-background-size: cover;
           background-size: cover;
-  -webkit-transition: background-position 0.3s ease-in-out, -webkit-background-size 0.3s ease-in-out;
-  transition: background-position 0.3s ease-in-out, -webkit-background-size 0.3s ease-in-out;
-  -o-transition: background-size 0.3s ease-in-out, background-position 0.3s ease-in-out;
-  transition: background-size 0.3s ease-in-out, background-position 0.3s ease-in-out;
-  transition: background-size 0.3s ease-in-out, background-position 0.3s ease-in-out, -webkit-background-size 0.3s ease-in-out;
 }
 
 @media screen and (max-width: 767px) {
@@ -2577,11 +2594,7 @@ input[type="text"] {
   .timely__wrapper {
     left: 0;
     width: 100%;
-    background-attachment: fixed;
-  }
-  
-  .is-iOS .timely__wrapper {
-    background-attachment: scroll;
+    background-image: none;
   }
 }
 
@@ -2589,6 +2602,28 @@ input[type="text"] {
 .popular {
   padding-top: 51px;
   padding-bottom: 51px;
+}
+
+
+.recently__bg {
+  display: none;
+}
+
+@media screen and (max-width: 767px) {
+  
+  .recently__bg {
+    z-index: -100;
+    position: fixed;
+    display: block;
+    left: 0;
+    width: 100%;
+    background-image: url("../img/img-bg__recently.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+    -webkit-background-size: cover;
+            background-size: cover;
+    background-attachment: fixed;
+  }
 }
 
 
@@ -2615,11 +2650,6 @@ input[type="text"] {
   background-position: center;
   -webkit-background-size: cover;
           background-size: cover;
-  -webkit-transition: background-position 0.3s ease-in-out, -webkit-background-size 0.3s ease-in-out;
-  transition: background-position 0.3s ease-in-out, -webkit-background-size 0.3s ease-in-out;
-  -o-transition: background-size 0.3s ease-in-out, background-position 0.3s ease-in-out;
-  transition: background-size 0.3s ease-in-out, background-position 0.3s ease-in-out;
-  transition: background-size 0.3s ease-in-out, background-position 0.3s ease-in-out, -webkit-background-size 0.3s ease-in-out;
 }
 
 @media screen and (max-width: 767px) {
@@ -2627,11 +2657,7 @@ input[type="text"] {
   .recently__wrapper {
     left: 0;
     width: 100%;
-    background-attachment: fixed;
-  }
-  
-  .is-iOS .recently__wrapper {
-    background-attachment: scroll;
+    background-image: none;
   }
 }
 

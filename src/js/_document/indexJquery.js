@@ -89,7 +89,6 @@ $(document).ready((ev) => {
     mobileMenuContainer.toggleClass("is-show");
     hideScrollElem.toggleClass("is-hideScroll");
   });
-
   function closeMobileMenu() {
     $(".header__middle-wrap").on("click", (e) => {
       const hamburgerBtn = $("[hamburger-btn-js]"),
@@ -126,31 +125,5 @@ $(document).ready((ev) => {
 
     }
   });
-
-
-  function detectIOS() {
-    var iDevices = [
-      'iPad Simulator',
-      'iPhone Simulator',
-      'iPod Simulator',
-      'iPad',
-      'iPhone',
-      'iPod'
-    ];
-
-    if (!!navigator.platform) {
-      while (iDevices.length) {
-        if (navigator.platform === iDevices.pop()){ return true; }
-      }
-    }
-
-    return false;
-  }
-
-  if(detectIOS()) {
-    $("body").addClass("is-iOS");
-  } else {
-    $("body").removeClass("is-iOS");
-  }
 });
 

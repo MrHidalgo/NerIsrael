@@ -1,4 +1,30 @@
-'use strict';
+"use strict";
+
+/**
+ * @name detectFixedContainer
+ * @description
+ */
+function detectFixedContainer(containerName, listenerBlockName) {
+
+  /**
+   *
+   */
+  var changeBlockSize = function changeBlockSize() {
+    var containerOffsetHeight = $(containerName).offset().top - $(window).scrollTop(),
+        containerHeight = $(containerName).height();
+
+    $(containerName + "__bg").css({
+      "top": containerOffsetHeight,
+      "height": containerHeight
+    });
+  };
+
+  changeBlockSize();
+
+  $(listenerBlockName).on("click", function () {
+    changeBlockSize();
+  });
+}
 
 /**
  * @name initObjectFitImages
@@ -74,6 +100,36 @@ function initSwiper() {
     // }
   });
 }
+
+/**
+ * @description Window on load.
+ */
+$(window).on("load", function (ev) {
+  if ($(window).width() < 768) {
+    detectFixedContainer(".timely", ".table--timely");
+    detectFixedContainer(".recently", ".table--recently");
+  }
+});
+
+/**
+ * @description Window on resize.
+ */
+$(window).on("resize", function (ev) {
+  if ($(window).width() < 768) {
+    detectFixedContainer(".timely", ".table--timely");
+    detectFixedContainer(".recently", ".table--recently");
+  }
+});
+
+/**
+ * @description Window on scroll.
+ */
+$(window).on("scroll", function (ev) {
+  if ($(window).width() < 768) {
+    detectFixedContainer(".timely", ".table--timely");
+    detectFixedContainer(".recently", ".table--recently");
+  }
+});
 
 /**
  * @description Document DOM ready.
@@ -157,7 +213,6 @@ $(document).ready(function (ev) {
     mobileMenuContainer.toggleClass("is-show");
     hideScrollElem.toggleClass("is-hideScroll");
   });
-
   function closeMobileMenu() {
     $(".header__middle-wrap").on("click", function (e) {
       var hamburgerBtn = $("[hamburger-btn-js]"),
@@ -191,26 +246,6 @@ $(document).ready(function (ev) {
       }
     }
   });
-
-  function detectIOS() {
-    var iDevices = ['iPad Simulator', 'iPhone Simulator', 'iPod Simulator', 'iPad', 'iPhone', 'iPod'];
-
-    if (!!navigator.platform) {
-      while (iDevices.length) {
-        if (navigator.platform === iDevices.pop()) {
-          return true;
-        }
-      }
-    }
-
-    return false;
-  }
-
-  if (detectIOS()) {
-    $("body").addClass("is-iOS");
-  } else {
-    $("body").removeClass("is-iOS");
-  }
 });
 
 /*!
