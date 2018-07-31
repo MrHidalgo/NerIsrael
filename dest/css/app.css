@@ -1410,13 +1410,13 @@ input[type="text"] {
 
 
 .swiper-slide-pos {
-  font-size: 8px;
+  font-size: 11px;
 }
 
 @media screen and (max-width: 767px) {
   
   .swiper-slide-pos {
-    font-size: 6px;
+    font-size: 8px;
   }
 }
 
