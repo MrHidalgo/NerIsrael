@@ -4,6 +4,7 @@
   &__wrapper {
     display: flex;
     height: 122px;
+    box-shadow: 0 2px 5px 0 rgba($c-black, 0.14);
     @include respond(m_m) {
       z-index: 100;
       position: fixed;

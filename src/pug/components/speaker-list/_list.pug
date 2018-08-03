@@ -1,0 +1,176 @@
+// LIST :: START
+
+-
+  var listData = [
+    {
+      name: "Rabbi Aron Feldman",
+      position: "Lectures: 1"
+    },
+    {
+      name: "Rabbi Aron Feldman",
+      position: "Lectures: 1"
+    },
+    {
+      name: "Rabbi Aron Feldman",
+      position: "Lectures: 1"
+    },
+    {
+      name: "Rabbi Aron Feldman",
+      position: "Lectures: 1"
+    },
+    {
+      name: "Rabbi Aron Feldman",
+      position: "Lectures: 1"
+    },
+    {
+      name: "Rabbi Aron Feldman",
+      position: "Lectures: 1"
+    },
+    {
+      name: "Rabbi Aron Feldman",
+      position: "Lectures: 1"
+    },
+    {
+      name: "Rabbi Aron Feldman",
+      position: "Lectures: 1"
+    },
+    {
+      name: "Rabbi Aron Feldman",
+      position: "Lectures: 1"
+    },
+    {
+      name: "Rabbi Aron Feldman",
+      position: "Lectures: 1"
+    },
+    {
+      name: "Rabbi Aron Feldman",
+      position: "Lectures: 1"
+    },
+    {
+      name: "Rabbi Aron Feldman",
+      position: "Lectures: 1"
+    },
+    {
+      name: "Rabbi Aron Feldman",
+      position: "Lectures: 1"
+    },
+    {
+      name: "Rabbi Aron Feldman",
+      position: "Lectures: 1"
+    },
+    {
+      name: "Rabbi Aron Feldman",
+      position: "Lectures: 1"
+    },
+    {
+      name: "Rabbi Aron Feldman",
+      position: "Lectures: 1"
+    },
+    {
+      name: "Rabbi Aron Feldman",
+      position: "Lectures: 1"
+    },
+    {
+      name: "Rabbi Aron Feldman",
+      position: "Lectures: 1"
+    },
+    {
+      name: "Rabbi Aron Feldman",
+      position: "Lectures: 1"
+    },
+    {
+      name: "Rabbi Aron Feldman",
+      position: "Lectures: 1"
+    },
+    {
+      name: "Rabbi Aron Feldman",
+      position: "Lectures: 1"
+    },
+  ];
+  var listDataBg = [
+    {
+      name: "Rabbi Aron Feldman",
+      position: "Lectures: 1"
+    },
+    {
+      name: "Rabbi Aron Feldman",
+      position: "Lectures: 1"
+    },
+    {
+      name: "Rabbi Aron Feldman",
+      position: "Lectures: 1"
+    },
+    {
+      name: "Rabbi Aron Feldman",
+      position: "Lectures: 1"
+    },
+    {
+      name: "Rabbi Aron Feldman",
+      position: "Lectures: 1"
+    },
+    {
+      name: "Rabbi Aron Feldman",
+      position: "Lectures: 1"
+    },
+    {
+      name: "Rabbi Aron Feldman",
+      position: "Lectures: 1"
+    },
+    {
+      name: "Rabbi Aron Feldman",
+      position: "Lectures: 1"
+    },
+    {
+      name: "Rabbi Aron Feldman",
+      position: "Lectures: 1"
+    },
+    {
+      name: "Rabbi Aron Feldman",
+      position: "Lectures: 1"
+    },
+    {
+      name: "Rabbi Aron Feldman",
+      position: "Lectures: 1"
+    },
+    {
+      name: "Rabbi Aron Feldman",
+      position: "Lectures: 1"
+    },
+  ];
+
+
+mixin listItem(title, arr)
+  .list__row
+    p.list__row-title!= title
+    .list__row-wrapper
+      each val, idx in arr
+        .list__row-block
+          .list__row-block--left
+            .list__row-img
+              img(
+                src="./img/img-ava-0__featured.png"
+                srcset="./img/img-ava-0__featured@2x.png 2x"
+                alt=""
+                title=""
+               )
+          .list__row-block--right
+            p.list__row-name(title!= arr[idx].name)!= arr[idx].name
+            p.list__row-position!= arr[idx].position
+
+
+.list.list--wbg
+  .c-grid
+    .list__wrapper
+
+      +listItem("Yeshiva Hanhala & Rabbeim", listData)
+
+
+.list.list--bg
+  .c-grid
+    .list__wrapper
+
+      +listItem("Visiting Rabbeim", listDataBg)
+
+
+
+// LIST :: END

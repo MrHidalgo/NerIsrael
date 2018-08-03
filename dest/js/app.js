@@ -105,30 +105,30 @@ function initSwiper() {
  * @description Window on load.
  */
 $(window).on("load", function (ev) {
-  if ($(window).width() < 768) {
-    detectFixedContainer(".timely", ".table--timely");
-    detectFixedContainer(".recently", ".table--recently");
-  }
+  // if($(window).width() < 768) {
+  //   detectFixedContainer(".timely", ".table--timely");
+  //   detectFixedContainer(".recently", ".table--recently");
+  // }
 });
 
 /**
  * @description Window on resize.
  */
 $(window).on("resize", function (ev) {
-  if ($(window).width() < 768) {
-    detectFixedContainer(".timely", ".table--timely");
-    detectFixedContainer(".recently", ".table--recently");
-  }
+  // if($(window).width() < 768) {
+  //   detectFixedContainer(".timely", ".table--timely");
+  //   detectFixedContainer(".recently", ".table--recently");
+  // }
 });
 
 /**
  * @description Window on scroll.
  */
 $(window).on("scroll", function (ev) {
-  if ($(window).width() < 768) {
-    detectFixedContainer(".timely", ".table--timely");
-    detectFixedContainer(".recently", ".table--recently");
-  }
+  // if($(window).width() < 768) {
+  //   detectFixedContainer(".timely", ".table--timely");
+  //   detectFixedContainer(".recently", ".table--recently");
+  // }
 });
 
 /**

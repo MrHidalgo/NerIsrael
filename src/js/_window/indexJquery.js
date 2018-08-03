@@ -4,10 +4,10 @@
  * @description Window on load.
  */
 $(window).on("load", (ev) => {
-  if($(window).width() < 768) {
-    detectFixedContainer(".timely", ".table--timely");
-    detectFixedContainer(".recently", ".table--recently");
-  }
+  // if($(window).width() < 768) {
+  //   detectFixedContainer(".timely", ".table--timely");
+  //   detectFixedContainer(".recently", ".table--recently");
+  // }
 });
 
 
@@ -15,10 +15,10 @@ $(window).on("load", (ev) => {
  * @description Window on resize.
  */
 $(window).on("resize", (ev) => {
-  if($(window).width() < 768) {
-    detectFixedContainer(".timely", ".table--timely");
-    detectFixedContainer(".recently", ".table--recently");
-  }
+  // if($(window).width() < 768) {
+  //   detectFixedContainer(".timely", ".table--timely");
+  //   detectFixedContainer(".recently", ".table--recently");
+  // }
 });
 
 
@@ -26,9 +26,9 @@ $(window).on("resize", (ev) => {
  * @description Window on scroll.
  */
 $(window).on("scroll", (ev) => {
-  if($(window).width() < 768) {
-    detectFixedContainer(".timely", ".table--timely");
-    detectFixedContainer(".recently", ".table--recently");
-  }
+  // if($(window).width() < 768) {
+  //   detectFixedContainer(".timely", ".table--timely");
+  //   detectFixedContainer(".recently", ".table--recently");
+  // }
 });
 

@@ -36,8 +36,11 @@
 /// ===============
 @import "_components/header";
 @import "_components/footer";
-@import "_components/main";
-@import "_components/featured";
-@import "_components/timely";
-@import "_components/popular";
-@import "_components/recently";
+
+@import "_components/homepage/main";
+@import "_components/homepage/featured";
+@import "_components/homepage/timely";
+@import "_components/homepage/popular";
+@import "_components/homepage/recently";
+
+@import "_components/speaker-list/list";
