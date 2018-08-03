@@ -246,6 +246,18 @@ $(document).ready(function (ev) {
       }
     }
   });
+
+  /**
+   *
+   */
+  $("[list-title-js]").on("click", function (e) {
+    var elem = $(e.currentTarget),
+        showContainer = elem.siblings(".list__row-wrapper");
+
+    if (_window.width() < 767) {
+      showContainer.slideToggle(500);
+    }
+  });
 });
 
 /*!

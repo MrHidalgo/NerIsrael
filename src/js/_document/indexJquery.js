@@ -125,5 +125,19 @@ $(document).ready((ev) => {
 
     }
   });
+
+
+  /**
+   *
+   */
+  $("[list-title-js]").on("click", (e) => {
+    const elem = $(e.currentTarget),
+      showContainer = elem.siblings(".list__row-wrapper");
+
+
+    if(_window.width() < 767) {
+      showContainer.slideToggle(500);
+    }
+  });
 });
 
