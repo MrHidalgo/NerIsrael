@@ -2,12 +2,12 @@
 
 .recently {
   @include respond(m_m) {
-    overflow-y: auto;
-    max-height: 612px;
-    background-image: url("../img/img-bg__recently.jpg");
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: cover;
+    //overflow-y: auto;
+    //max-height: 612px;
+    //background-image: url("../img/img-bg__recently.jpg");
+    //background-repeat: no-repeat;
+    //background-position: center;
+    //background-size: cover;
   }
   //&__bg {
   //  display: none;
@@ -49,8 +49,8 @@
     @include respond(m_m) {
       left: 0;
       width: 100%;
-      max-height: 612px;
-      background-image: none;
+      //max-height: 612px;
+      background-attachment: fixed;
     }
   }
 }

@@ -35,6 +35,15 @@
   }
 }
 
+.hamburger {
+  &.is-active {
+    z-index: 100;
+    position: fixed;
+    top: 17px;
+    left: 32.5px;
+  }
+}
+
 .table {
   z-index: 1;
   overflow: hidden;
@@ -142,6 +151,7 @@
           font-weight: bold;
           @include respond(m_m) {
             display: block;
+            font-size: 12px;
           }
         }
         @include respond(m_m) {
@@ -208,6 +218,9 @@
 
       p {
         font-size: 10px;
+        @include respond(m_m) {
+          font-size: 12px;
+        }
 
         a {
           color: rgba($c-matterhorn, 0.93);

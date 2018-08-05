@@ -94,7 +94,10 @@
       flex-wrap: wrap;
       justify-content: space-between;
       @include respond(m_m) {
-        display: none;
+        &--hide {
+          display: none;
+        }
+
         padding-left: 6px;
         padding-right: 6px;
       }
