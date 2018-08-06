@@ -134,6 +134,10 @@
       }
       @include respond(m_m) {
         max-width: 100%;
+
+        &:first-child {
+          margin-top: 5px;
+        }
       }
       @include respond(m_s) {
         max-width: 100%;

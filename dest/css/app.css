@@ -2859,6 +2859,10 @@ input[type="text"] {
   .list__row-block {
     max-width: 100%;
   }
+  
+  .list__row-block:first-child {
+    margin-top: 5px;
+  }
 }
 
 @media screen and (max-width: 575px) {
