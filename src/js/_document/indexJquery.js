@@ -132,10 +132,11 @@ $(document).ready((ev) => {
    */
   $("[list-title-js]").on("click", (e) => {
     const elem = $(e.currentTarget),
+      parentContainer = elem.closest(".list__row"),
       showContainer = elem.siblings(".list__row-wrapper");
 
-
     if(_window.width() < 767) {
+      parentContainer.toggleClass("is-hide");
       showContainer.slideToggle(500);
     }
   });

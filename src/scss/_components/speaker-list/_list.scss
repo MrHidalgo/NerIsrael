@@ -82,7 +82,15 @@
 
       i {
         display: none;
+        transform: rotate(-180deg);
         @include retina-sprite($sp-arrow-group);
+        @include transition(transform);
+
+        .is-hide & {
+          transform: rotate(0);
+          @include transition(transform);
+        }
+
         @include respond(m_m) {
           display: block;
         }
