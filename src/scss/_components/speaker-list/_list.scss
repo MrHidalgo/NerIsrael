@@ -28,6 +28,7 @@
       @include respond(m_m) {
         padding-left: 24px;
         padding-right: 24px;
+        background-attachment: fixed;
       }
     }
   }
