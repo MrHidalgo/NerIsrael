@@ -2979,7 +2979,7 @@ input[type="text"] {
 @media screen and (max-width: 575px) {
   
   .list__row-position {
-    font-size: 8.22px;
+    font-size: 10px;
   }
 }
 
