@@ -1413,26 +1413,26 @@ input[type="text"] {
 .swiper-slide-title {
   padding-bottom: 5px;
   line-height: 1.2;
-  font-size: 12px;
+  font-size: 11px;
   font-weight: 700;
 }
 
 @media screen and (max-width: 767px) {
   
   .swiper-slide-title {
-    font-size: 8px;
+    font-size: 12px;
   }
 }
 
 
 .swiper-slide-pos {
-  font-size: 12px;
+  font-size: 11px;
 }
 
 @media screen and (max-width: 767px) {
   
   .swiper-slide-pos {
-    font-size: 8px;
+    font-size: 12px;
   }
 }
 
