@@ -140,5 +140,17 @@ $(document).ready((ev) => {
       showContainer.slideToggle(500);
     }
   });
+
+
+  /**
+   *
+   */
+  $("[individual-btn-js]").on("click", (e) => {
+    const elem = $(e.currentTarget),
+      elemAttrId = elem.attr("data-name");
+
+    $("[individual-btn-js]").removeClass("is-active");
+    elem.addClass("is-active");
+  });
 });
 

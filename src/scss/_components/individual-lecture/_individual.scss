@@ -1,0 +1,95 @@
+// INDIVIDUAL :: START
+
+.individual {
+  padding-bottom: 54px;
+
+
+  &__container {
+    padding-left: 36px;
+    padding-right: 36px;
+    @include respond(m_m) {
+      padding-left: 24px;
+      padding-right: 24px;
+    }
+  }
+
+
+  &__wrapper {
+    overflow: hidden;
+    border-radius: 11px;
+    box-shadow: 0 2px 10px 0 rgba($c-black, 0.27);
+  }
+
+
+  &__header {
+    display: flex;
+    align-items: center;
+    min-height: 83px;
+    padding-left: 54px;
+    @include respond(m_m) {
+      padding-left: 13px;
+    }
+
+
+    &-title {
+      margin-right: 7px;
+      color: $c-charcoal;
+      font-size: 15px;
+      font-weight: bold;
+      @include respond(m_m) {
+        font-size: 11px;
+      }
+      @include respond(m_s) {
+        font-size: 9px;
+      }
+    }
+
+
+    &-wrap {
+      display: flex;
+    }
+
+
+    &-btn {
+      opacity: 0.15;
+      position: relative;
+      margin-right: 21px;
+      color: $c-charcoal;
+      font-size: 15px;
+      font-weight: bold;
+      @include transition(opacity);
+      @include respond(m_m) {
+        margin-right: 16px;
+        font-size: 11px;
+      }
+      @include respond(m_s) {
+        margin-right: 11px;
+        font-size: 9px;
+      }
+
+
+      &.is-active {
+        opacity: 1;
+      }
+
+
+      &:hover {
+        opacity: 1;
+        text-decoration: none;
+        color: $c-charcoal;
+        @include transition(opacity);
+      }
+      &:after {
+        content: "";
+        position: absolute;
+        left: 0;
+        bottom: -5px;
+        width: 26px;
+        height: 4px;
+        background-color: $c-putty;
+      }
+    }
+  }
+}
+
+// INDIVIDUAL :: END

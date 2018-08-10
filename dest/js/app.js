@@ -260,6 +260,17 @@ $(document).ready(function (ev) {
       showContainer.slideToggle(500);
     }
   });
+
+  /**
+   *
+   */
+  $("[individual-btn-js]").on("click", function (e) {
+    var elem = $(e.currentTarget),
+        elemAttrId = elem.attr("data-name");
+
+    $("[individual-btn-js]").removeClass("is-active");
+    elem.addClass("is-active");
+  });
 });
 
 /*!

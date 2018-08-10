@@ -10,24 +10,31 @@ mixin iconSVG(name, mod)
 
 
 //- TABLE
-mixin table(classMod, headerDataArr, bodyDataArr)
+mixin table(classMod, headerDataArr, bodyDataArr, btnMod)
   .table(class="table--" + classMod)
-    .table__header
-      .table__row.table__row-0
-        .table__row-head
-          .table__col.table__col-0
-            p!= headerDataArr[0]
-          .table__col.table__col-1
-            p!= headerDataArr[1]
-        .table__row-body
-          .table__col.table__col-2
-            p!= headerDataArr[2]
-          .table__col.table__col-3
-            p!= headerDataArr[3]
-          .table__col.table__col-4
-            p!= headerDataArr[4]
-          .table__col.table__col-5
-            p!= headerDataArr[5]
+    if(headerDataArr)
+      .table__header
+        .table__row.table__row-0
+          .table__row-head
+            if(headerDataArr[0])
+              .table__col.table__col-0
+                p!= headerDataArr[0]
+            if(headerDataArr[1])
+              .table__col.table__col-1
+                p!= headerDataArr[1]
+          .table__row-body
+            if(headerDataArr[2])
+              .table__col.table__col-2
+                p!= headerDataArr[2]
+            if(headerDataArr[3])
+              .table__col.table__col-3
+                p!= headerDataArr[3]
+            if(headerDataArr[4])
+              .table__col.table__col-4
+                p!= headerDataArr[4]
+            if(headerDataArr[5])
+              .table__col.table__col-5
+                p!= headerDataArr[5]
 
     .table__body
       -for(var i = 0, countBody = 1, len = bodyDataArr.length; i < len; i++, countBody++)
@@ -36,33 +43,38 @@ mixin table(classMod, headerDataArr, bodyDataArr)
             .table__col.table__col-0
               a.table__play(href="#" title="" class="")
                 i
-            .table__col.table__col-1
-              p
-                a(href="#" title!="" class!="")!= bodyDataArr[i].nameVal
-              a.table__col-arr(href="#" title!="" class!="")
-                i
+            if(bodyDataArr[i].nameVal)
+              .table__col.table__col-1
+                p
+                  a(href="#" title!="" class!="")!= bodyDataArr[i].nameVal
+                a.table__col-arr(href="#" title!="" class!="")
+                  i
           .table__row-body(talbe-body-js class!= (i === 0) ? "is-show": "" )
-            .table__col.table__col-2
-              span!="Speaker"
-              p
-                a(href="#" title!="" class!="")!= bodyDataArr[i].speakerVal
-            .table__col.table__col-3
-              span!="Category"
-              p
-                a(href="#" title!="" class!="")!= bodyDataArr[i].categoryVal
-            .table__col.table__col-4
-              span!="Length"
-              p!= bodyDataArr[i].lengthVal
-            .table__col.table__col-5
-              span!="Action"
-              a.table__add(href="#" title="" class="")
-                i
-              a.table__download(href="#" title="" class="")
-                i
-              a.table__share(href="#" title="" class="")
-                i
-              a.table__send(href="#" title="" class="")
-                i
+            if(bodyDataArr[i].speakerVal)
+              .table__col.table__col-2
+                span!="Speaker"
+                p
+                  a(href="#" title!="" class!="")!= bodyDataArr[i].speakerVal
+            if(bodyDataArr[i].categoryVal)
+              .table__col.table__col-3
+                span!="Category"
+                p
+                  a(href="#" title!="" class!="")!= bodyDataArr[i].categoryVal
+            if(bodyDataArr[i].lengthVal)
+              .table__col.table__col-4
+                span!="Length"
+                p!= bodyDataArr[i].lengthVal
+            if(btnMod)
+              .table__col.table__col-5
+                span!="Action"
+                a.table__add(href="#" title="" class="")
+                  i
+                a.table__download(href="#" title="" class="")
+                  i
+                a.table__share(href="#" title="" class="")
+                  i
+                a.table__send(href="#" title="" class="")
+                  i
 //- end TABLE
 
 //- MIXIN :: END

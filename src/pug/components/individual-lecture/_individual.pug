@@ -1,0 +1,100 @@
+// INDIVIDUAL :: START
+
+-
+  var tableDataBody = [
+    {
+      iconName: "play",
+      nameVal: "Tznius, A Jew and His Inner Being",
+      speakerVal: "Rabbi Aron Feldman",
+      categoryVal: "Halacha"
+    },
+    {
+      iconName: "play",
+      nameVal: "Kiruv Training",
+      speakerVal: "Rabbi Aron Feldman",
+      categoryVal: "Halacha"
+    },
+    {
+      iconName: "play",
+      nameVal: "Pesach 5774 - Why Full Hallel On First Days - Discussion on Lechem Oni",
+      speakerVal: "Rabbi Aron Feldman",
+      categoryVal: "Halacha"
+    },
+    {
+      iconName: "play",
+      nameVal: "Purim 5774 - Pidyon of Shekolim - Explanation of True Empowerment",
+      speakerVal: "Rabbi Aron Feldman",
+      categoryVal: "Halacha"
+    },
+    {
+      iconName: "play",
+      nameVal: "49 ways at which the Torah can be aquired",
+      speakerVal: "Rabbi Aron Feldman",
+      categoryVal: "Halacha"
+    },
+    {
+      iconName: "play",
+      nameVal: "Elul - Shofar",
+      speakerVal: "Rabbi Aron Feldman",
+      categoryVal: "Halacha"
+    },
+    {
+      iconName: "play",
+      nameVal: "Stop the Talking in Shul",
+      speakerVal: "Rabbi Aron Feldman",
+      categoryVal: "Halacha"
+    },
+    {
+      iconName: "play",
+      nameVal: "Neo - Chassidus",
+      speakerVal: "Rabbi Aron Feldman",
+      categoryVal: "Halacha"
+    },
+    {
+      iconName: "play",
+      nameVal: "Baltimore Men’s Evening of Chizuk Likras Yomim Noraim 9-10-14",
+      speakerVal: "Rabbi Aron Feldman",
+      categoryVal: "Halacha"
+    },
+    {
+      iconName: "play",
+      nameVal: "Hesped - Har Nof Kdoshim",
+      speakerVal: "Rabbi Aron Feldman",
+      categoryVal: "Halacha"
+    }
+  ];
+
+
+.individual
+  .c-grid
+    .individual__container
+      .individual__wrapper
+
+        .individual__header
+          p.individual__header-title!= "More from this:"
+          .individual__header-wrap
+            a(
+              href="#" 
+              title="" 
+              class="individual__header-btn individual__header-btn--0 is-active"
+              data-name="speaker"
+              individual-btn-js
+            )!= "Speaker"
+            a(
+              href="#"
+              title=""
+              class="individual__header-btn individual__header-btn--1"
+              data-name="category"
+              individual-btn-js
+            )!= "Category"
+            a(
+              href="#"
+              title=""
+              class="individual__header-btn individual__header-btn--2"
+              data-name="series"
+              individual-btn-js
+            )!= "Series"
+
+        +table("individual", "", tableDataBody, false)
+
+// INDIVIDUAL :: END
