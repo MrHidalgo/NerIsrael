@@ -3105,6 +3105,14 @@ input[type="text"] {
   padding-bottom: 40px;
 }
 
+@media screen and (max-width: 767px) {
+  
+  .user {
+    padding-top: 27px;
+    padding-bottom: 20px;
+  }
+}
+
 
 .user__container {
   padding-left: 36px;
@@ -3145,9 +3153,10 @@ input[type="text"] {
 @media screen and (max-width: 767px) {
   
   .user__wrapper-top {
+    padding-top: 16px;
     padding-left: 14px;
     padding-right: 14px;
-    padding-bottom: 14px;
+    padding-bottom: 21px;
   }
 }
 
@@ -3175,8 +3184,15 @@ input[type="text"] {
   
   .user__wrapper-middle {
     padding-left: 14px;
-    padding-right: 14px;
+    padding-right: 20px;
     padding-bottom: 14px;
+  }
+}
+
+@media screen and (max-width: 575px) {
+  
+  .user__wrapper-middle {
+    padding-bottom: 11px;
   }
 }
 
@@ -3202,6 +3218,14 @@ input[type="text"] {
   }
 }
 
+@media screen and (max-width: 767px) {
+  
+  .user__wrapper-left {
+    -webkit-border-radius: 11px;
+            border-radius: 11px;
+  }
+}
+
 
 .user__wrapper-left > div:nth-child(1) {
   position: relative;
@@ -3211,7 +3235,7 @@ input[type="text"] {
 @media screen and (max-width: 767px) {
   
   .user__wrapper-left > div:nth-child(1) {
-    width: 90px;
+    width: 86px;
   }
 }
 
@@ -3239,8 +3263,8 @@ input[type="text"] {
 @media screen and (max-width: 767px) {
   
   .user__wrapper-left > div:nth-child(2) {
-    width: -webkit-calc(100% - 90px);
-    width: calc(100% - 90px);
+    width: -webkit-calc(100% - 86px);
+    width: calc(100% - 86px);
   }
 }
 
@@ -3258,6 +3282,13 @@ input[type="text"] {
     width: 100%;
     padding-top: 20px;
     padding-left: 0;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  
+  .user__wrapper-right {
+    padding-top: 12px;
   }
 }
 
@@ -3455,6 +3486,7 @@ input[type="text"] {
 @media screen and (max-width: 767px) {
   
   .user__link {
+    margin-bottom: 0;
     font-size: 10px;
   }
 }
@@ -3475,6 +3507,13 @@ input[type="text"] {
   
   .user__link:last-child {
     margin-bottom: 12px;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  
+  .user__link:last-child {
+    margin-bottom: 0;
   }
 }
 
@@ -3527,6 +3566,7 @@ input[type="text"] {
     -webkit-flex-direction: row;
         -ms-flex-direction: row;
             flex-direction: row;
+    padding-bottom: 8px;
   }
 }
 
@@ -3620,7 +3660,8 @@ input[type="text"] {
 @media screen and (max-width: 575px) {
   
   .user__email {
-    font-size: 8px;
+    white-space: nowrap;
+    font-size: 7px;
   }
 }
 
@@ -3657,6 +3698,7 @@ input[type="text"] {
   
   .user__info {
     min-height: 18px;
+    padding-left: 8px;
   }
 }
 
@@ -3777,6 +3819,13 @@ input[type="text"] {
   
   .individual__header {
     padding-left: 13px;
+  }
+}
+
+@media screen and (max-width: 575px) {
+  
+  .individual__header {
+    min-height: 42px;
   }
 }
 

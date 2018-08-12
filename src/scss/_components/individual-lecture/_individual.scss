@@ -29,6 +29,9 @@
     @include respond(m_m) {
       padding-left: 13px;
     }
+    @include respond(m_s) {
+      min-height: 42px;
+    }
 
 
     &-title {
