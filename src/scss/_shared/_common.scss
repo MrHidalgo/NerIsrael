@@ -163,7 +163,8 @@
           .table__col-1 {
             a {
               i {
-                transform: rotate(180deg);
+                transform: rotate(-180deg);
+                @include transition(transform);
               }
             }
           }
@@ -182,10 +183,6 @@
             display: block;
             font-size: 12px;
           }
-
-          //.table--individual & {
-          //  color: $c-midnightExpress;
-          //}
         }
         @include respond(m_m) {
           display: none;
@@ -221,6 +218,7 @@
 
           i {
             @include retina-sprite($sp-arrow-group);
+            @include transition(transform);
           }
         }
 

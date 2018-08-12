@@ -1,33 +1,6 @@
 // TIMELY :: START
 
 .timely {
-  @include respond(m_m) {
-    //overflow-y: auto;
-    //max-height: 612px;
-    //background-image: url("../img/img-bg__timely.jpg");
-    //background-repeat: no-repeat;
-    //background-position: center;
-    //background-size: cover;
-  }
-
-
-  //&__bg {
-  //  display: none;
-  //  @include respond(m_m) {
-  //    z-index: -100;
-  //    position: fixed;
-  //    display: block;
-  //    left: 0;
-  //    width: 100%;
-  //    background-image: url("../img/img-bg__timely.jpg");
-  //    background-repeat: no-repeat;
-  //    background-position: center;
-  //    background-size: cover;
-  //    background-attachment: fixed;
-  //  }
-  //}
-
-
   .c-grid {
     position: relative;
     min-height: 547px;
@@ -50,7 +23,6 @@
     @include respond(m_m) {
       left: 0;
       width: 100%;
-      //max-height: 612px;
       background-attachment: fixed;
     }
   }
