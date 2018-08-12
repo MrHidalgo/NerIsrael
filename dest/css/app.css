@@ -2703,7 +2703,6 @@ input[type="text"] {
   .timely__wrapper {
     left: 0;
     width: 100%;
-    background-attachment: fixed;
   }
 }
 
@@ -2744,7 +2743,6 @@ input[type="text"] {
   .recently__wrapper {
     left: 0;
     width: 100%;
-    background-attachment: fixed;
   }
 }
 
@@ -2778,7 +2776,6 @@ input[type="text"] {
   .list--bg .list__wrapper {
     padding-left: 24px;
     padding-right: 24px;
-    background-attachment: fixed;
   }
 }
 
