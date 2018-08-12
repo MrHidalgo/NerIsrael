@@ -2703,6 +2703,7 @@ input[type="text"] {
   .timely__wrapper {
     left: 0;
     width: 100%;
+    background-attachment: fixed;
   }
 }
 
@@ -2743,6 +2744,7 @@ input[type="text"] {
   .recently__wrapper {
     left: 0;
     width: 100%;
+    background-attachment: fixed;
   }
 }
 
@@ -2776,14 +2778,15 @@ input[type="text"] {
   .list--bg .list__wrapper {
     padding-left: 24px;
     padding-right: 24px;
+    background-attachment: fixed;
   }
 }
 
 
 .list__row {
   max-width: 954px;
-  margin-left: auto;
-  margin-right: auto;
+  margin-left: 15px;
+  margin-right: 15px;
   padding: 20px;
   -webkit-border-radius: 14px;
           border-radius: 14px;

@@ -28,6 +28,7 @@
       @include respond(m_m) {
         padding-left: 24px;
         padding-right: 24px;
+        background-attachment: fixed;
       }
     }
   }
@@ -35,8 +36,8 @@
 
   &__row {
     max-width: 954px;
-    margin-left: auto;
-    margin-right: auto;
+    margin-left: 15px;
+    margin-right: 15px;
     padding: 20px;
     border-radius: 14px;
     background-color: rgba($c-white, 0.93);
