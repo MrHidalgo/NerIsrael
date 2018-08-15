@@ -134,6 +134,9 @@
         background-color: rgba($c-white, 0.93);
 
         .table--individual & {
+          @include respond(m_m) {
+            background-color: $c-whiteSmooke;
+          }
           @include respond(m) {
             min-height: 70px;
           }
@@ -147,6 +150,9 @@
 
         .table--individual & {
           background-color: $c-whiteSmooke;
+          @include respond(m_m) {
+            background-color: $c-white;
+          }
           @include respond(m) {
             min-height: 51px;
           }
@@ -226,7 +232,9 @@
         .table--individual & {
           p {
             a {
-              font-weight: bold;
+              @include respond(m_m) {
+                color: $c-black;
+              }
             }
           }
         }
@@ -262,6 +270,7 @@
           font-size: 12px;
         }
 
+
         a {
           color: rgba($c-matterhorn, 0.93);
           @include transition(color);
@@ -270,10 +279,6 @@
             text-decoration: none;
             color: $c-black;
             @include transition(color);
-          }
-
-          .table--individual & {
-            color: $c-midnightExpress;
           }
         }
       }

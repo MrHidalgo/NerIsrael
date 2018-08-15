@@ -28,6 +28,7 @@
     padding-left: 54px;
     @include respond(m_m) {
       padding-left: 13px;
+      background-color: $c-whiteSmooke;
     }
     @include respond(m_s) {
       min-height: 42px;
@@ -73,6 +74,17 @@
 
       &.is-active {
         opacity: 1;
+
+
+        &:after {
+          content: "";
+          position: absolute;
+          left: 0;
+          bottom: -5px;
+          width: 26px;
+          height: 4px;
+          background-color: $c-putty;
+        }
       }
 
 
@@ -81,15 +93,6 @@
         text-decoration: none;
         color: $c-charcoal;
         @include transition(opacity);
-      }
-      &:after {
-        content: "";
-        position: absolute;
-        left: 0;
-        bottom: -5px;
-        width: 26px;
-        height: 4px;
-        background-color: $c-putty;
       }
     }
   }

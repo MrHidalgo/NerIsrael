@@ -160,6 +160,7 @@
     color: $c-white;
     font-size: 16px;
     font-weight: bold;
+    @include transition(color, background-color);
     @include respond(m_m) {
       max-width: 139px;
       height: 40px;
@@ -179,6 +180,8 @@
     &:hover {
       text-decoration: none;
       color: $c-white;
+      background-color: $c-putty;
+      @include transition(color, background-color);
     }
 
 
@@ -188,7 +191,7 @@
         transform: scale(0.75);
       }
       @include respond(m_s) {
-        transform: scale(0.45);
+        transform: scale(0.45) translateX(-10px);
       }
     }
 
@@ -200,6 +203,7 @@
       }
       @include respond(m_s) {
         margin-left: 0;
+        transform: translateX(-10px);
       }
     }
   }
@@ -223,12 +227,29 @@
     margin-bottom: 12px;
     color: $c-charcoal;
     font-size: 12px;
+    @include transition(color);
     @include respond(m_l) {
       width: 50%;
     }
     @include respond(m_m) {
       margin-bottom: 0;
       font-size: 10px;
+
+
+      &:nth-child(1) {
+        order: 1;
+        padding-left: 30px;
+      }
+      &:nth-child(2) {
+        order: 3;
+        padding-left: 30px;
+      }
+      &:nth-child(3) {
+        order: 2;
+      }
+      &:nth-child(4) {
+        order: 4;
+      }
     }
     @include respond(m_s) {
       font-size: 8px;
@@ -244,10 +265,23 @@
         margin-bottom: 0;
       }
     }
+    &:hover,
+    &:focus {
+      text-decoration: none;
+      color: $c-darkSlate;
+      @include transition(color);
+
+      i,
+      span {
+        opacity: 0.5;
+        @include transition(opacity);
+      }
+    }
 
 
     i {
       margin-right: 14px;
+      @include transition(opacity);
       @include respond(m_m) {
         margin-right: 9px;
         transform: scale(0.7);
@@ -256,6 +290,11 @@
         margin-right: 5px;
         transform: scale(0.5);
       }
+    }
+
+
+    span {
+      @include transition(opacity);
     }
 
 
