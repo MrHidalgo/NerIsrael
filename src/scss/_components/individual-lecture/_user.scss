@@ -139,7 +139,7 @@
         font-size: 15px;
         font-weight: bold;
         @include respond(m_m) {
-          font-size: 8px;
+          font-size: 12px;
         }
       }
     }
@@ -169,11 +169,10 @@
       font-size: 12px;
     }
     @include respond(m_s) {
-      max-width: 85px;
-      height: 25px;
+      max-width: 105px;
+      height: 30px;
       margin-right: 12px;
       border-radius: 5px;
-      font-size: 7px;
     }
 
 
@@ -188,10 +187,10 @@
     i {
       @include retina-sprite($sp-btn-play-group);
       @include respond(m_m) {
-        transform: scale(0.75);
+        transform: scale(0.8);
       }
       @include respond(m_s) {
-        transform: scale(0.45) translateX(-10px);
+        transform: scale(0.6) translateX(-5px);
       }
     }
 
@@ -202,8 +201,8 @@
         margin-left: 6px;
       }
       @include respond(m_s) {
-        margin-left: 0;
-        transform: translateX(-10px);
+        margin-left: 3px;
+        transform: translateX(-5px);
       }
     }
   }
@@ -213,10 +212,7 @@
     font-size: 22px;
     font-weight: bold;
     @include respond(m_m) {
-      font-size: 15px;
-    }
-    @include respond(m_s) {
-      font-size: 8px;
+      font-size: 12px;
     }
   }
 
@@ -232,8 +228,7 @@
       width: 50%;
     }
     @include respond(m_m) {
-      margin-bottom: 0;
-      font-size: 10px;
+      margin-bottom: 6px;
 
 
       &:nth-child(1) {
@@ -251,18 +246,12 @@
         order: 4;
       }
     }
-    @include respond(m_s) {
-      font-size: 8px;
-    }
 
 
     &:last-child {
       margin-bottom: 32px;
       @include respond(m_l) {
-        margin-bottom: 12px;
-      }
-      @include respond(m_m) {
-        margin-bottom: 0;
+        margin-bottom: 6px;
       }
     }
     &:hover,
@@ -284,11 +273,11 @@
       @include transition(opacity);
       @include respond(m_m) {
         margin-right: 9px;
-        transform: scale(0.7);
+        transform: scale(0.8);
       }
       @include respond(m_s) {
         margin-right: 5px;
-        transform: scale(0.5);
+        transform: scale(0.7);
       }
     }
 
@@ -345,13 +334,6 @@
         display: inline-block;
       }
     }
-    @include respond(m_m) {
-      font-size: 10px;
-    }
-    @include respond(m_s) {
-      white-space: nowrap;
-      font-size: 7px;
-    }
 
 
     a {
@@ -398,10 +380,7 @@
       color: $c-charcoal;
       font-size: 15px;
       @include respond(m_m) {
-        font-size: 11px;
-      }
-      @include respond(m_s) {
-        font-size: 7px;
+        font-size: 12px;
       }
 
 
@@ -417,9 +396,6 @@
         font-weight: 700;
         @include respond(m_m) {
           font-size: 13px;
-        }
-        @include respond(m_s) {
-          font-size: 8px;
         }
       }
     }
