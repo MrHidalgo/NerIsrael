@@ -654,14 +654,7 @@ input[type="text"] {
 
 
 .table__body .table__col p {
-  font-size: 10px;
-}
-
-@media screen and (max-width: 767px) {
-  
-  .table__body .table__col p {
-    font-size: 12px;
-  }
+  font-size: 12px;
 }
 
 
@@ -1536,27 +1529,13 @@ input[type="text"] {
 .swiper-slide-title {
   padding-bottom: 5px;
   line-height: 1.2;
-  font-size: 11px;
+  font-size: 12px;
   font-weight: 700;
-}
-
-@media screen and (max-width: 767px) {
-  
-  .swiper-slide-title {
-    font-size: 12px;
-  }
 }
 
 
 .swiper-slide-pos {
-  font-size: 11px;
-}
-
-@media screen and (max-width: 767px) {
-  
-  .swiper-slide-pos {
-    font-size: 12px;
-  }
+  font-size: 12px;
 }
 
 
@@ -2332,6 +2311,7 @@ input[type="text"] {
   min-height: -webkit-calc(176px - 8px);
   min-height: calc(176px - 8px);
   padding-top: 28px;
+  padding-bottom: 28px;
   background-color: #4a4a4a;
 }
 
@@ -2381,14 +2361,7 @@ input[type="text"] {
   width: 100%;
   max-width: 249px;
   color: #fff;
-  font-size: 7px;
-}
-
-@media screen and (max-width: 575px) {
-  
-  .footer__text {
-    font-size: 5px;
-  }
+  font-size: 12px;
 }
 
 
@@ -2480,66 +2453,31 @@ input[type="text"] {
           box-shadow: none;
   border-bottom: 1px solid #fff;
   color: #fff;
-  font-size: 10px;
-}
-
-@media screen and (max-width: 575px) {
-  
-  .footer__form-field input {
-    font-size: 7px;
-  }
+  font-size: 12px;
 }
 
 
 .footer__form-field input::-webkit-input-placeholder {
   color: #fff;
-  font-size: 7px;
-}
-
-@media screen and (max-width: 575px) {
-  
-  .footer__form-field input::-webkit-input-placeholder {
-    font-size: 6px;
-  }
+  font-size: 12px;
 }
 
 
 .footer__form-field input::-moz-placeholder {
   color: #fff;
-  font-size: 7px;
-}
-
-@media screen and (max-width: 575px) {
-  
-  .footer__form-field input::-moz-placeholder {
-    font-size: 6px;
-  }
+  font-size: 12px;
 }
 
 
 .footer__form-field input:-ms-input-placeholder {
   color: #fff;
-  font-size: 7px;
-}
-
-@media screen and (max-width: 575px) {
-  
-  .footer__form-field input:-ms-input-placeholder {
-    font-size: 6px;
-  }
+  font-size: 12px;
 }
 
 
 .footer__form-field input:-moz-placeholder {
   color: #fff;
-  font-size: 7px;
-}
-
-@media screen and (max-width: 575px) {
-  
-  .footer__form-field input:-moz-placeholder {
-    font-size: 6px;
-  }
+  font-size: 12px;
 }
 
 
@@ -2566,8 +2504,9 @@ input[type="text"] {
           box-shadow: none;
   border: 1px solid #fff;
   background-color: transparent;
+  line-height: 1;
   color: #fff;
-  font-size: 8px;
+  font-size: 12px;
 }
 
 @media screen and (max-width: 575px) {
@@ -3100,14 +3039,7 @@ input[type="text"] {
 
 .list__row-position {
   white-space: nowrap;
-  font-size: 10.67px;
-}
-
-@media screen and (max-width: 575px) {
-  
-  .list__row-position {
-    font-size: 10px;
-  }
+  font-size: 12px;
 }
 
 

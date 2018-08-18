@@ -15,6 +15,7 @@
     flex-wrap: wrap;
     min-height: calc(176px - 8px);
     padding-top: 28px;
+    padding-bottom: 28px;
     background-color: $c-charcoal;
   }
 
@@ -52,10 +53,7 @@
     width: 100%;
     max-width: 249px;
     color: $c-white;
-    font-size: 7px;
-    @include respond(m_s) {
-      font-size: 5px;
-    }
+    font-size: 12px;
   }
 
 
@@ -115,38 +113,23 @@
         box-shadow: none;
         border-bottom: 1px solid $c-white;
         color: $c-white;
-        font-size: 10px;
-        @include respond(m_s) {
-          font-size: 7px;
-        }
+        font-size: 12px;
 
         &::-webkit-input-placeholder {
           color: $c-white;
-          font-size: 7px;
-          @include respond(m_s) {
-            font-size: 6px;
-          }
+          font-size: 12px;
         }
         &::-moz-placeholder {
           color: $c-white;
-          font-size: 7px;
-          @include respond(m_s) {
-            font-size: 6px;
-          }
+          font-size: 12px;
         }
         &:-ms-input-placeholder {
           color: $c-white;
-          font-size: 7px;
-          @include respond(m_s) {
-            font-size: 6px;
-          }
+          font-size: 12px;
         }
         &:-moz-placeholder {
           color: $c-white;
-          font-size: 7px;
-          @include respond(m_s) {
-            font-size: 6px;
-          }
+          font-size: 12px;
         }
       }
     }
@@ -163,8 +146,9 @@
       box-shadow: none;
       border: 1px solid $c-white;
       background-color: transparent;
+      line-height: 1;
       color: $c-white;
-      font-size: 8px;
+      font-size: 12px;
       @include respond(m_s) {
         height: 18px;
         padding-left: 20px;

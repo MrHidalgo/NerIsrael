@@ -277,18 +277,12 @@
     &-title {
       padding-bottom: 5px;
       line-height: 1.2;
-      font-size: 11px;
+      font-size: 12px;
       font-weight: 700;
-      @include respond(m_m) {
-        font-size: 12px;
-      }
     }
 
     &-pos {
-      font-size: 11px;
-      @include respond(m_m) {
-        font-size: 12px;
-      }
+      font-size: 12px;
     }
   }
 

@@ -265,10 +265,7 @@
       }
 
       p {
-        font-size: 10px;
-        @include respond(m_m) {
-          font-size: 12px;
-        }
+        font-size: 12px;
 
 
         a {

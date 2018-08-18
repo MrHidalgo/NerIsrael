@@ -191,7 +191,6 @@
       overflow: hidden;
       position: relative;
       width: 100%;
-      //height: 100%;
       border-radius: 15.52px;
 
 
@@ -226,10 +225,7 @@
 
     &-position {
       white-space: nowrap;
-      font-size: 10.67px;
-      @include respond(m_s) {
-        font-size: 10px;
-      }
+      font-size: 12px;
     }
   }
 }
