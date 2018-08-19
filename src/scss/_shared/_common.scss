@@ -1,5 +1,15 @@
 // COMMON :: START
 
+.myplaylist {
+  z-index: 0;
+  position: relative;
+  width: 100%;
+  max-width: 1025px;
+  margin-left: auto;
+  margin-right: auto;
+  background-color: #f7f7f7;
+}
+
 .title {
   text-align: center;
   font-size: 25px;
@@ -64,6 +74,12 @@
       margin-left: 0;
       margin-right: 0;
     }
+
+    &--playlist {
+      max-width: 100%;
+      margin-left: 0;
+      margin-right: 0;
+    }
   }
   @include respond(l) {
     max-width: 940px;
@@ -81,8 +97,20 @@
     border-radius: 0;
     box-shadow: none;
   }
+  &--playlist {
+    max-width: 100%;
+    border-radius: 0;
+    border-bottom-left-radius: 11px;
+    border-bottom-right-radius: 11px;
+    box-shadow: none;
+  }
 
   &__header {
+    .table--individual & {
+      display: none;
+    }
+
+
     p {
       color: $c-nobel;
       font-size: 12px;
@@ -106,8 +134,10 @@
 
     .table__col {
       &-0 {
+        display: none;
         padding-left: 24px;
         @include respond(m_m) {
+          display: block;
           max-width: 91px;
           padding-left: 15px;
         }
@@ -141,6 +171,15 @@
             min-height: 70px;
           }
         }
+
+        .table--playlist & {
+          @include respond(m_m) {
+            background-color: $c-whiteSmooke;
+          }
+          @include respond(m) {
+            min-height: 70px;
+          }
+        }
       }
 
       &:nth-child(odd) {
@@ -149,6 +188,16 @@
         box-shadow: 0 2px 5px 0 rgba($c-black, 0.14);
 
         .table--individual & {
+          background-color: $c-whiteSmooke;
+          @include respond(m_m) {
+            background-color: $c-white;
+          }
+          @include respond(m) {
+            min-height: 51px;
+          }
+        }
+
+        .table--playlist & {
           background-color: $c-whiteSmooke;
           @include respond(m_m) {
             background-color: $c-white;
@@ -204,6 +253,15 @@
     .table__col {
       display: flex;
       align-items: center;
+
+      &-0 {
+        .table--playlist & {
+          display: none;
+          @include respond(m_m) {
+            display: block;
+          }
+        }
+      }
 
       &-1 {
         position: relative;
@@ -310,6 +368,10 @@
           width: calc(105px + 362px + 74px);
         }
       }
+
+      .table--playlist & {
+        max-width: calc(27px + 280px + 47px);
+      }
     }
     &-body {
       display: flex;
@@ -323,6 +385,10 @@
         @include respond(m) {
           width: (109px + 185px + 43px + 75px);
         }
+      }
+
+      .table--playlist & {
+        width: (252px + 159px + 186px);
       }
     }
   }
@@ -359,6 +425,10 @@
           max-width: calc(100% - 105px);
         }
       }
+      .table--playlist & {
+        max-width: calc(27px + 280px + 47px);
+        padding-left: 49px;
+      }
     }
     &-2 {
       max-width: 178px;
@@ -367,6 +437,9 @@
         @include respond(m) {
           max-width: calc(100% - (43px + 75px));
         }
+      }
+      .table--playlist & {
+        max-width: calc(52px + 200px);
       }
     }
     &-3 {
@@ -379,9 +452,18 @@
     }
     &-4 {
       max-width: 88px;
+
+      .table--playlist & {
+        max-width: calc(40px + 119px);
+      }
     }
     &-5 {
       max-width: 127px;
+
+      .table--playlist & {
+        max-width: calc(141px + 45px);
+        text-align: center;
+      }
     }
   }
 
@@ -418,6 +500,41 @@
 
     i {
       @include retina-sprite($sp-send-group);
+    }
+  }
+  &__btn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    max-width: 141px;
+    height: 29px;
+    margin-left: auto !important;
+    margin-right: auto !important;
+    border-radius: 14.5px;
+    background-color: $c-white;
+    box-shadow: 0 2px 5px 0 rgba($c-black, 0.14);
+    @include transition(background-color);
+
+
+    &:hover {
+      background-color: $c-darkCerulean;
+      @include transition(background-color);
+
+      span {
+        color: $c-white;
+        @include transition(color);
+      }
+    }
+
+
+    span {
+      display: block !important;
+      width: 100% !important;
+      font-size: 10px !important;
+      font-weight: 500 !important;
+      padding-left: 0 !important;
+      @include transition(color);
     }
   }
 }

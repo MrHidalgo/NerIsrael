@@ -2,6 +2,8 @@
 
 .header {
   &__wrapper {
+    z-index: 1;
+    position: relative;
     display: flex;
     height: 122px;
     box-shadow: 0 2px 5px 0 rgba($c-black, 0.14);

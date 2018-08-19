@@ -64,6 +64,15 @@
     }
   ];
 
+  var tableDataHead = [
+    "",
+    "",
+    "Speaker",
+    "Category",
+    "",
+    ""
+  ];
+
 
 .individual
   .c-grid
@@ -95,6 +104,6 @@
               individual-btn-js
             )!= "Series"
 
-        +table("individual", "", tableDataBody, false)
+        +table("individual", tableDataHead, tableDataBody, false, false)
 
 // INDIVIDUAL :: END

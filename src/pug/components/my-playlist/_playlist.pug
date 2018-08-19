@@ -1,0 +1,90 @@
+// PLAYLIST :: START
+
+-
+  var tableDataHead = [
+    "&nbsp;",
+    "Title",
+    "Speaker",
+    "",
+    "Length",
+    "Action"
+  ];
+  var tableDataBody = [
+    {
+      iconName: "play",
+      nameVal: "Education In Summer Break",
+      speakerVal: "Rabbi Aron Feldman",
+      lengthVal: "01:05:23",
+      btnVal: "REMOVE FROM PLAYLIST"
+    },
+    {
+      iconName: "play",
+      nameVal: "Rabbi Mattisyahu Saloman - Middos And Education",
+      speakerVal: "Rabbi Mattisyhau Salomon",
+      lengthVal: "00:43:15",
+      btnVal: "REMOVE FROM PLAYLIST"
+    },
+    {
+      iconName: "play",
+      nameVal: "Rabbi Yaakov Bender on Education",
+      speakerVal: "Rabbi Yaakov Bender",
+      lengthVal: "00:30:25",
+      btnVal: "REMOVE FROM PLAYLIST"
+    }
+  ];
+
+#playlist.playlist
+  .c-grid
+    .playlist__wrapper
+
+      .playlist__row.playlist__row-0
+        .playlist__head
+          .playlist__head-left
+            .playlist__title(playlist-btn-js)
+              div
+                i
+              div
+                p!= "<span>Speakers</span> (3 shiurim)"
+
+          .playlist__head-right
+            a(
+              href="#" title="" class="playlist__btn playlist__btn-0"
+            )
+              i
+              span!= "PLAY NOW"
+            a(
+              href="#" title="" class="playlist__btn playlist__btn-1"
+            )
+              i
+              span!= "DELETE"
+
+        .playlist__body
+          +table("playlist", tableDataHead, tableDataBody, false, true)
+
+
+      .playlist__row.playlist__row-1
+        .playlist__head
+          .playlist__head-left
+            .playlist__title(playlist-btn-js)
+              div
+                i
+              div
+                p!= "<span>Education</span> (3 shiurim)"
+
+          .playlist__head-right
+            a(
+            href="#" title="" class="playlist__btn playlist__btn-0"
+            )
+              i
+              span!= "PLAY NOW"
+            a(
+            href="#" title="" class="playlist__btn playlist__btn-1"
+            )
+              i
+              span!= "DELETE"
+
+        .playlist__body
+          +table("playlist", tableDataHead, tableDataBody, false, true)
+
+
+// PLAYLIST :: END

@@ -96,6 +96,11 @@ ul {
 a {
   outline: none;
   text-decoration: none;
+
+  &:hover {
+    color: inherit;
+    text-decoration: none;
+  }
 }
 
 input[type="text"] {

@@ -10,7 +10,7 @@ mixin iconSVG(name, mod)
 
 
 //- TABLE
-mixin table(classMod, headerDataArr, bodyDataArr, btnMod)
+mixin table(classMod, headerDataArr, bodyDataArr, linkMod, btnMod)
   .table(class="table--" + classMod)
     if(headerDataArr)
       .table__header
@@ -52,21 +52,21 @@ mixin table(classMod, headerDataArr, bodyDataArr, btnMod)
           .table__row-body(talbe-body-js class!= (i === 0) ? "is-show": "" )
             if(bodyDataArr[i].speakerVal)
               .table__col.table__col-2
-                span!="Speaker"
+                span!= headerDataArr[2]
                 p
                   a(href="#" title!="" class!="")!= bodyDataArr[i].speakerVal
             if(bodyDataArr[i].categoryVal)
               .table__col.table__col-3
-                span!="Category"
+                span!= headerDataArr[3]
                 p
                   a(href="#" title!="" class!="")!= bodyDataArr[i].categoryVal
             if(bodyDataArr[i].lengthVal)
               .table__col.table__col-4
-                span!="Length"
+                span!= headerDataArr[4]
                 p!= bodyDataArr[i].lengthVal
-            if(btnMod)
+            if(linkMod)
               .table__col.table__col-5
-                span!="Action"
+                span!= headerDataArr[5]
                 a.table__add(href="#" title="" class="")
                   i
                 a.table__download(href="#" title="" class="")
@@ -75,6 +75,15 @@ mixin table(classMod, headerDataArr, bodyDataArr, btnMod)
                   i
                 a.table__send(href="#" title="" class="")
                   i
+            if(btnMod)
+              .table__col.table__col-5
+                span!= headerDataArr[5]
+                a.table__btn(href="#" title="" class="")
+                  i
+                  span!= bodyDataArr[i].btnVal
+
+
 //- end TABLE
+
 
 //- MIXIN :: END

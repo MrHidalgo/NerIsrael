@@ -1,0 +1,16 @@
+---
+title: NerIsrael - My Playlist
+favicon: favicon
+
+bodyClassName: myplaylist
+dataPageName: myPlaylist
+
+additionalStyleFile: false
+---
+extends shared/_layout
+
+block content
+
+  div(class!= bodyClassName)
+    include ./components/my-playlist/_main
+    include ./components/my-playlist/_playlist

@@ -215,6 +215,17 @@ $(document).ready(function (ev) {
     $("[individual-btn-js]").removeClass("is-active");
     elem.addClass("is-active");
   });
+
+  /**
+   *
+   */
+  $("[playlist-btn-js]").on("click", function (e) {
+    var elem = $(e.currentTarget),
+        tableWrap = elem.closest(".playlist__row").find(".playlist__body");
+
+    elem.toggleClass("is-active");
+    tableWrap.slideToggle(300);
+  });
 });
 
 /*!
