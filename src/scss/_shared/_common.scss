@@ -134,19 +134,29 @@
 
     .table__col {
       &-0 {
-        display: none;
         padding-left: 24px;
         @include respond(m_m) {
-          display: block;
           max-width: 91px;
           padding-left: 15px;
         }
+
+
+        .table--playlist & {
+          display: none;
+          @include respond(m_m) {
+            display: block;
+          }
+        }
       }
+
+
       &-1 {
         @include respond(m_m) {
           max-width: calc(100% - 91px);
         }
       }
+
+
       &-2,
       &-3,
       &-4,

@@ -454,16 +454,26 @@ input[type="text"] {
 
 
 .table__header .table__col-0 {
-  display: none;
   padding-left: 24px;
 }
 
 @media screen and (max-width: 767px) {
   
   .table__header .table__col-0 {
-    display: block;
     max-width: 91px;
     padding-left: 15px;
+  }
+}
+
+
+.table--playlist .table__header .table__col-0 {
+  display: none;
+}
+
+@media screen and (max-width: 767px) {
+  
+  .table--playlist .table__header .table__col-0 {
+    display: block;
   }
 }
 
