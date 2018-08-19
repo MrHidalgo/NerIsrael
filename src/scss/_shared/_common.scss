@@ -1,6 +1,6 @@
 // COMMON :: START
 
-.myplaylist {
+.myPlaylist {
   z-index: 0;
   position: relative;
   width: 100%;
@@ -10,11 +10,13 @@
   background-color: #f7f7f7;
 }
 
+
 .title {
   text-align: center;
   font-size: 25px;
   font-weight: 700;
 }
+
 
 .button {
   cursor: pointer;
@@ -54,6 +56,7 @@
   }
 }
 
+
 .table {
   z-index: 1;
   overflow: hidden;
@@ -69,12 +72,7 @@
     margin-left: 15px;
     margin-right: 15px;
 
-    &--individual {
-      max-width: 100%;
-      margin-left: 0;
-      margin-right: 0;
-    }
-
+    &--individual,
     &--playlist {
       max-width: 100%;
       margin-left: 0;
@@ -88,22 +86,22 @@
     margin-left: auto;
     margin-right: auto;
 
-    &--individual {
+    &--individual,
+    &--playlist {
       max-width: 100%;
     }
   }
 
-  &--individual {
+  &--individual,
+  &--playlist {
     border-radius: 0;
     box-shadow: none;
   }
   &--playlist {
-    max-width: 100%;
-    border-radius: 0;
     border-bottom-left-radius: 11px;
     border-bottom-right-radius: 11px;
-    box-shadow: none;
   }
+
 
   &__header {
     .table--individual & {
@@ -118,6 +116,7 @@
       @include transition(color);
     }
 
+
     .table__row {
       background-color: rgba($c-white, 0.93);
 
@@ -131,6 +130,7 @@
         }
       }
     }
+
 
     .table__col {
       &-0 {
@@ -158,20 +158,13 @@
     }
   }
 
+
   &__body {
     .table__row {
       &:nth-child(even) {
         background-color: rgba($c-white, 0.93);
 
-        .table--individual & {
-          @include respond(m_m) {
-            background-color: $c-whiteSmooke;
-          }
-          @include respond(m) {
-            min-height: 70px;
-          }
-        }
-
+        .table--individual &,
         .table--playlist & {
           @include respond(m_m) {
             background-color: $c-whiteSmooke;
@@ -181,22 +174,14 @@
           }
         }
       }
+
 
       &:nth-child(odd) {
         position: relative;
         background-color: $c-white;
         box-shadow: 0 2px 5px 0 rgba($c-black, 0.14);
 
-        .table--individual & {
-          background-color: $c-whiteSmooke;
-          @include respond(m_m) {
-            background-color: $c-white;
-          }
-          @include respond(m) {
-            min-height: 51px;
-          }
-        }
-
+        .table--individual &,
         .table--playlist & {
           background-color: $c-whiteSmooke;
           @include respond(m_m) {
@@ -207,6 +192,7 @@
           }
         }
       }
+
 
       &-head {
         @include respond(m_m) {
@@ -225,6 +211,7 @@
           }
         }
       }
+
 
       &-body {
         span {
@@ -250,9 +237,12 @@
         }
       }
     }
+
+
     .table__col {
       display: flex;
       align-items: center;
+
 
       &-0 {
         .table--playlist & {
@@ -262,6 +252,7 @@
           }
         }
       }
+
 
       &-1 {
         position: relative;
@@ -298,6 +289,7 @@
         }
       }
 
+
       &-5 {
         @include respond(m_m) {
           margin-bottom: 15px;
@@ -312,6 +304,7 @@
         }
       }
 
+
       &-2,
       &-3,
       &-4,
@@ -321,6 +314,7 @@
           min-height: 25px;
         }
       }
+
 
       p {
         font-size: 12px;
@@ -340,6 +334,7 @@
     }
   }
 
+
   &__row {
     display: flex;
     width: 100%;
@@ -350,11 +345,13 @@
       flex-wrap: wrap;
     }
 
+
     .table--individual & {
       @include respond(m) {
         min-height: auto;
       }
     }
+
 
     &-head {
       display: flex;
@@ -363,16 +360,20 @@
         width: 100%;
       }
 
+
       .table--individual & {
         @include respond(m) {
           width: calc(105px + 362px + 74px);
         }
       }
 
+
       .table--playlist & {
         max-width: calc(27px + 280px + 47px);
       }
     }
+
+
     &-body {
       display: flex;
       width: (178px + 118px + 88px + 127px);
@@ -381,11 +382,13 @@
         width: 100%;
       }
 
+
       .table--individual & {
         @include respond(m) {
           width: (109px + 185px + 43px + 75px);
         }
       }
+
 
       .table--playlist & {
         width: (252px + 159px + 186px);
@@ -396,6 +399,8 @@
   &__col {
     width: 100%;
     padding-right: 5px;
+
+
     &-0 {
       @include respond(es) {
         max-width: 91px;
@@ -413,6 +418,8 @@
         }
       }
     }
+
+
     &-1 {
       max-width: 298px;
       @include respond(m_m) {
@@ -430,6 +437,8 @@
         padding-left: 49px;
       }
     }
+
+
     &-2 {
       max-width: 178px;
 
@@ -442,6 +451,8 @@
         max-width: calc(52px + 200px);
       }
     }
+
+
     &-3 {
       max-width: 118px;
       .table--individual & {
@@ -450,6 +461,8 @@
         }
       }
     }
+
+
     &-4 {
       max-width: 88px;
 
@@ -457,6 +470,8 @@
         max-width: calc(40px + 119px);
       }
     }
+
+
     &-5 {
       max-width: 127px;
 
@@ -466,6 +481,7 @@
       }
     }
   }
+
 
   &__play {
     display: flex;
@@ -539,10 +555,12 @@
   }
 }
 
+
 .animated {
   animation-duration: 1s;
   animation-fill-mode: both;
 }
+
 
 @keyframes fadeIn {
   from {
@@ -553,6 +571,7 @@
     opacity: 1;
   }
 }
+
 
 .fadeIn {
   animation-name: fadeIn;

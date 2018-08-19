@@ -287,7 +287,7 @@ input[type="text"] {
 }
 
 
-.myplaylist {
+.myPlaylist {
   z-index: 0;
   position: relative;
   width: 100%;
@@ -382,13 +382,7 @@ input[type="text"] {
     margin-right: 15px;
   }
   
-  .table--individual {
-    max-width: 100%;
-    margin-left: 0;
-    margin-right: 0;
-  }
-  
-  .table--playlist {
+  .table--individual, .table--playlist {
     max-width: 100%;
     margin-left: 0;
     margin-right: 0;
@@ -405,13 +399,13 @@ input[type="text"] {
     margin-right: auto;
   }
   
-  .table--individual {
+  .table--individual, .table--playlist {
     max-width: 100%;
   }
 }
 
 
-.table--individual {
+.table--individual, .table--playlist {
   -webkit-border-radius: 0;
           border-radius: 0;
   -webkit-box-shadow: none;
@@ -420,15 +414,10 @@ input[type="text"] {
 
 
 .table--playlist {
-  max-width: 100%;
-  -webkit-border-radius: 0;
-          border-radius: 0;
   -webkit-border-bottom-left-radius: 11px;
           border-bottom-left-radius: 11px;
   -webkit-border-bottom-right-radius: 11px;
           border-bottom-right-radius: 11px;
-  -webkit-box-shadow: none;
-          box-shadow: none;
 }
 
 
@@ -500,20 +489,7 @@ input[type="text"] {
 
 @media screen and (max-width: 767px) {
   
-  .table--individual .table__body .table__row:nth-child(even) {
-    background-color: #f5f5f5;
-  }
-}
-
-@media screen and (min-width: 768px) {
-  
-  .table--individual .table__body .table__row:nth-child(even) {
-    min-height: 70px;
-  }
-}
-
-@media screen and (max-width: 767px) {
-  
+  .table--individual .table__body .table__row:nth-child(even),
   .table--playlist .table__body .table__row:nth-child(even) {
     background-color: #f5f5f5;
   }
@@ -521,6 +497,7 @@ input[type="text"] {
 
 @media screen and (min-width: 768px) {
   
+  .table--individual .table__body .table__row:nth-child(even),
   .table--playlist .table__body .table__row:nth-child(even) {
     min-height: 70px;
   }
@@ -535,31 +512,14 @@ input[type="text"] {
 }
 
 
-.table--individual .table__body .table__row:nth-child(odd) {
-  background-color: #f5f5f5;
-}
-
-@media screen and (max-width: 767px) {
-  
-  .table--individual .table__body .table__row:nth-child(odd) {
-    background-color: #fff;
-  }
-}
-
-@media screen and (min-width: 768px) {
-  
-  .table--individual .table__body .table__row:nth-child(odd) {
-    min-height: 51px;
-  }
-}
-
-
+.table--individual .table__body .table__row:nth-child(odd),
 .table--playlist .table__body .table__row:nth-child(odd) {
   background-color: #f5f5f5;
 }
 
 @media screen and (max-width: 767px) {
   
+  .table--individual .table__body .table__row:nth-child(odd),
   .table--playlist .table__body .table__row:nth-child(odd) {
     background-color: #fff;
   }
@@ -567,6 +527,7 @@ input[type="text"] {
 
 @media screen and (min-width: 768px) {
   
+  .table--individual .table__body .table__row:nth-child(odd),
   .table--playlist .table__body .table__row:nth-child(odd) {
     min-height: 51px;
   }
