@@ -104,7 +104,8 @@
 
 
   &__header {
-    .table--individual & {
+    .table--individual &,
+    .table--playlist & {
       display: none;
     }
 
@@ -258,7 +259,7 @@
         .table--playlist & {
           display: none;
           @include respond(m_m) {
-            display: block;
+            display: flex;
           }
         }
       }
@@ -266,6 +267,7 @@
 
       &-1 {
         position: relative;
+
 
         .table__col-arr {
           display: none;
@@ -280,6 +282,7 @@
           @include respond(m_m) {
             display: flex;
           }
+
 
           i {
             @include retina-sprite($sp-arrow-group);
@@ -320,8 +323,9 @@
       &-4,
       &-5 {
         @include respond(m_m) {
-          max-width: 100%;
-          min-height: 25px;
+          max-width: 100% !important;
+          min-height: 30px;
+          text-align: left !important;
         }
       }
 
@@ -379,7 +383,9 @@
 
 
       .table--playlist & {
-        max-width: calc(27px + 280px + 47px);
+        @include respond(m) {
+          max-width: calc(27px + 280px + 47px);
+        }
       }
     }
 
@@ -445,6 +451,10 @@
       .table--playlist & {
         max-width: calc(27px + 280px + 47px);
         padding-left: 49px;
+        @include respond(m_m) {
+          max-width: 100%;
+          padding-left: 0;
+        }
       }
     }
 
@@ -541,6 +551,10 @@
     background-color: $c-white;
     box-shadow: 0 2px 5px 0 rgba($c-black, 0.14);
     @include transition(background-color);
+    @include respond(m_m) {
+      margin: 0 !important;
+      text-align: center;
+    }
 
 
     &:hover {
