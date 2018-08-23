@@ -3,6 +3,10 @@
 .playlist {
   padding-top: 14px;
   padding-bottom: 40px;
+  @include respond(m_m) {
+    padding-left: 25px;
+    padding-right: 25px;
+  }
 
 
   &__row {

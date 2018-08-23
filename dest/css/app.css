@@ -4016,6 +4016,15 @@ input[type="text"] {
   padding-bottom: 13px;
 }
 
+@media screen and (max-width: 767px) {
+  
+  .mainp {
+    padding-top: 18px;
+    padding-left: 25px;
+    padding-right: 25px;
+  }
+}
+
 
 .mainp__wrapper {
   width: 100%;
@@ -4031,14 +4040,45 @@ input[type="text"] {
   font-weight: bold;
 }
 
+@media screen and (max-width: 767px) {
+  
+  .mainp__title {
+    font-size: 25px;
+  }
+}
+
+@media screen and (max-width: 575px) {
+  
+  .mainp__title {
+    padding-bottom: 11px;
+    font-size: 15px;
+  }
+}
+
 
 .mainp__text {
   padding-bottom: 23px;
 }
 
+@media screen and (max-width: 575px) {
+  
+  .mainp__text {
+    padding-bottom: 17px;
+    line-height: 1.4;
+    font-size: 12px;
+  }
+}
+
 
 .mainp__text--bold {
   font-weight: bold;
+}
+
+@media screen and (max-width: 575px) {
+  
+  .mainp__text--bold {
+    padding-bottom: 24px;
+  }
 }
 
 
@@ -4077,6 +4117,14 @@ input[type="text"] {
   transition: color 0.3s ease-in-out, background-color 0.3s ease-in-out;
 }
 
+@media screen and (max-width: 767px) {
+  
+  .mainp__btn {
+    margin-left: 0;
+    margin-right: auto;
+  }
+}
+
 
 .mainp__btn:hover {
   color: #fff;
@@ -4108,6 +4156,14 @@ input[type="text"] {
 .playlist {
   padding-top: 14px;
   padding-bottom: 40px;
+}
+
+@media screen and (max-width: 767px) {
+  
+  .playlist {
+    padding-left: 25px;
+    padding-right: 25px;
+  }
 }
 
 

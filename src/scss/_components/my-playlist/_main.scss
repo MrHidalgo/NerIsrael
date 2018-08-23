@@ -3,6 +3,11 @@
 .mainp {
   padding-top: 23px;
   padding-bottom: 13px;
+  @include respond(m_m) {
+    padding-top: 18px;
+    padding-left: 25px;
+    padding-right: 25px;
+  }
 
 
   &__wrapper {
@@ -17,15 +22,32 @@
     padding-bottom: 27px;
     font-size: 27px;
     font-weight: bold;
+    @include respond(m_m) {
+      font-size: 25px;
+    }
+    @include respond(m_s) {
+      padding-bottom: 11px;
+      font-size: 15px;
+    }
   }
 
 
   &__text {
     padding-bottom: 23px;
+    @include respond(m_s) {
+      padding-bottom: 17px;
+      line-height: 1.4;
+      font-size: 12px;
+    }
+
 
     &--bold {
       font-weight: bold;
+      @include respond(m_s) {
+        padding-bottom: 24px;
+      }
     }
+
 
     &:last-child {
       padding-bottom: 27px;
@@ -49,6 +71,10 @@
     font-size: 10.35px;
     font-weight: bold;
     @include transition(color, background-color);
+    @include respond(m_m) {
+      margin-left: 0;
+      margin-right: auto;
+    }
 
 
     &:hover {
