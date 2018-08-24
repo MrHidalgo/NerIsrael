@@ -4,5 +4,47 @@
   .c-grid
     .result__wrapper
 
+      .result__box.result__box-0
+        .result__box-head
+          a(
+            href="#"
+            title=""
+            class="result__box-link"
+          )!= "Speakers"
+
+        .result__box-body
+
+      .result__box.result__box-1
+        .result__box-head
+          a(
+            href="#"
+            title=""
+            class="result__box-link"
+          )!= "Categories"
+
+        .result__box-body
+          div
+            p!= "Hilchos Talmid Torah"
+          div
+            p!= "Hilchos Teffilin, Meszuzah, Sefer Torah"
+          div
+            p!= "Torah Leining"
+          div
+            p!= "Torah Umesorah Convetion"
+
+      .result__box.result__box-2
+        .result__box-head
+          a(
+            href="#"
+            title=""
+            class="result__box-link"
+          )!= "Shiurim"
+
+        .result__box-body
+
+
+        .result__box-footer
+          include ../../macros/_pagination
+
 
 // RESULT :: END
