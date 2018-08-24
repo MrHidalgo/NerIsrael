@@ -1,0 +1,21 @@
+// LIST :: START
+
+
+section#mainr.mainr
+  .c-grid
+    .mainr__wrapper
+
+      .mainr__search
+        p.mainr__search-title= "64 results for <search>"
+        form.mainr__search-wrap
+          .mainr__search-field
+            input(type="text" class="mainr__search-input" placeholder="Type your search")
+            label.mainr__search-label()
+              i
+          .mainr__search-field
+            button(type="submit" class="mainr__search-btn")!= "Search"
+
+
+      p.mainr__text!= "All Shiur titles are in Hebrew. You can search in Hebrew using the on-screen keyboard."
+
+// LIST :: END

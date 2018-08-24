@@ -287,7 +287,8 @@ input[type="text"] {
 }
 
 
-.myPlaylist {
+.myPlaylist,
+.searchResult {
   z-index: 0;
   position: relative;
   width: 100%;
@@ -4473,6 +4474,206 @@ input[type="text"] {
     -webkit-background-size: 113px 104px;
             background-size: 113px 104px;
   }
+}
+
+
+.mainr {
+  padding-top: 42px;
+  padding-bottom: 16px;
+}
+
+
+.mainr__wrapper {
+  width: 100%;
+  max-width: 954px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+
+.mainr__search {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding-bottom: 12px;
+}
+
+
+.mainr__search-title {
+  overflow: hidden;
+  white-space: nowrap;
+  width: 217px;
+  padding-right: 10px;
+  -o-text-overflow: ellipsis;
+     text-overflow: ellipsis;
+  font-size: 18px;
+  font-weight: 600;
+}
+
+
+.mainr__search-wrap {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 100%;
+  max-width: -webkit-calc(100% - 217px);
+  max-width: calc(100% - 217px);
+}
+
+
+.mainr__search-input {
+  outline: none;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  padding-left: 15px;
+  padding-right: 33px;
+  border: none;
+  -webkit-border-radius: 5px;
+          border-radius: 5px;
+  background-color: #fff;
+  -webkit-box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.1);
+          box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.1);
+  font-size: 12px;
+}
+
+
+.mainr__search-input::-webkit-input-placeholder {
+  color: rgba(0, 0, 0, 0.2);
+  font-size: 12px;
+  font-weight: 600;
+}
+
+
+.mainr__search-input::-moz-placeholder {
+  color: rgba(0, 0, 0, 0.2);
+  font-size: 12px;
+  font-weight: 600;
+}
+
+
+.mainr__search-input:-ms-input-placeholder {
+  color: rgba(0, 0, 0, 0.2);
+  font-size: 12px;
+  font-weight: 600;
+}
+
+
+.mainr__search-input:-moz-placeholder {
+  color: rgba(0, 0, 0, 0.2);
+  font-size: 12px;
+  font-weight: 600;
+}
+
+
+.mainr__search-label {
+  cursor: pointer;
+  position: absolute;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  top: 0;
+  right: 0;
+  width: 33px;
+  height: 100%;
+}
+
+
+.mainr__search-label i {
+  background-image: url(../img/sprite.png);
+  background-position: -74px -72px;
+  width: 11px;
+  height: 8px;
+}
+
+@media (-webkit-min-device-pixel-ratio: 2), (-o-min-device-pixel-ratio: 2/1), (min-resolution: 192dpi) {
+  
+  .mainr__search-label i {
+    background-image: url(../img/sprite@2x.png);
+    -webkit-background-size: 113px 104px;
+            background-size: 113px 104px;
+  }
+}
+
+
+.mainr__search-field:first-child {
+  position: relative;
+  width: 100%;
+  max-width: -webkit-calc(100% - 160px);
+  max-width: calc(100% - 160px);
+  height: 36px;
+}
+
+
+.mainr__search-field:last-child {
+  width: 160px;
+  padding-left: 20px;
+}
+
+
+.mainr__search-btn {
+  cursor: pointer;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  width: 100%;
+  max-width: 140px;
+  height: 36px;
+  -webkit-border-radius: 5px;
+          border-radius: 5px;
+  border: none;
+  background-color: #184478;
+  -webkit-box-shadow: none;
+          box-shadow: none;
+  color: #fff;
+  font-size: 13px;
+  font-weight: 600;
+  -webkit-transition: background-color 0.3s ease-in-out;
+  -o-transition: background-color 0.3s ease-in-out;
+  transition: background-color 0.3s ease-in-out;
+}
+
+
+.mainr__search-btn:hover {
+  background-color: #cbae6a;
+  -webkit-transition: background-color 0.3s ease-in-out;
+  -o-transition: background-color 0.3s ease-in-out;
+  transition: background-color 0.3s ease-in-out;
+}
+
+
+.mainr__text {
+  font-size: 12px;
 }
 
 /*# sourceMappingURL=maps/app.css.map */
