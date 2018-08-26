@@ -144,7 +144,8 @@
     margin-right: 15px;
 
     &--individual,
-    &--playlist {
+    &--playlist,
+    &--result {
       max-width: 100%;
       margin-left: 0;
       margin-right: 0;
@@ -158,13 +159,15 @@
     margin-right: auto;
 
     &--individual,
-    &--playlist {
+    &--playlist,
+    &--result {
       max-width: 100%;
     }
   }
 
   &--individual,
-  &--playlist {
+  &--playlist,
+  &--result {
     border-radius: 0;
     box-shadow: none;
   }
@@ -176,7 +179,8 @@
 
   &__header {
     .table--individual &,
-    .table--playlist & {
+    .table--playlist &,
+    .table--result & {
       display: none;
     }
 
@@ -247,7 +251,8 @@
         background-color: rgba($c-white, 0.93);
 
         .table--individual &,
-        .table--playlist & {
+        .table--playlist &,
+        .table--result & {
           @include respond(m_m) {
             background-color: $c-whiteSmooke;
           }
@@ -264,13 +269,19 @@
         box-shadow: 0 2px 5px 0 rgba($c-black, 0.14);
 
         .table--individual &,
-        .table--playlist & {
+        .table--playlist &,
+        .table--result & {
           background-color: $c-whiteSmooke;
           @include respond(m_m) {
             background-color: $c-white;
           }
           @include respond(m) {
             min-height: 51px;
+          }
+        }
+        .table--result & {
+          @include respond(m) {
+            min-height: 63px;
           }
         }
       }
@@ -451,11 +462,17 @@
           width: calc(105px + 362px + 74px);
         }
       }
-
-
       .table--playlist & {
         @include respond(m) {
           max-width: calc(27px + 280px + 47px);
+        }
+      }
+      .table--result & {
+        @include respond(m) {
+          width: calc(182px + 298px);
+        }
+        @include respond(l) {
+          width: calc(231px + 414px);
         }
       }
     }
@@ -475,13 +492,20 @@
           width: (109px + 185px + 43px + 75px);
         }
       }
-
-
       .table--playlist & {
         width: (252px + 159px + 186px);
       }
+      .table--result & {
+        @include respond(m) {
+          width: calc(100% - (182px + 298px));
+        }
+        @include respond(l) {
+          width: calc(100% - (231px + 414px));
+        }
+      }
     }
   }
+
 
   &__col {
     width: 100%;
@@ -502,6 +526,14 @@
         @include respond(l) {
           max-width: 105px;
           padding-left: 50px;
+        }
+      }
+      .table--result & {
+        @include respond(m) {
+          max-width: 182px;
+        }
+        @include respond(l) {
+          max-width: 231px;
         }
       }
     }
@@ -527,6 +559,11 @@
           padding-left: 0;
         }
       }
+      .table--result & {
+        @include respond(l) {
+          max-width: 414px;
+        }
+      }
     }
 
 
@@ -540,6 +577,9 @@
       }
       .table--playlist & {
         max-width: calc(52px + 200px);
+      }
+      .table--result & {
+        max-width: 186px;
       }
     }
 
@@ -560,6 +600,9 @@
       .table--playlist & {
         max-width: calc(40px + 119px);
       }
+      .table--result & {
+        max-width: calc(100% - 186px);
+      }
     }
 
 
@@ -569,6 +612,11 @@
       .table--playlist & {
         max-width: calc(141px + 45px);
         text-align: center;
+      }
+      .table--result & {
+        @include respond(m) {
+          display: none;
+        }
       }
     }
   }
@@ -593,6 +641,18 @@
 
     i {
       @include retina-sprite($sp-download-group);
+    }
+
+
+    &--big {
+      margin-left: 20px;
+      @include respond(m_m) {
+        display: none;
+      }
+
+      i {
+        @include retina-sprite($sp-i-download-big-group);
+      }
     }
   }
   &__share {
@@ -646,6 +706,26 @@
       font-weight: 500 !important;
       padding-left: 0 !important;
       @include transition(color);
+    }
+  }
+
+
+  &__img {
+    overflow: hidden;
+    position: relative;
+    width: 34px;
+    height: 34px;
+    margin-right: 20px;
+
+
+    img {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      object-position: center;
     }
   }
 }

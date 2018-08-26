@@ -482,7 +482,7 @@ input[type="text"] {
     margin-right: 15px;
   }
   
-  .table--individual, .table--playlist {
+  .table--individual, .table--playlist, .table--result {
     max-width: 100%;
     margin-left: 0;
     margin-right: 0;
@@ -499,13 +499,13 @@ input[type="text"] {
     margin-right: auto;
   }
   
-  .table--individual, .table--playlist {
+  .table--individual, .table--playlist, .table--result {
     max-width: 100%;
   }
 }
 
 
-.table--individual, .table--playlist {
+.table--individual, .table--playlist, .table--result {
   -webkit-border-radius: 0;
           border-radius: 0;
   -webkit-box-shadow: none;
@@ -522,7 +522,8 @@ input[type="text"] {
 
 
 .table--individual .table__header,
-.table--playlist .table__header {
+.table--playlist .table__header,
+.table--result .table__header {
   display: none;
 }
 
@@ -601,7 +602,8 @@ input[type="text"] {
 @media screen and (max-width: 767px) {
   
   .table--individual .table__body .table__row:nth-child(even),
-  .table--playlist .table__body .table__row:nth-child(even) {
+  .table--playlist .table__body .table__row:nth-child(even),
+  .table--result .table__body .table__row:nth-child(even) {
     background-color: #f5f5f5;
   }
 }
@@ -609,7 +611,8 @@ input[type="text"] {
 @media screen and (min-width: 768px) {
   
   .table--individual .table__body .table__row:nth-child(even),
-  .table--playlist .table__body .table__row:nth-child(even) {
+  .table--playlist .table__body .table__row:nth-child(even),
+  .table--result .table__body .table__row:nth-child(even) {
     min-height: 70px;
   }
 }
@@ -624,14 +627,16 @@ input[type="text"] {
 
 
 .table--individual .table__body .table__row:nth-child(odd),
-.table--playlist .table__body .table__row:nth-child(odd) {
+.table--playlist .table__body .table__row:nth-child(odd),
+.table--result .table__body .table__row:nth-child(odd) {
   background-color: #f5f5f5;
 }
 
 @media screen and (max-width: 767px) {
   
   .table--individual .table__body .table__row:nth-child(odd),
-  .table--playlist .table__body .table__row:nth-child(odd) {
+  .table--playlist .table__body .table__row:nth-child(odd),
+  .table--result .table__body .table__row:nth-child(odd) {
     background-color: #fff;
   }
 }
@@ -639,8 +644,16 @@ input[type="text"] {
 @media screen and (min-width: 768px) {
   
   .table--individual .table__body .table__row:nth-child(odd),
-  .table--playlist .table__body .table__row:nth-child(odd) {
+  .table--playlist .table__body .table__row:nth-child(odd),
+  .table--result .table__body .table__row:nth-child(odd) {
     min-height: 51px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  
+  .table--result .table__body .table__row:nth-child(odd) {
+    min-height: 63px;
   }
 }
 
@@ -764,7 +777,7 @@ input[type="text"] {
 
 .table__body .table__col-1 .table__col-arr i {
   background-image: url(../img/sprite.png);
-  background-position: -118px -13px;
+  background-position: -114px -40px;
   width: 11px;
   height: 7px;
   -webkit-transition: -webkit-transform 0.3s ease-in-out;
@@ -778,8 +791,8 @@ input[type="text"] {
   
   .table__body .table__col-1 .table__col-arr i {
     background-image: url(../img/sprite@2x.png);
-    -webkit-background-size: 129px 104px;
-            background-size: 129px 104px;
+    -webkit-background-size: 145px 107px;
+            background-size: 145px 107px;
   }
 }
 
@@ -899,6 +912,22 @@ input[type="text"] {
   }
 }
 
+@media screen and (min-width: 768px) {
+  
+  .table--result .table__row-head {
+    width: -webkit-calc(182px + 298px);
+    width: calc(182px + 298px);
+  }
+}
+
+@media screen and (min-width: 992px) {
+  
+  .table--result .table__row-head {
+    width: -webkit-calc(231px + 414px);
+    width: calc(231px + 414px);
+  }
+}
+
 
 .table__row-body {
   display: -webkit-box;
@@ -930,6 +959,22 @@ input[type="text"] {
   width: 597px;
 }
 
+@media screen and (min-width: 768px) {
+  
+  .table--result .table__row-body {
+    width: -webkit-calc(100% - (182px + 298px));
+    width: calc(100% - (182px + 298px));
+  }
+}
+
+@media screen and (min-width: 992px) {
+  
+  .table--result .table__row-body {
+    width: -webkit-calc(100% - (231px + 414px));
+    width: calc(100% - (231px + 414px));
+  }
+}
+
 
 .table__col {
   width: 100%;
@@ -957,6 +1002,20 @@ input[type="text"] {
   .table--individual .table__col-0 {
     max-width: 105px;
     padding-left: 50px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  
+  .table--result .table__col-0 {
+    max-width: 182px;
+  }
+}
+
+@media screen and (min-width: 992px) {
+  
+  .table--result .table__col-0 {
+    max-width: 231px;
   }
 }
 
@@ -996,6 +1055,13 @@ input[type="text"] {
   }
 }
 
+@media screen and (min-width: 992px) {
+  
+  .table--result .table__col-1 {
+    max-width: 414px;
+  }
+}
+
 
 .table__col-2 {
   max-width: 178px;
@@ -1013,6 +1079,11 @@ input[type="text"] {
 .table--playlist .table__col-2 {
   max-width: -webkit-calc(52px + 200px);
   max-width: calc(52px + 200px);
+}
+
+
+.table--result .table__col-2 {
+  max-width: 186px;
 }
 
 
@@ -1040,6 +1111,12 @@ input[type="text"] {
 }
 
 
+.table--result .table__col-4 {
+  max-width: -webkit-calc(100% - 186px);
+  max-width: calc(100% - 186px);
+}
+
+
 .table__col-5 {
   max-width: 127px;
 }
@@ -1049,6 +1126,13 @@ input[type="text"] {
   max-width: -webkit-calc(141px + 45px);
   max-width: calc(141px + 45px);
   text-align: center;
+}
+
+@media screen and (min-width: 768px) {
+  
+  .table--result .table__col-5 {
+    display: none;
+  }
 }
 
 
@@ -1071,8 +1155,8 @@ input[type="text"] {
   
   .table__play i {
     background-image: url(../img/sprite@2x.png);
-    -webkit-background-size: 129px 104px;
-            background-size: 129px 104px;
+    -webkit-background-size: 145px 107px;
+            background-size: 145px 107px;
   }
 }
 
@@ -1096,8 +1180,8 @@ input[type="text"] {
   
   .table__add i {
     background-image: url(../img/sprite@2x.png);
-    -webkit-background-size: 129px 104px;
-            background-size: 129px 104px;
+    -webkit-background-size: 145px 107px;
+            background-size: 145px 107px;
   }
 }
 
@@ -1112,7 +1196,7 @@ input[type="text"] {
 
 .table__download i {
   background-image: url(../img/sprite.png);
-  background-position: -94px -66px;
+  background-position: -94px -60px;
   width: 15px;
   height: 16px;
 }
@@ -1121,8 +1205,37 @@ input[type="text"] {
   
   .table__download i {
     background-image: url(../img/sprite@2x.png);
-    -webkit-background-size: 129px 104px;
-            background-size: 129px 104px;
+    -webkit-background-size: 145px 107px;
+            background-size: 145px 107px;
+  }
+}
+
+
+.table__download--big {
+  margin-left: 20px;
+}
+
+@media screen and (max-width: 767px) {
+  
+  .table__download--big {
+    display: none;
+  }
+}
+
+
+.table__download--big i {
+  background-image: url(../img/sprite.png);
+  background-position: -34px -57px;
+  width: 23px;
+  height: 24px;
+}
+
+@media (-webkit-min-device-pixel-ratio: 2), (-o-min-device-pixel-ratio: 2/1), (min-resolution: 192dpi) {
+  
+  .table__download--big i {
+    background-image: url(../img/sprite@2x.png);
+    -webkit-background-size: 145px 107px;
+            background-size: 145px 107px;
   }
 }
 
@@ -1137,7 +1250,7 @@ input[type="text"] {
 
 .table__share i {
   background-image: url(../img/sprite.png);
-  background-position: -94px -45px;
+  background-position: -21px -91px;
   width: 15px;
   height: 16px;
 }
@@ -1146,8 +1259,8 @@ input[type="text"] {
   
   .table__share i {
     background-image: url(../img/sprite@2x.png);
-    -webkit-background-size: 129px 104px;
-            background-size: 129px 104px;
+    -webkit-background-size: 145px 107px;
+            background-size: 145px 107px;
   }
 }
 
@@ -1162,7 +1275,7 @@ input[type="text"] {
 
 .table__send i {
   background-image: url(../img/sprite.png);
-  background-position: 0px -91px;
+  background-position: -41px -91px;
   width: 16px;
   height: 13px;
 }
@@ -1171,8 +1284,8 @@ input[type="text"] {
   
   .table__send i {
     background-image: url(../img/sprite@2x.png);
-    -webkit-background-size: 129px 104px;
-            background-size: 129px 104px;
+    -webkit-background-size: 145px 107px;
+            background-size: 145px 107px;
   }
 }
 
@@ -1239,6 +1352,28 @@ input[type="text"] {
   -webkit-transition: color 0.3s ease-in-out;
   -o-transition: color 0.3s ease-in-out;
   transition: color 0.3s ease-in-out;
+}
+
+
+.table__img {
+  overflow: hidden;
+  position: relative;
+  width: 34px;
+  height: 34px;
+  margin-right: 20px;
+}
+
+
+.table__img img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  -o-object-position: center;
+     object-position: center;
 }
 
 
@@ -1608,15 +1743,15 @@ input[type="text"] {
   
   .swiper-slide-drop ul li:nth-child(1) a i {
     background-image: url(../img/sprite@2x.png);
-    -webkit-background-size: 129px 104px;
-            background-size: 129px 104px;
+    -webkit-background-size: 145px 107px;
+            background-size: 145px 107px;
   }
 }
 
 
 .swiper-slide-drop ul li:nth-child(2) a i {
   background-image: url(../img/sprite.png);
-  background-position: -94px -66px;
+  background-position: -94px -60px;
   width: 15px;
   height: 16px;
 }
@@ -1625,15 +1760,15 @@ input[type="text"] {
   
   .swiper-slide-drop ul li:nth-child(2) a i {
     background-image: url(../img/sprite@2x.png);
-    -webkit-background-size: 129px 104px;
-            background-size: 129px 104px;
+    -webkit-background-size: 145px 107px;
+            background-size: 145px 107px;
   }
 }
 
 
 .swiper-slide-drop ul li:nth-child(3) a i {
   background-image: url(../img/sprite.png);
-  background-position: -94px -45px;
+  background-position: -21px -91px;
   width: 15px;
   height: 16px;
 }
@@ -1642,15 +1777,15 @@ input[type="text"] {
   
   .swiper-slide-drop ul li:nth-child(3) a i {
     background-image: url(../img/sprite@2x.png);
-    -webkit-background-size: 129px 104px;
-            background-size: 129px 104px;
+    -webkit-background-size: 145px 107px;
+            background-size: 145px 107px;
   }
 }
 
 
 .swiper-slide-drop ul li:nth-child(4) a i {
   background-image: url(../img/sprite.png);
-  background-position: 0px -91px;
+  background-position: -41px -91px;
   width: 16px;
   height: 13px;
 }
@@ -1659,8 +1794,8 @@ input[type="text"] {
   
   .swiper-slide-drop ul li:nth-child(4) a i {
     background-image: url(../img/sprite@2x.png);
-    -webkit-background-size: 129px 104px;
-            background-size: 129px 104px;
+    -webkit-background-size: 145px 107px;
+            background-size: 145px 107px;
   }
 }
 
@@ -1774,8 +1909,8 @@ input[type="text"] {
   
   .swiper-slide-play i {
     background-image: url(../img/sprite@2x.png);
-    -webkit-background-size: 129px 104px;
-            background-size: 129px 104px;
+    -webkit-background-size: 145px 107px;
+            background-size: 145px 107px;
   }
 }
 
@@ -1853,7 +1988,7 @@ input[type="text"] {
 
 .swiper-button-next i {
   background-image: url(../img/sprite.png);
-  background-position: -34px -57px;
+  background-position: -94px -30px;
   width: 15px;
   height: 25px;
 }
@@ -1862,8 +1997,8 @@ input[type="text"] {
   
   .swiper-button-next i {
     background-image: url(../img/sprite@2x.png);
-    -webkit-background-size: 129px 104px;
-            background-size: 129px 104px;
+    -webkit-background-size: 145px 107px;
+            background-size: 145px 107px;
   }
 }
 
@@ -1875,7 +2010,7 @@ input[type="text"] {
 
 .swiper-button-prev i {
   background-image: url(../img/sprite.png);
-  background-position: -54px -57px;
+  background-position: -94px 0px;
   width: 15px;
   height: 25px;
 }
@@ -1884,8 +2019,8 @@ input[type="text"] {
   
   .swiper-button-prev i {
     background-image: url(../img/sprite@2x.png);
-    -webkit-background-size: 129px 104px;
-            background-size: 129px 104px;
+    -webkit-background-size: 145px 107px;
+            background-size: 145px 107px;
   }
 }
 
@@ -2164,7 +2299,7 @@ input[type="text"] {
 
 .search__keyboard-clean i {
   background-image: url(../img/sprite.png);
-  background-position: -21px -91px;
+  background-position: -62px -91px;
   width: 17px;
   height: 12px;
 }
@@ -2173,8 +2308,8 @@ input[type="text"] {
   
   .search__keyboard-clean i {
     background-image: url(../img/sprite@2x.png);
-    -webkit-background-size: 129px 104px;
-            background-size: 129px 104px;
+    -webkit-background-size: 145px 107px;
+            background-size: 145px 107px;
   }
 }
 
@@ -2189,7 +2324,7 @@ input[type="text"] {
 
 .search__keyboard-space i {
   background-image: url(../img/sprite.png);
-  background-position: -43px -91px;
+  background-position: -114px 0px;
   width: 31px;
   height: 5px;
 }
@@ -2198,8 +2333,8 @@ input[type="text"] {
   
   .search__keyboard-space i {
     background-image: url(../img/sprite@2x.png);
-    -webkit-background-size: 129px 104px;
-            background-size: 129px 104px;
+    -webkit-background-size: 145px 107px;
+            background-size: 145px 107px;
   }
 }
 
@@ -2378,7 +2513,7 @@ input[type="text"] {
 
 .search__label-icon {
   background-image: url(../img/sprite.png);
-  background-position: -118px 0px;
+  background-position: -114px -27px;
   width: 11px;
   height: 8px;
 }
@@ -2387,8 +2522,8 @@ input[type="text"] {
   
   .search__label-icon {
     background-image: url(../img/sprite@2x.png);
-    -webkit-background-size: 129px 104px;
-            background-size: 129px 104px;
+    -webkit-background-size: 145px 107px;
+            background-size: 145px 107px;
   }
 }
 
@@ -2403,7 +2538,7 @@ input[type="text"] {
 
 .search__label.is-active i {
   background-image: url(../img/sprite.png);
-  background-position: -74px -72px;
+  background-position: -130px -27px;
   width: 11px;
   height: 8px;
 }
@@ -2412,8 +2547,8 @@ input[type="text"] {
   
   .search__label.is-active i {
     background-image: url(../img/sprite@2x.png);
-    -webkit-background-size: 129px 104px;
-            background-size: 129px 104px;
+    -webkit-background-size: 145px 107px;
+            background-size: 145px 107px;
   }
 }
 
@@ -2452,7 +2587,7 @@ input[type="text"] {
 
 .search__btn-icon {
   background-image: url(../img/sprite.png);
-  background-position: -77px -37px;
+  background-position: -114px -10px;
   width: 12px;
   height: 12px;
 }
@@ -2461,8 +2596,8 @@ input[type="text"] {
   
   .search__btn-icon {
     background-image: url(../img/sprite@2x.png);
-    -webkit-background-size: 129px 104px;
-            background-size: 129px 104px;
+    -webkit-background-size: 145px 107px;
+            background-size: 145px 107px;
   }
 }
 
@@ -3314,7 +3449,7 @@ input[type="text"] {
       -ms-transform: rotate(-180deg);
           transform: rotate(-180deg);
   background-image: url(../img/sprite.png);
-  background-position: -118px -13px;
+  background-position: -114px -40px;
   width: 11px;
   height: 7px;
   -webkit-transition: -webkit-transform 0.3s ease-in-out;
@@ -3328,8 +3463,8 @@ input[type="text"] {
   
   .list__row-title i {
     background-image: url(../img/sprite@2x.png);
-    -webkit-background-size: 129px 104px;
-            background-size: 129px 104px;
+    -webkit-background-size: 145px 107px;
+            background-size: 145px 107px;
   }
 }
 
@@ -3852,8 +3987,8 @@ input[type="text"] {
   
   .user__btn i {
     background-image: url(../img/sprite@2x.png);
-    -webkit-background-size: 129px 104px;
-            background-size: 129px 104px;
+    -webkit-background-size: 145px 107px;
+            background-size: 145px 107px;
   }
 }
 
@@ -4078,15 +4213,15 @@ input[type="text"] {
   
   .user__link--add i {
     background-image: url(../img/sprite@2x.png);
-    -webkit-background-size: 129px 104px;
-            background-size: 129px 104px;
+    -webkit-background-size: 145px 107px;
+            background-size: 145px 107px;
   }
 }
 
 
 .user__link--download i {
   background-image: url(../img/sprite.png);
-  background-position: -94px -66px;
+  background-position: -94px -60px;
   width: 15px;
   height: 16px;
 }
@@ -4095,15 +4230,15 @@ input[type="text"] {
   
   .user__link--download i {
     background-image: url(../img/sprite@2x.png);
-    -webkit-background-size: 129px 104px;
-            background-size: 129px 104px;
+    -webkit-background-size: 145px 107px;
+            background-size: 145px 107px;
   }
 }
 
 
 .user__link--share i {
   background-image: url(../img/sprite.png);
-  background-position: -94px -45px;
+  background-position: -21px -91px;
   width: 15px;
   height: 16px;
 }
@@ -4112,15 +4247,15 @@ input[type="text"] {
   
   .user__link--share i {
     background-image: url(../img/sprite@2x.png);
-    -webkit-background-size: 129px 104px;
-            background-size: 129px 104px;
+    -webkit-background-size: 145px 107px;
+            background-size: 145px 107px;
   }
 }
 
 
 .user__link--send i {
   background-image: url(../img/sprite.png);
-  background-position: 0px -91px;
+  background-position: -41px -91px;
   width: 16px;
   height: 13px;
 }
@@ -4129,8 +4264,8 @@ input[type="text"] {
   
   .user__link--send i {
     background-image: url(../img/sprite@2x.png);
-    -webkit-background-size: 129px 104px;
-            background-size: 129px 104px;
+    -webkit-background-size: 145px 107px;
+            background-size: 145px 107px;
   }
 }
 
@@ -4502,7 +4637,7 @@ input[type="text"] {
 .mainp__btn i {
   margin-right: 5px;
   background-image: url(../img/sprite.png);
-  background-position: -94px -24px;
+  background-position: 0px -91px;
   width: 16px;
   height: 16px;
 }
@@ -4511,8 +4646,8 @@ input[type="text"] {
   
   .mainp__btn i {
     background-image: url(../img/sprite@2x.png);
-    -webkit-background-size: 129px 104px;
-            background-size: 129px 104px;
+    -webkit-background-size: 145px 107px;
+            background-size: 145px 107px;
   }
 }
 
@@ -4671,7 +4806,7 @@ input[type="text"] {
 
 .playlist__title i {
   background-image: url(../img/sprite.png);
-  background-position: -74px -57px;
+  background-position: -131px -10px;
   width: 10px;
   height: 10px;
   -webkit-transform: rotate(90deg);
@@ -4688,8 +4823,8 @@ input[type="text"] {
   
   .playlist__title i {
     background-image: url(../img/sprite@2x.png);
-    -webkit-background-size: 129px 104px;
-            background-size: 129px 104px;
+    -webkit-background-size: 145px 107px;
+            background-size: 145px 107px;
   }
 }
 
@@ -4766,7 +4901,7 @@ input[type="text"] {
 
 .playlist__btn-0 i {
   background-image: url(../img/sprite.png);
-  background-position: -94px 0px;
+  background-position: -62px -57px;
   width: 19px;
   height: 19px;
   margin-right: 5px;
@@ -4776,8 +4911,8 @@ input[type="text"] {
   
   .playlist__btn-0 i {
     background-image: url(../img/sprite@2x.png);
-    -webkit-background-size: 129px 104px;
-            background-size: 129px 104px;
+    -webkit-background-size: 145px 107px;
+            background-size: 145px 107px;
   }
 }
 
@@ -4798,7 +4933,7 @@ input[type="text"] {
 
 .playlist__btn-1 i {
   background-image: url(../img/sprite.png);
-  background-position: -94px -24px;
+  background-position: 0px -91px;
   width: 16px;
   height: 16px;
   -webkit-transform: rotate(45deg);
@@ -4811,8 +4946,8 @@ input[type="text"] {
   
   .playlist__btn-1 i {
     background-image: url(../img/sprite@2x.png);
-    -webkit-background-size: 129px 104px;
-            background-size: 129px 104px;
+    -webkit-background-size: 145px 107px;
+            background-size: 145px 107px;
   }
 }
 
@@ -4942,7 +5077,7 @@ input[type="text"] {
 
 .mainr__search-label i {
   background-image: url(../img/sprite.png);
-  background-position: -118px 0px;
+  background-position: -114px -27px;
   width: 11px;
   height: 8px;
 }
@@ -4951,8 +5086,8 @@ input[type="text"] {
   
   .mainr__search-label i {
     background-image: url(../img/sprite@2x.png);
-    -webkit-background-size: 129px 104px;
-            background-size: 129px 104px;
+    -webkit-background-size: 145px 107px;
+            background-size: 145px 107px;
   }
 }
 
