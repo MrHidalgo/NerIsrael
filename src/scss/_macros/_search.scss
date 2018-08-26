@@ -58,7 +58,7 @@
     border-radius: 4px;
     background-color: $c-white;
     box-shadow: 0 2px 8px 0 rgba($c-black, 0.27);
-    @include respond(max-s) {
+    @include respond(m_m) {
       display: none !important;
     }
 

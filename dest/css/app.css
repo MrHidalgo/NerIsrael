@@ -2116,6 +2116,13 @@ input[type="text"] {
           box-shadow: 0 2px 8px 0 rgba(0, 0, 0, 0.27);
 }
 
+@media screen and (max-width: 767px) {
+  
+  .search__keyboard {
+    display: none !important;
+  }
+}
+
 
 .search__keyboard-bottom {
   display: -webkit-box;
