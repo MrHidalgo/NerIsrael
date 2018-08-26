@@ -17,6 +17,7 @@
 
 
   &__form {
+    position: relative;
     display: flex;
     @include respond(m_l) {
       width: 100%;
@@ -40,6 +41,126 @@
       @include respond(m_l) {
         width: 100%;
         max-width: 30px;
+      }
+    }
+  }
+
+
+  &__keyboard {
+    display: none;
+    z-index: 100;
+    position: absolute;
+    top: 34px;
+    right: 40px;
+    width: 300px;
+    min-height: 160px;
+    padding: 12px;
+    border-radius: 4px;
+    background-color: $c-white;
+    box-shadow: 0 2px 8px 0 rgba($c-black, 0.27);
+    @include respond(max-s) {
+      display: none !important;
+    }
+
+
+    &-bottom {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+
+
+      a {
+        display: flex;
+        align-items: center;
+        width: calc(100% / 3);
+      }
+    }
+
+
+    &-clean {
+      justify-content: flex-start;
+
+
+      i {
+        @include retina-sprite($sp-i-keyboard-clean-group);
+      }
+    }
+
+
+    &-space {
+      justify-content: center;
+
+
+      i {
+        @include retina-sprite($sp-i-keyboard-space-group);
+      }
+    }
+
+
+    &-enter {
+      justify-content: flex-end;
+      color: $c-grey;
+      font-size: 11px;
+    }
+
+
+    &-list {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      padding-bottom: 12px;
+
+
+      &--0 {
+        li {
+          width: calc(100% / 10);
+        }
+      }
+
+
+      &--1 {
+        padding-left: calc((100% / 10) / 2);
+        padding-right: calc((100% / 10) / 2);
+
+        li {
+          width: calc(100% / 9);
+        }
+      }
+
+
+      &--2 {
+        padding-left: calc(100% / 10);
+        padding-right: calc(100% / 10);
+        padding-bottom: 10px;
+
+        li {
+          width: calc(100% / 8);
+        }
+      }
+
+
+      li {
+        text-align: center;
+      }
+
+
+      a {
+        position: relative;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding: 4px;
+        color: $c-grey;
+        font-size: 14px;
+        border-radius: 4px;
+        @include transition(box-shadow, color);
+
+
+        &:hover {
+          box-shadow: 0 2px 8px 0 rgba($c-black, 0.27);
+          color: $c-darkCerulean;
+          @include transition(box-shadow, color);
+        }
       }
     }
   }
@@ -85,9 +206,23 @@
     right: 0;
     width: 33px;
     height: 100%;
+    border-radius: 4px;
+    @include transition(background-color);
+
 
     &-icon {
-      @include retina-sprite($sp-search-label-group)
+      @include retina-sprite($sp-search-label-group);
+    }
+
+
+    &.is-active {
+      background-color: $c-darkCerulean;
+      @include transition(background-color);
+
+
+      i {
+        @include retina-sprite($sp-i-keyboard-white-group);
+      }
     }
   }
 

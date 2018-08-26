@@ -33,11 +33,14 @@ $(document).ready((ev) => {
    *
    */
   $('body').on('click', function (e) {
-    const className = ".swiper-slide-menu, .swiper-slide-drop";
+    const className = ".swiper-slide-menu, .swiper-slide-drop, .search__label, .search__keyboard";
 
     if (!$(e.target).closest(className).length) {
       $("[featured-menu-js]").removeClass("is-show");
       $(".swiper-slide-drop").removeClass("is-open");
+
+      $("[search-keyboard-js]").removeClass("is-active");
+      $(".search__keyboard").fadeOut(300);
     }
   });
 
@@ -157,12 +160,26 @@ $(document).ready((ev) => {
   /**
    *
    */
-  $("[playlist-btn-js]").on("click", function(e) {
+  $("[playlist-btn-js]").on("click", (e) => {
     const elem = $(e.currentTarget),
       tableWrap = elem.closest(".playlist__row").find(".playlist__body");
 
     elem.toggleClass("is-active");
     tableWrap.slideToggle(300);
+  });
+
+
+  /**
+   *
+   */
+  $("[search-keyboard-js]").on("click", (e) => {
+    const elem = $(e.currentTarget),
+      keyboard = $(".search__keyboard");
+
+    if(_window.width() > 767) {
+      elem.toggleClass("is-active");
+      keyboard.fadeToggle(300);
+    }
   });
 });
 
