@@ -5,6 +5,16 @@
   padding-bottom: 51px;
 
 
+  .c-grid {
+    padding-left: 15px;
+    padding-right: 15px;
+    @include respond(m_m) {
+      padding-left: 0;
+      padding-right: 0;
+    }
+  }
+
+
   &__wrapper {}
 }
 
