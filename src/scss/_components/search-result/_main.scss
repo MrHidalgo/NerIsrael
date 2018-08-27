@@ -3,6 +3,9 @@
 .mainr {
   padding-top: 42px;
   padding-bottom: 16px;
+  @include respond(m_m) {
+    padding-top: 21px;
+  }
 
 
   &__wrapper {
@@ -17,6 +20,9 @@
     display: flex;
     align-items: center;
     padding-bottom: 12px;
+    @include respond(m_m) {
+      flex-wrap: wrap;
+    }
 
 
     &-title {
@@ -27,6 +33,11 @@
       text-overflow: ellipsis;
       font-size: 18px;
       font-weight: 600;
+      @include respond(m_m) {
+        width: 100%;
+        padding-right: 0;
+        padding-bottom: 10px;
+      }
     }
 
 
@@ -35,6 +46,9 @@
       align-items: center;
       width: 100%;
       max-width: calc(100% - 217px);
+      @include respond(m_m) {
+        max-width: 100%;
+      }
     }
 
 
@@ -101,12 +115,18 @@
         width: 100%;
         max-width: calc(100% - 160px);
         height: 36px;
+        @include respond(m_s) {
+          max-width: calc(100% - 90px);
+        }
       }
 
 
       &:last-child {
         width: 160px;
         padding-left: 20px;
+        @include respond(m_s) {
+          width: 90px;
+        }
       }
     }
 

@@ -35,6 +35,9 @@
       color: $c-black;
       font-size: 27px;
       font-weight: bold;
+      @include respond(m_m) {
+        font-size: 16px;
+      }
 
 
       &:after {
@@ -51,6 +54,9 @@
 
     &-head {
       padding: 22px 25px;
+      @include respond(m_s) {
+        padding: 12px 15px 22px;
+      }
     }
 
 
@@ -61,6 +67,11 @@
         min-height: 63px;
         padding-left: 25px;
         padding-right: 25px;
+        @include respond(m_m) {
+          min-height: 44px;
+          padding-left: 20px;
+          padding-right: 20px;
+        }
 
 
         &:nth-child(odd) {
@@ -73,6 +84,9 @@
           color: $c-darkCerulean;
           font-size: 15px;
           font-weight: 600;
+          @include respond(m_m) {
+            font-size: 12px;
+          }
         }
       }
     }

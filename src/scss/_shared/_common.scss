@@ -11,6 +11,13 @@
   }
 }
 
+.searchResult {
+  @include respond(m_m) {
+    padding-left: 25px;
+    padding-right: 25px;
+  }
+}
+
 .myPlaylist,
 .searchResult {
   z-index: 0;
@@ -20,6 +27,9 @@
   margin-left: auto;
   margin-right: auto;
   background-color: #f7f7f7;
+  @include respond(m_m) {
+    background-color: $c-white;
+  }
 }
 
 
@@ -86,6 +96,27 @@
     height: 24px;
     margin-left: 5px;
     margin-right: 5px;
+    @include respond(m_m) {
+      min-width: 20px;
+      height: 20px;
+      margin-left: 3px;
+      margin-right: 3px;
+
+
+      &:nth-child(5),
+      &:nth-child(6),
+      &:nth-child(7) {
+        display: none;
+      }
+    }
+
+
+    &--max {
+      display: none;
+      @include respond(m_m) {
+        display: block;
+      }
+    }
   }
 
 
@@ -108,6 +139,14 @@
     background-color: $c-whiteSmooke;
 
 
+    &--max {
+      display: none;
+      @include respond(m_m) {
+        display: flex;
+      }
+    }
+
+
     &:hover,
     &.is-active {
       background-color: $c-putty;
@@ -128,6 +167,10 @@
     padding-left: 12px;
     padding-right: 12px;
     background-color: $c-whiteSmooke;
+    @include respond(m_m) {
+      padding-left: 6px;
+      padding-right: 6px;
+    }
 
 
     &:hover {
@@ -636,6 +679,13 @@
   &__play {
     display: flex;
 
+    .table--result & {
+      @include respond(m_m) {
+        order: 1;
+      }
+    }
+
+
     i {
       @include retina-sprite($sp-table-play-group);
     }
@@ -727,6 +777,13 @@
     width: 34px;
     height: 34px;
     margin-right: 20px;
+    @include respond(m_m) {
+      order: 2;
+      width: 29px;
+      height: 29px;
+      margin-right: 0;
+      margin-left: 10px;
+    }
 
 
     img {
