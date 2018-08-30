@@ -393,7 +393,7 @@
 
       &-0 {
         .table--playlist & {
-          display: none;
+          //display: none;
           @include respond(m_m) {
             display: flex;
           }
@@ -518,7 +518,7 @@
       }
       .table--playlist & {
         @include respond(m) {
-          max-width: calc(27px + 280px + 47px);
+          max-width: calc(27px + 320px + 47px);
         }
       }
       .table--result & {
@@ -547,7 +547,7 @@
         }
       }
       .table--playlist & {
-        width: (252px + 159px + 186px);
+        width: (252px + 119px + 186px);
       }
       .table--result & {
         @include respond(m) {
@@ -607,7 +607,7 @@
       }
       .table--playlist & {
         max-width: calc(27px + 280px + 47px);
-        padding-left: 49px;
+        //padding-left: 49px;
         @include respond(m_m) {
           max-width: 100%;
           padding-left: 0;
@@ -652,7 +652,7 @@
       max-width: 88px;
 
       .table--playlist & {
-        max-width: calc(40px + 119px);
+        max-width: calc(40px + 79px);
       }
       .table--result & {
         max-width: calc(100% - 186px);

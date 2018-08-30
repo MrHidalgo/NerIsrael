@@ -806,11 +806,6 @@ input[type="text"] {
           align-items: center;
 }
 
-
-.table--playlist .table__body .table__col-0 {
-  display: none;
-}
-
 @media screen and (max-width: 767px) {
   
   .table--playlist .table__body .table__col-0 {
@@ -990,8 +985,8 @@ input[type="text"] {
 @media screen and (min-width: 768px) {
   
   .table--playlist .table__row-head {
-    max-width: -webkit-calc(27px + 280px + 47px);
-    max-width: calc(27px + 280px + 47px);
+    max-width: -webkit-calc(27px + 320px + 47px);
+    max-width: calc(27px + 320px + 47px);
   }
 }
 
@@ -1039,7 +1034,7 @@ input[type="text"] {
 
 
 .table--playlist .table__row-body {
-  width: 597px;
+  width: 557px;
 }
 
 @media screen and (min-width: 768px) {
@@ -1127,7 +1122,6 @@ input[type="text"] {
 .table--playlist .table__col-1 {
   max-width: -webkit-calc(27px + 280px + 47px);
   max-width: calc(27px + 280px + 47px);
-  padding-left: 49px;
 }
 
 @media screen and (max-width: 767px) {
@@ -1189,8 +1183,8 @@ input[type="text"] {
 
 
 .table--playlist .table__col-4 {
-  max-width: -webkit-calc(40px + 119px);
-  max-width: calc(40px + 119px);
+  max-width: -webkit-calc(40px + 79px);
+  max-width: calc(40px + 79px);
 }
 
 
