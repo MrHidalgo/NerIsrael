@@ -5,15 +5,113 @@ section#mainr.mainr
   .c-grid
     .mainr__wrapper
 
-      .mainr__search
+      .mainr__search(search-wrap-js)
         p.mainr__search-title= "64 results for <search>"
         form.mainr__search-wrap
-          .mainr__search-field
+          .mainr__search-field.mainr__search-field--0
             input(type="text" class="mainr__search-input" placeholder="Type your search")
-            label.mainr__search-label()
+            label.mainr__search-label(
+              search-keyboard-js
+            )
               i
-          .mainr__search-field
+          .mainr__search-field.mainr__search-field--1
             button(type="submit" class="mainr__search-btn")!= "Search"
+          .search__keyboard
+            .search__keyboard-top
+              ul.search__keyboard-list.search__keyboard-list--0
+                li
+                  a(href="#" title="" class="")
+                    span!= "י"
+                li
+                  a(href="#" title="" class="")
+                    span!= "ט"
+                li
+                  a(href="#" title="" class="")
+                    span!= "ח"
+                li
+                  a(href="#" title="" class="")
+                    span!= "ז"
+                li
+                  a(href="#" title="" class="")
+                    span!= "ו"
+                li
+                  a(href="#" title="" class="")
+                    span!= "ה"
+                li
+                  a(href="#" title="" class="")
+                    span!= "ד"
+                li
+                  a(href="#" title="" class="")
+                    span!= "ג"
+                li
+                  a(href="#" title="" class="")
+                    span!= "ב"
+                li
+                  a(href="#" title="" class="")
+                    span!= "א"
+
+              ul.search__keyboard-list.search__keyboard-list--1
+                li
+                  a(href="#" title="" class="")
+                    span!= "ע"
+                li
+                  a(href="#" title="" class="")
+                    span!= "ס"
+                li
+                  a(href="#" title="" class="")
+                    span!= "ן"
+                li
+                  a(href="#" title="" class="")
+                    span!= "נ"
+                li
+                  a(href="#" title="" class="")
+                    span!= "ם"
+                li
+                  a(href="#" title="" class="")
+                    span!= "מ"
+                li
+                  a(href="#" title="" class="")
+                    span!= "ל"
+                li
+                  a(href="#" title="" class="")
+                    span!= "ך"
+                li
+                  a(href="#" title="" class="")
+                    span!= "כ"
+
+              ul.search__keyboard-list.search__keyboard-list--2
+                li
+                  a(href="#" title="" class="")
+                    span!= "ת"
+                li
+                  a(href="#" title="" class="")
+                    span!= "ש"
+                li
+                  a(href="#" title="" class="")
+                    span!= "ר"
+                li
+                  a(href="#" title="" class="")
+                    span!= "ק"
+                li
+                  a(href="#" title="" class="")
+                    span!= "ץ"
+                li
+                  a(href="#" title="" class="")
+                    span!= "צ"
+                li
+                  a(href="#" title="" class="")
+                    span!= "ף"
+                li
+                  a(href="#" title="" class="")
+                    span!= "פ"
+
+            .search__keyboard-bottom
+              a(href="#" title="" class="search__keyboard-clean")
+                i
+              a(href="#" title="" class="search__keyboard-space")
+                i
+              a(href="#" title="" class="search__keyboard-enter")!= "Enter"
+
 
 
       p.mainr__text!= "All Shiur titles are in Hebrew. You can search in Hebrew using the on-screen keyboard."

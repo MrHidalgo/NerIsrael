@@ -80,12 +80,19 @@
         }
 
 
-        p {
+        a {
           color: $c-darkCerulean;
           font-size: 15px;
           font-weight: 600;
+          @include transition(color);
           @include respond(m_m) {
             font-size: 12px;
+          }
+
+
+          &:hover {
+            color: $c-black;
+            @include transition(color);
           }
         }
       }

@@ -17,6 +17,7 @@
 
 
   &__search {
+    position: relative;
     display: flex;
     align-items: center;
     padding-bottom: 12px;
@@ -66,6 +67,9 @@
       background-color: $c-white;
       box-shadow: 0 2px 4px 0 rgba($c-black, 0.1);
       font-size: 12px;
+      @include respond(m_m) {
+        padding-right: 15px;
+      }
 
 
 
@@ -102,15 +106,30 @@
       right: 0;
       width: 33px;
       height: 100%;
+      border-radius: 4px;
+      @include respond(m_m) {
+        display: none;
+      }
 
       i {
         @include retina-sprite($sp-search-label-group)
+      }
+
+
+      &.is-active {
+        background-color: $c-darkCerulean;
+        @include transition(background-color);
+
+
+        i {
+          @include retina-sprite($sp-i-keyboard-white-group);
+        }
       }
     }
 
 
     &-field {
-      &:first-child {
+      &--0 {
         position: relative;
         width: 100%;
         max-width: calc(100% - 160px);
@@ -121,7 +140,7 @@
       }
 
 
-      &:last-child {
+      &--1 {
         width: 160px;
         padding-left: 20px;
         @include respond(m_s) {

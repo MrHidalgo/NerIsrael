@@ -105,7 +105,7 @@ $(document).ready(function (ev) {
    *
    */
   $('body').on('click', function (e) {
-    var className = ".swiper-slide-menu, .swiper-slide-drop, .search__label, .search__keyboard";
+    var className = ".swiper-slide-menu, .swiper-slide-drop, .search__label, .mainr__search-label, .search__keyboard";
 
     if (!$(e.target).closest(className).length) {
       $("[featured-menu-js]").removeClass("is-show");
@@ -235,12 +235,29 @@ $(document).ready(function (ev) {
    */
   $("[search-keyboard-js]").on("click", function (e) {
     var elem = $(e.currentTarget),
-        keyboard = $(".search__keyboard");
+        keyboard = elem.closest("[search-wrap-js]").find(".search__keyboard"),
+        visibleKeyboard = $(".search__keyboard");
 
     if (_window.width() > 767) {
+
+      if (visibleKeyboard.is(":visible")) {
+        visibleKeyboard.closest("[search-wrap-js]").find("label").removeClass("is-active");
+        visibleKeyboard.fadeOut(300);
+      }
+
       elem.toggleClass("is-active");
       keyboard.fadeToggle(300);
     }
+  });
+
+  /**
+   *
+   */
+  $(".result__box-head").on("click", function (e) {
+    var elem = $(e.currentTarget),
+        resultDataWrap = elem.closest(".result__box").find("[result-body-js]");
+
+    resultDataWrap.slideToggle(300);
   });
 });
 

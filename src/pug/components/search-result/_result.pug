@@ -12,7 +12,11 @@
             class="result__box-link"
           )!= "Speakers"
 
-        .result__box-body
+        .result__box-body(result-body-js)
+          div
+            a(href="#" title="")!= "Torah Leining"
+          div
+            a(href="#" title="")!= "Torah Umesorah Convetion"
 
       .result__box.result__box-1
         .result__box-head
@@ -22,15 +26,15 @@
             class="result__box-link"
           )!= "Categories"
 
-        .result__box-body
+        .result__box-body(result-body-js)
           div
-            p!= "Hilchos Talmid Torah"
+            a(href="#" title="")!= "Hilchos Talmid Torah"
           div
-            p!= "Hilchos Teffilin, Meszuzah, Sefer Torah"
+            a(href="#" title="")!= "Hilchos Teffilin, Meszuzah, Sefer Torah"
           div
-            p!= "Torah Leining"
+            a(href="#" title="")!= "Torah Leining"
           div
-            p!= "Torah Umesorah Convetion"
+            a(href="#" title="")!= "Torah Umesorah Convetion"
 
       .result__box.result__box-2
         .result__box-head
@@ -40,199 +44,200 @@
             class="result__box-link"
           )!= "Shiurim"
 
-        .result__box-main
-          .table(class="table--result")
-            .table__body
-              .table__row(class="table__row-1")
-                .table__row-head(table-head-js class!= (i === 0) ? "is-open" : "" )
-                  .table__col.table__col-0
-                    div.table__img
-                      img(
-                        src="./img/img-ava-1__featured.png"
-                        srcset="./img/img-ava-1__featured@2x.png 2x" 
-                        alt=""
-                        title=""
-                       )
-                    a.table__play(href="#" title="" class="")
-                      i
-                    a.table__download.table__download--big(href="#" title="" class="")
-                      i
-                  .table__col.table__col-1
-                    p
-                      a(href="#" title!="" class!="")!= "Protecting Intellectual Property In Jewish Law (2017 - 02 - 15) (B)"
-                    a.table__col-arr(href="#" title!="" class!="")
-                      i
-                .table__row-body(talbe-body-js class!= (i === 0) ? "is-show" : "" )
-                  .table__col.table__col-2
-                    span!= "Speaker"
-                    p
-                      a(href="#" title!="" class!="")!= "Rabbi Aron Feldman"
-                  .table__col.table__col-4
-                    span!= "Length"
-                    p!= "13 min"
-                  .table__col.table__col-5
-                    span!= "Action"
-                    a.table__download(href="#" title="" class="")
-                      i
-              .table__row(class="table__row-2")
-                .table__row-head(table-head-js class!= (i === 0) ? "is-open" : "" )
-                  .table__col.table__col-0
-                    div.table__img
-                      img(
-                        src="./img/img-ava-1__featured.png"
-                        srcset="./img/img-ava-1__featured@2x.png 2x"
-                        alt=""
-                        title=""
-                       )
-                    a.table__play(href="#" title="" class="")
-                      i
-                    a.table__download.table__download--big(href="#" title="" class="")
-                      i
-                  .table__col.table__col-1
-                    p
-                      a(href="#" title!="" class!="")!= "Protecting Intellectual Property In Jewish Law (2017 - 02 - 15) (B)"
-                    a.table__col-arr(href="#" title!="" class!="")
-                      i
-                .table__row-body(talbe-body-js class!= (i === 0) ? "is-show" : "" )
-                  .table__col.table__col-2
-                    span!= "Speaker"
-                    p
-                      a(href="#" title!="" class!="")!= "Rabbi Aron Feldman"
-                  .table__col.table__col-4
-                    span!= "Length"
-                    p!= "13 min"
-                  .table__col.table__col-5
-                    span!= "Action"
-                    a.table__download(href="#" title="" class="")
-                      i
-              .table__row(class="table__row-3")
-                .table__row-head(table-head-js class!= (i === 0) ? "is-open" : "" )
-                  .table__col.table__col-0
-                    div.table__img
-                      img(
-                        src="./img/img-ava-1__featured.png"
-                        srcset="./img/img-ava-1__featured@2x.png 2x"
-                        alt=""
-                        title=""
-                       )
-                    a.table__play(href="#" title="" class="")
-                      i
-                    a.table__download.table__download--big(href="#" title="" class="")
-                      i
-                  .table__col.table__col-1
-                    p
-                      a(href="#" title!="" class!="")!= "Protecting Intellectual Property In Jewish Law (2017 - 02 - 15) (B)"
-                    a.table__col-arr(href="#" title!="" class!="")
-                      i
-                .table__row-body(talbe-body-js class!= (i === 0) ? "is-show" : "" )
-                  .table__col.table__col-2
-                    span!= "Speaker"
-                    p
-                      a(href="#" title!="" class!="")!= "Rabbi Aron Feldman"
-                  .table__col.table__col-4
-                    span!= "Length"
-                    p!= "13 min"
-                  .table__col.table__col-5
-                    span!= "Action"
-                    a.table__download(href="#" title="" class="")
-                      i
-              .table__row(class="table__row-4")
-                .table__row-head(table-head-js class!= (i === 0) ? "is-open" : "" )
-                  .table__col.table__col-0
-                    div.table__img
-                      img(
-                        src="./img/img-ava-1__featured.png"
-                        srcset="./img/img-ava-1__featured@2x.png 2x"
-                        alt=""
-                        title=""
-                       )
-                    a.table__play(href="#" title="" class="")
-                      i
-                    a.table__download.table__download--big(href="#" title="" class="")
-                      i
-                  .table__col.table__col-1
-                    p
-                      a(href="#" title!="" class!="")!= "Protecting Intellectual Property In Jewish Law (2017 - 02 - 15) (B)"
-                    a.table__col-arr(href="#" title!="" class!="")
-                      i
-                .table__row-body(talbe-body-js class!= (i === 0) ? "is-show" : "" )
-                  .table__col.table__col-2
-                    span!= "Speaker"
-                    p
-                      a(href="#" title!="" class!="")!= "Rabbi Aron Feldman"
-                  .table__col.table__col-4
-                    span!= "Length"
-                    p!= "13 min"
-                  .table__col.table__col-5
-                    span!= "Action"
-                    a.table__download(href="#" title="" class="")
-                      i
-              .table__row(class="table__row-5")
-                .table__row-head(table-head-js class!= (i === 0) ? "is-open" : "" )
-                  .table__col.table__col-0
-                    div.table__img
-                      img(
-                        src="./img/img-ava-1__featured.png"
-                        srcset="./img/img-ava-1__featured@2x.png 2x"
-                        alt=""
-                        title=""
-                       )
-                    a.table__play(href="#" title="" class="")
-                      i
-                    a.table__download.table__download--big(href="#" title="" class="")
-                      i
-                  .table__col.table__col-1
-                    p
-                      a(href="#" title!="" class!="")!= "Protecting Intellectual Property In Jewish Law (2017 - 02 - 15) (B)"
-                    a.table__col-arr(href="#" title!="" class!="")
-                      i
-                .table__row-body(talbe-body-js class!= (i === 0) ? "is-show" : "" )
-                  .table__col.table__col-2
-                    span!= "Speaker"
-                    p
-                      a(href="#" title!="" class!="")!= "Rabbi Aron Feldman"
-                  .table__col.table__col-4
-                    span!= "Length"
-                    p!= "13 min"
-                  .table__col.table__col-5
-                    span!= "Action"
-                    a.table__download(href="#" title="" class="")
-                      i
-              .table__row(class="table__row-6")
-                .table__row-head(table-head-js class!= (i === 0) ? "is-open" : "" )
-                  .table__col.table__col-0
-                    div.table__img
-                      img(
-                        src="./img/img-ava-1__featured.png"
-                        srcset="./img/img-ava-1__featured@2x.png 2x"
-                        alt=""
-                        title=""
-                       )
-                    a.table__play(href="#" title="" class="")
-                      i
-                    a.table__download.table__download--big(href="#" title="" class="")
-                      i
-                  .table__col.table__col-1
-                    p
-                      a(href="#" title!="" class!="")!= "Protecting Intellectual Property In Jewish Law (2017 - 02 - 15) (B)"
-                    a.table__col-arr(href="#" title!="" class!="")
-                      i
-                .table__row-body(talbe-body-js class!= (i === 0) ? "is-show" : "" )
-                  .table__col.table__col-2
-                    span!= "Speaker"
-                    p
-                      a(href="#" title!="" class!="")!= "Rabbi Aron Feldman"
-                  .table__col.table__col-4
-                    span!= "Length"
-                    p!= "13 min"
-                  .table__col.table__col-5
-                    span!= "Action"
-                    a.table__download(href="#" title="" class="")
-                      i
+        div(result-body-js)
+          .result__box-main
+            .table(class="table--result")
+              .table__body
+                .table__row(class="table__row-1")
+                  .table__row-head(table-head-js class!= (i === 0) ? "is-open" : "" )
+                    .table__col.table__col-0
+                      div.table__img
+                        img(
+                          src="./img/img-ava-1__featured.png"
+                          srcset="./img/img-ava-1__featured@2x.png 2x"
+                          alt=""
+                          title=""
+                         )
+                      a.table__play(href="#" title="" class="")
+                        i
+                      a.table__download.table__download--big(href="#" title="" class="")
+                        i
+                    .table__col.table__col-1
+                      p
+                        a(href="#" title!="" class!="")!= "Protecting Intellectual Property In Jewish Law (2017 - 02 - 15) (B)"
+                      a.table__col-arr(href="#" title!="" class!="")
+                        i
+                  .table__row-body(talbe-body-js class!= (i === 0) ? "is-show" : "" )
+                    .table__col.table__col-2
+                      span!= "Speaker"
+                      p
+                        a(href="#" title!="" class!="")!= "Rabbi Aron Feldman"
+                    .table__col.table__col-4
+                      span!= "Length"
+                      p!= "13 min"
+                    .table__col.table__col-5
+                      span!= "Action"
+                      a.table__download(href="#" title="" class="")
+                        i
+                .table__row(class="table__row-2")
+                  .table__row-head(table-head-js class!= (i === 0) ? "is-open" : "" )
+                    .table__col.table__col-0
+                      div.table__img
+                        img(
+                          src="./img/img-ava-1__featured.png"
+                          srcset="./img/img-ava-1__featured@2x.png 2x"
+                          alt=""
+                          title=""
+                         )
+                      a.table__play(href="#" title="" class="")
+                        i
+                      a.table__download.table__download--big(href="#" title="" class="")
+                        i
+                    .table__col.table__col-1
+                      p
+                        a(href="#" title!="" class!="")!= "Protecting Intellectual Property In Jewish Law (2017 - 02 - 15) (B)"
+                      a.table__col-arr(href="#" title!="" class!="")
+                        i
+                  .table__row-body(talbe-body-js class!= (i === 0) ? "is-show" : "" )
+                    .table__col.table__col-2
+                      span!= "Speaker"
+                      p
+                        a(href="#" title!="" class!="")!= "Rabbi Aron Feldman"
+                    .table__col.table__col-4
+                      span!= "Length"
+                      p!= "13 min"
+                    .table__col.table__col-5
+                      span!= "Action"
+                      a.table__download(href="#" title="" class="")
+                        i
+                .table__row(class="table__row-3")
+                  .table__row-head(table-head-js class!= (i === 0) ? "is-open" : "" )
+                    .table__col.table__col-0
+                      div.table__img
+                        img(
+                          src="./img/img-ava-1__featured.png"
+                          srcset="./img/img-ava-1__featured@2x.png 2x"
+                          alt=""
+                          title=""
+                         )
+                      a.table__play(href="#" title="" class="")
+                        i
+                      a.table__download.table__download--big(href="#" title="" class="")
+                        i
+                    .table__col.table__col-1
+                      p
+                        a(href="#" title!="" class!="")!= "Protecting Intellectual Property In Jewish Law (2017 - 02 - 15) (B)"
+                      a.table__col-arr(href="#" title!="" class!="")
+                        i
+                  .table__row-body(talbe-body-js class!= (i === 0) ? "is-show" : "" )
+                    .table__col.table__col-2
+                      span!= "Speaker"
+                      p
+                        a(href="#" title!="" class!="")!= "Rabbi Aron Feldman"
+                    .table__col.table__col-4
+                      span!= "Length"
+                      p!= "13 min"
+                    .table__col.table__col-5
+                      span!= "Action"
+                      a.table__download(href="#" title="" class="")
+                        i
+                .table__row(class="table__row-4")
+                  .table__row-head(table-head-js class!= (i === 0) ? "is-open" : "" )
+                    .table__col.table__col-0
+                      div.table__img
+                        img(
+                          src="./img/img-ava-1__featured.png"
+                          srcset="./img/img-ava-1__featured@2x.png 2x"
+                          alt=""
+                          title=""
+                         )
+                      a.table__play(href="#" title="" class="")
+                        i
+                      a.table__download.table__download--big(href="#" title="" class="")
+                        i
+                    .table__col.table__col-1
+                      p
+                        a(href="#" title!="" class!="")!= "Protecting Intellectual Property In Jewish Law (2017 - 02 - 15) (B)"
+                      a.table__col-arr(href="#" title!="" class!="")
+                        i
+                  .table__row-body(talbe-body-js class!= (i === 0) ? "is-show" : "" )
+                    .table__col.table__col-2
+                      span!= "Speaker"
+                      p
+                        a(href="#" title!="" class!="")!= "Rabbi Aron Feldman"
+                    .table__col.table__col-4
+                      span!= "Length"
+                      p!= "13 min"
+                    .table__col.table__col-5
+                      span!= "Action"
+                      a.table__download(href="#" title="" class="")
+                        i
+                .table__row(class="table__row-5")
+                  .table__row-head(table-head-js class!= (i === 0) ? "is-open" : "" )
+                    .table__col.table__col-0
+                      div.table__img
+                        img(
+                          src="./img/img-ava-1__featured.png"
+                          srcset="./img/img-ava-1__featured@2x.png 2x"
+                          alt=""
+                          title=""
+                         )
+                      a.table__play(href="#" title="" class="")
+                        i
+                      a.table__download.table__download--big(href="#" title="" class="")
+                        i
+                    .table__col.table__col-1
+                      p
+                        a(href="#" title!="" class!="")!= "Protecting Intellectual Property In Jewish Law (2017 - 02 - 15) (B)"
+                      a.table__col-arr(href="#" title!="" class!="")
+                        i
+                  .table__row-body(talbe-body-js class!= (i === 0) ? "is-show" : "" )
+                    .table__col.table__col-2
+                      span!= "Speaker"
+                      p
+                        a(href="#" title!="" class!="")!= "Rabbi Aron Feldman"
+                    .table__col.table__col-4
+                      span!= "Length"
+                      p!= "13 min"
+                    .table__col.table__col-5
+                      span!= "Action"
+                      a.table__download(href="#" title="" class="")
+                        i
+                .table__row(class="table__row-6")
+                  .table__row-head(table-head-js class!= (i === 0) ? "is-open" : "" )
+                    .table__col.table__col-0
+                      div.table__img
+                        img(
+                          src="./img/img-ava-1__featured.png"
+                          srcset="./img/img-ava-1__featured@2x.png 2x"
+                          alt=""
+                          title=""
+                         )
+                      a.table__play(href="#" title="" class="")
+                        i
+                      a.table__download.table__download--big(href="#" title="" class="")
+                        i
+                    .table__col.table__col-1
+                      p
+                        a(href="#" title!="" class!="")!= "Protecting Intellectual Property In Jewish Law (2017 - 02 - 15) (B)"
+                      a.table__col-arr(href="#" title!="" class!="")
+                        i
+                  .table__row-body(talbe-body-js class!= (i === 0) ? "is-show" : "" )
+                    .table__col.table__col-2
+                      span!= "Speaker"
+                      p
+                        a(href="#" title!="" class!="")!= "Rabbi Aron Feldman"
+                    .table__col.table__col-4
+                      span!= "Length"
+                      p!= "13 min"
+                    .table__col.table__col-5
+                      span!= "Action"
+                      a.table__download(href="#" title="" class="")
+                        i
 
 
-        .result__box-footer
-          include ../../macros/_pagination
+          .result__box-footer
+            include ../../macros/_pagination
 
 
 // RESULT :: END
