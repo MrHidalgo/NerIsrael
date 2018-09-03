@@ -199,5 +199,30 @@ $(document).ready((ev) => {
 
     resultDataWrap.slideToggle(300);
   });
+
+
+  /**
+   *
+   */
+  $(".table__menu").on("click", (e) => {
+    const elem = $(e.currentTarget);
+
+    /**
+     *
+     */
+    function removeHideDrop() {
+      $(".table__menu").removeClass("is-active");
+      $(".table__drop").removeClass("is-open");
+    }
+
+    if(elem.hasClass("is-active")) {
+      removeHideDrop();
+    } else {
+      removeHideDrop();
+
+      elem.addClass("is-active");
+      elem.siblings(".table__drop").addClass("is-open");
+    }
+  });
 });
 

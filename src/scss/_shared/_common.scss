@@ -467,6 +467,11 @@
           &:last-child {
             margin-right: 0;
           }
+
+
+          .table--mains & {
+            margin-right: 0;
+          }
         }
       }
 
@@ -527,6 +532,23 @@
     .table--individual & {
       @include respond(m) {
         min-height: auto;
+      }
+    }
+
+
+    .table--mains & {
+      position: relative;
+
+
+      &:last-child,
+      &:nth-last-child(2) {
+        .table__drop {
+          top: auto;
+          bottom: 12px;
+          @include respond(m_m) {
+            bottom: 6px;
+          }
+        }
       }
     }
 
@@ -801,6 +823,23 @@
     height: 20px;
     padding-left: 5px;
     padding-right: 5px;
+    margin-left: 10px;
+
+
+    &.is-active {
+      z-index: 2;
+
+
+      i {
+        background-color: $c-eclipse;
+
+
+        &:before,
+        &:after {
+          background-color: $c-eclipse;
+        }
+      }
+    }
 
 
     i {
@@ -869,6 +908,106 @@
       font-weight: 500 !important;
       padding-left: 0 !important;
       @include transition(color);
+    }
+  }
+
+
+  &__drop {
+    display: none;
+    z-index: 1;
+    position: absolute;
+    top: 12px;
+    right: 12px;
+    width: 100%;
+    max-width: 160px;
+    min-height: 120px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    border-radius: 11px;
+    background-color: $c-white;
+    box-shadow: 0 2px 10px 0 rgba($c-black, 0.27);
+    animation-name: fadeIn;
+    animation-duration: 0.5s;
+    @include respond(m_m) {
+      top: 6px;
+    }
+
+
+    &.is-open {
+      display: block;
+    }
+
+
+    ul {
+      li {
+        border-bottom: 1px solid rgba($c-dimGray, 0.5);
+
+
+        &:last-child {
+          border-bottom: 0;
+        }
+
+
+        &:nth-child(1) {
+          a {
+            i {
+              @include retina-sprite($sp-download-group)
+            }
+          }
+        }
+        &:nth-child(2) {
+          a {
+            i {
+              @include retina-sprite($sp-share-group)
+            }
+          }
+        }
+        &:nth-child(3) {
+          a {
+            i {
+              @include retina-sprite($sp-send-group)
+            }
+          }
+        }
+
+        a {
+          display: flex;
+          align-items: center;
+          height: 43px;
+          padding-left: 25px;
+          color: $c-darkSlate;
+          font-size: 14px;
+          @include transition(color);
+          @include respond(m_s) {
+            font-size: 12px;
+          }
+
+
+          &:hover,
+          &:focus {
+            text-decoration: none;
+            color: $c-darkSlate;
+            @include transition(color);
+
+            i,
+            span {
+              opacity: 0.5;
+              @include transition(opacity);
+            }
+          }
+
+
+          span {
+            margin-left: 15px;
+            @include transition(opacity);
+          }
+
+
+          i {
+            @include transition(opacity);
+          }
+        }
+      }
     }
   }
 
