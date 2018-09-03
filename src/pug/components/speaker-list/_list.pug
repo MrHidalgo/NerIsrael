@@ -146,7 +146,7 @@ mixin listItem(title, arr, classMod, wrapperHide)
       i
     .list__row-wrapper(class!= (wrapperHide) ? "list__row-wrapper--hide": "")
       each val, idx in arr
-        .list__row-block
+        a.list__row-block(href="speaker.html")
           .list__row-block--left
             .list__row-img
               img(
