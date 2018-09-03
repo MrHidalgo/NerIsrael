@@ -26,7 +26,7 @@
   max-width: 1025px;
   margin-left: auto;
   margin-right: auto;
-  background-color: #f7f7f7;
+  background-color: $c-whiteSmooke;
   @include respond(m_m) {
     background-color: $c-white;
   }
@@ -199,7 +199,8 @@
 
     &--individual,
     &--playlist,
-    &--result {
+    &--result,
+    &--mains {
       max-width: 100%;
       margin-left: 0;
       margin-right: 0;
@@ -219,15 +220,20 @@
     }
   }
 
+
   &--individual,
   &--playlist,
-  &--result {
+  &--result,
+  &--mains {
     border-radius: 0;
     box-shadow: none;
   }
   &--playlist {
     border-bottom-left-radius: 11px;
     border-bottom-right-radius: 11px;
+  }
+  &--mains {
+    z-index: 0;
   }
 
 
@@ -314,6 +320,11 @@
             min-height: 70px;
           }
         }
+
+
+        .table--mains & {
+          background-color: $c-charcoal;
+        }
       }
 
 
@@ -333,10 +344,17 @@
             min-height: 51px;
           }
         }
+
+
         .table--result & {
           @include respond(m) {
             min-height: 63px;
           }
+        }
+
+
+        .table--mains & {
+          background-color: $c-eclipse;
         }
       }
 
@@ -393,7 +411,6 @@
 
       &-0 {
         .table--playlist & {
-          //display: none;
           @include respond(m_m) {
             display: flex;
           }
@@ -474,10 +491,21 @@
           color: rgba($c-matterhorn, 0.93);
           @include transition(color);
 
+
+          .table--mains & {
+            color: rgba($c-white, 0.75);
+          }
+
+
           &:hover {
             text-decoration: none;
             color: $c-black;
             @include transition(color);
+
+
+            .table--mains & {
+              color: $c-white;
+            }
           }
         }
       }
@@ -590,6 +618,12 @@
           max-width: 231px;
         }
       }
+      .table--mains & {
+        @include respond(s) {
+          max-width: 131px;
+          padding-left: 33px;
+        }
+      }
     }
 
 
@@ -607,7 +641,6 @@
       }
       .table--playlist & {
         max-width: calc(27px + 280px + 47px);
-        //padding-left: 49px;
         @include respond(m_m) {
           max-width: 100%;
           padding-left: 0;
@@ -616,6 +649,15 @@
       .table--result & {
         @include respond(l) {
           max-width: 414px;
+        }
+      }
+      .table--mains & {
+        @include respond(es) {
+          max-width: calc(100% - (50px + 91px));
+          padding-right: 0;
+        }
+        @include respond(s) {
+          max-width: calc(100% - (50px + 131px));
         }
       }
     }
@@ -672,6 +714,12 @@
           display: none;
         }
       }
+      .table--mains & {
+        @include respond(es) {
+          justify-content: center;
+          max-width: 50px !important;
+        }
+      }
     }
   }
 
@@ -693,12 +741,25 @@
   &__add {
     display: flex;
 
+
     i {
       @include retina-sprite($sp-add-group);
+    }
+
+
+
+    &--white {
+      margin-left: 20px;
+
+
+      i {
+        @include retina-sprite($sp-add-white-group);
+      }
     }
   }
   &__download {
     display: flex;
+
 
     i {
       @include retina-sprite($sp-download-group);
@@ -711,6 +772,7 @@
         display: none;
       }
 
+
       i {
         @include retina-sprite($sp-i-download-big-group);
       }
@@ -719,6 +781,7 @@
   &__share {
     display: flex;
 
+
     i {
       @include retina-sprite($sp-share-group);
     }
@@ -726,8 +789,47 @@
   &__send {
     display: flex;
 
+
     i {
       @include retina-sprite($sp-send-group);
+    }
+  }
+  &__menu {
+    position: relative;
+    display: flex;
+    width: 14px;
+    height: 20px;
+    padding-left: 5px;
+    padding-right: 5px;
+
+
+    i {
+      position: absolute;
+      width: 4px;
+      height: 4px;
+      top: 50%;
+      left: 5px;
+      transform: translateY(-50%);
+      border-radius: 100%;
+      background-color: $c-white;
+
+
+      &:before,
+      &:after {
+        content: "";
+        position: absolute;
+        left: 0;
+        width: 4px;
+        height: 4px;
+        border-radius: 100%;
+        background-color: $c-white;
+      }
+      &:before {
+        top: 8px;
+      }
+      &:after {
+        bottom: 8px;
+      }
     }
   }
   &__btn {
