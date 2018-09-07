@@ -1,0 +1,17 @@
+---
+title: NerIsrael - Category
+favicon: favicon
+
+bodyClassName: category
+dataPageName: category
+
+additionalStyleFile: false
+---
+extends shared/_layout
+
+block content
+
+  div(class!= bodyClassName)
+
+    include ./components/category/_main
+    include ./components/category/_spreadsheet

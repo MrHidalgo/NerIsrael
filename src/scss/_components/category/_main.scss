@@ -1,0 +1,108 @@
+// MAIN CATEGORY :: START
+
+.mainc {
+  &__wrapper {
+    padding: 23px 42px 51px;
+    background-color: $c-whiteSmooke;
+    @include respond(m_m) {
+      flex-wrap: wrap;
+      background-color: $c-white;
+      padding-left: 25px;
+      padding-right: 25px;
+      padding-bottom: 16px;
+    }
+  }
+
+  &__block {
+    overflow: hidden;
+    border-radius: 14px;
+    background-color: $c-white;
+    box-shadow: 0 2px 10px 0 rgba($c-black, 0.27);
+
+    &-head {
+      padding: 22px 25px;
+      @include respond(m_s) {
+        padding: 12px 15px 22px;
+      }
+    }
+
+    &-body {
+      display: flex;
+      align-items: center;
+      flex-wrap: wrap;
+      padding: 10px 28px 28px;
+      @include respond(m_l) {
+        justify-content: space-between;
+      }
+      @include respond(m_m) {
+        padding-left: 15px;
+        padding-right: 15px;
+      }
+
+
+      a {
+        display: flex;
+        align-items: center;
+        width: 100%;
+        max-width: 200px;
+        min-height: 35px;
+        padding-left: 17px;
+        padding-right: 17px;
+        margin-right: 20px;
+        margin-bottom: 10px;
+        border-radius: 17px;
+        background-color: rgba($c-white, 0.93);
+        box-shadow: 0 2px 6px 0 rgba($c-black, 0.14);
+        color: $c-matterhorn;
+        font-size: 12px;
+        font-weight: 500;
+        @include respond(m_el) {
+          max-width: calc((100% / 3) - 10px);
+          margin-left: 5px;
+          margin-right: 5px;
+        }
+        @include respond(m_l) {
+          max-width: calc(50% - 10px);
+
+          &:nth-child(odd) {
+            margin-left: 0;
+            margin-right: 10px;
+          }
+          &:nth-child(even) {
+            margin-right: 0;
+            margin-left: 10px;
+          }
+        }
+        @include respond(m_s) {
+          max-width: 100%;
+          margin-left: 0 !important;
+          margin-right: 0 !important;
+        }
+      }
+    }
+
+    &-link {
+      position: relative;
+      display: block;
+      color: $c-black;
+      font-size: 27px;
+      font-weight: bold;
+      @include respond(m_m) {
+        font-size: 16px;
+      }
+
+
+      &:after {
+        content: "";
+        position: absolute;
+        left: 0;
+        bottom: -5px;
+        width: 37px;
+        height: 5px;
+        background-color: $c-putty;
+      }
+    }
+  }
+}
+
+// MAIN CATEGORY :: END

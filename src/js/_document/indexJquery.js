@@ -229,6 +229,9 @@ $(document).ready((ev) => {
   });
 
 
+  /**
+   *
+   */
   const initSelectricJs = () => {
     const $select = $("select");
 
@@ -240,5 +243,16 @@ $(document).ready((ev) => {
 
   };
   initSelectricJs();
+
+
+  /**
+   *
+   */
+  $(".mainc__block-head").on("click", (e) => {
+    const elem = $(e.currentTarget),
+      mainCategoryDataWrap = elem.closest(".mainc__block").find("[maincBlock-body-js]");
+
+    mainCategoryDataWrap.slideToggle(300);
+  });
 });
 

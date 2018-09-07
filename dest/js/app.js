@@ -287,6 +287,9 @@ $(document).ready(function (ev) {
     }
   });
 
+  /**
+   *
+   */
   var initSelectricJs = function initSelectricJs() {
     var $select = $("select");
 
@@ -297,6 +300,16 @@ $(document).ready(function (ev) {
     });
   };
   initSelectricJs();
+
+  /**
+   *
+   */
+  $(".mainc__block-head").on("click", function (e) {
+    var elem = $(e.currentTarget),
+        mainCategoryDataWrap = elem.closest(".mainc__block").find("[maincBlock-body-js]");
+
+    mainCategoryDataWrap.slideToggle(300);
+  });
 });
 
 /*!
