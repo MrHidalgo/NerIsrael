@@ -1,0 +1,132 @@
+// SPREADSHEET :: START
+
+
+section#spreadsheet.spreadsheet
+  .c-grid
+    .spreadsheet__wrapper
+
+      .spreadsheet__block
+        .spreadsheet__block-top
+          p!= "Filter by"
+          .spreadsheet__select-wrap
+            .spreadsheet__select
+              select(name="select")
+                option()!= "Chumas / Sefer Berieshish / Vayeira (1)"
+                option()!= "Chumas / Sefer Bamidbar / Bamidbar (1)"
+                option()!= "Moadim / Pesach (1)"
+                option()!= "Moadim / TIsha B’Av (1)"
+                option()!= "Moadim / Chodes Elul (1)"
+                option()!= "Moadim / Rosh Hashanah (1)"
+                option()!= "Moadim / Purim (3)"
+                option()!= "Moadim / Shabbos (2)"
+                option()!= "Machsava (1)"
+                option()!= "Machsava / Mussar (6)"
+                option()!= "Machsava / Torah Umesorah Coonvention (1)"
+                option()!= "Machsava / Bitachon (1)"
+                option()!= "Machsava / Chizuk (1)"
+                option()!= "Machsava / Religion (1)"
+                option()!= "Machsava / Chassidu (1)"
+                option()!= "Family / Parenting (1)"
+                option()!= "Tefilla / Davening (6)"
+                option()!= "History / Jewish History (1)"
+                option()!= "History / Eretz Yisroel (1)"
+                option()!= "History / Hespeidim (1)"
+            .spreadsheet__select
+              select(name="select")
+                option()!= "Chumas / Sefer Berieshish / Lech Lecha (1)"
+                option()!= "Chumas / Sefer Berieshish / Vayeira (1)"
+                option()!= "Chumas / Sefer Bamidbar / Bamidbar (1)"
+                option()!= "Moadim / Pesach (1)"
+                option()!= "Moadim / TIsha B’Av (1)"
+                option()!= "Moadim / Chodes Elul (1)"
+                option()!= "Moadim / Rosh Hashanah (1)"
+                option()!= "Moadim / Purim (3)"
+                option()!= "Moadim / Shabbos (2)"
+                option()!= "Machsava (1)"
+                option()!= "Machsava / Mussar (6)"
+                option()!= "Machsava / Torah Umesorah Coonvention (1)"
+                option()!= "Machsava / Bitachon (1)"
+                option()!= "Machsava / Chizuk (1)"
+                option()!= "Machsava / Religion (1)"
+                option()!= "Machsava / Chassidu (1)"
+                option()!= "Family / Parenting (1)"
+                option()!= "Tefilla / Davening (6)"
+                option()!= "History / Jewish History (1)"
+                option()!= "History / Eretz Yisroel (1)"
+                option()!= "History / Hespeidim (1)"
+
+
+        .spreadsheet__block-middle
+          .table.table--speaker
+            .table__header
+              .table__row.table__row-0
+                .table__row-head
+                  .table__col.table__col-0
+                    p!= "Timely"
+                  .table__col.table__col-1
+                    p!= "Name"
+                .table__row-body
+                  .table__col.table__col-2
+                    p!= "Speaker"
+                  .table__col.table__col-3
+                    p!= "Category"
+                  .table__col.table__col-4
+                    p!= "Length"
+                  .table__col.table__col-6
+                    p!= "Date"
+                  .table__col.table__col-5
+                    p!= "Action"
+
+            .table__body
+              -for(var i = 0; i < 20; i++)
+                .table__row(class!= "table__row-" + i)
+                  .table__row-head(table-head-js class!= (i === 0) ? "is-open" : "" )
+                    .table__col.table__col-0
+                      div.table__img
+                        img(
+                          src="./img/img-ava-1__featured.png"
+                          srcset="./img/img-ava-1__featured@2x.png 2x"
+                          alt=""
+                          title=""
+                        )
+                      a.table__play(href="#" title="" class="")
+                        i
+                      a.table__add(href="#" title="" class="")
+                        i
+                    .table__col.table__col-1
+                      p
+                        a(href="#" title!="" class!="")!= "Protecting Intellectual Property In Jewish Law <br>(2017 - 02 - 15) (B)"
+                      a.table__col-arr(href="#" title!="" class!="")
+                        i
+                  .table__row-body(talbe-body-js class!= (i === 0) ? "is-show" : "" )
+                    .table__col.table__col-2
+                      span!= "Speaker"
+                      p
+                        a(href="#" title!="" class!="")!= "Rabbi Aron Feldman"
+                    .table__col.table__col-3
+                      span!= "Category"
+                      p
+                        a(href="#" title!="" class!="")!= "Halacha"
+                    .table__col.table__col-4
+                      span!= "Length"
+                      p!= "13 min"
+                    .table__col.table__col-6
+                      span!= "Date"
+                      p!= "3/22/18"
+                    .table__col.table__col-5
+                      span!= "Action"
+                      a.table__add(href="#" title="" class="")
+                        i
+                      a.table__download(href="#" title="" class="")
+                        i
+                      a.table__share(href="#" title="" class="")
+                        i
+                      a.table__send(href="#" title="" class="")
+                        i
+
+
+        .spreadsheet__block-bottom
+          include ../../macros/_pagination
+
+
+// SPREADSHEET :: END

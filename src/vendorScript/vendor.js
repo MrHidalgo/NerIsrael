@@ -5,5 +5,6 @@
 * - jquery;
 * - swiper;
 * - object-fit;
+* - jquery-selectric;
 *
 * */

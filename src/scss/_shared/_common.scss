@@ -200,7 +200,8 @@
     &--individual,
     &--playlist,
     &--result,
-    &--mains {
+    &--mains,
+    &--speaker {
       max-width: 100%;
       margin-left: 0;
       margin-right: 0;
@@ -215,7 +216,8 @@
 
     &--individual,
     &--playlist,
-    &--result {
+    &--result,
+    &--speaker {
       max-width: 100%;
     }
   }
@@ -224,7 +226,8 @@
   &--individual,
   &--playlist,
   &--result,
-  &--mains {
+  &--mains,
+  &--speaker {
     border-radius: 0;
     box-shadow: none;
   }
@@ -240,7 +243,8 @@
   &__header {
     .table--individual &,
     .table--playlist &,
-    .table--result & {
+    .table--result &,
+    .table--speaker & {
       display: none;
     }
 
@@ -325,6 +329,11 @@
         .table--mains & {
           background-color: $c-charcoal;
         }
+
+
+        .table--speaker & {
+          background-color: transparent;
+        }
       }
 
 
@@ -355,6 +364,11 @@
 
         .table--mains & {
           background-color: $c-eclipse;
+        }
+
+
+        .table--speaker & {
+          background-color: rgba($c-white, 0.93);
         }
       }
 
@@ -479,7 +493,8 @@
       &-2,
       &-3,
       &-4,
-      &-5 {
+      &-5,
+      &-6 {
         @include respond(m_m) {
           max-width: 100% !important;
           min-height: 30px;
@@ -579,6 +594,14 @@
           width: calc(231px + 414px);
         }
       }
+      .table--speaker & {
+        @include respond(m) {
+          width: calc(152px + 204px);
+        }
+        @include respond(l) {
+          width: calc(211px + 204px);
+        }
+      }
     }
 
 
@@ -605,6 +628,14 @@
         }
         @include respond(l) {
           width: calc(100% - (231px + 414px));
+        }
+      }
+      .table--speaker & {
+        @include respond(m) {
+          width: calc(100% - (152px + 204px));
+        }
+        @include respond(l) {
+          width: calc(100% - (211px + 204px));
         }
       }
     }
@@ -646,6 +677,21 @@
           padding-left: 33px;
         }
       }
+
+      .table--speaker & {
+        @include respond(m) {
+          max-width: 152px;
+        }
+        @include respond(l) {
+          max-width: 211px;
+        }
+
+        .table__add {
+          @include respond(m_m) {
+            display: none;
+          }
+        }
+      }
     }
 
 
@@ -682,6 +728,12 @@
           max-width: calc(100% - (50px + 131px));
         }
       }
+      .table--speaker & {
+        max-width: 204px;
+        @include respond(m_m) {
+          max-width: 100%;
+        }
+      }
     }
 
 
@@ -699,6 +751,9 @@
       .table--result & {
         max-width: 186px;
       }
+      .table--speaker & {
+        max-width: 168px;
+      }
     }
 
 
@@ -708,6 +763,9 @@
         @include respond(m) {
           max-width: calc(100% - (109px + 185px));
         }
+      }
+      .table--speaker & {
+        max-width: 98px;
       }
     }
 
@@ -720,6 +778,9 @@
       }
       .table--result & {
         max-width: calc(100% - 186px);
+      }
+      .table--speaker & {
+        max-width: 87px;
       }
     }
 
@@ -742,6 +803,23 @@
           max-width: 50px !important;
         }
       }
+
+      .table--speaker & {
+        .table__add {
+          @include respond(m) {
+            display: none;
+          }
+        }
+      }
+      .table--speaker & {
+        max-width: 100px;
+      }
+    }
+
+    &-6 {
+      .table--speaker & {
+        max-width: 68px;
+      }
     }
   }
 
@@ -762,6 +840,11 @@
   }
   &__add {
     display: flex;
+
+
+    .table--speaker .table__col-0 & {
+      margin-left: 20px;
+    }
 
 
     i {
