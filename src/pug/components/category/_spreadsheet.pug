@@ -35,25 +35,6 @@ section#spreadsheet.spreadsheet
 
         .spreadsheet__block-middle
           .table.table--speaker
-            .table__header
-              .table__row.table__row-0
-                .table__row-head
-                  .table__col.table__col-0
-                    p!= "Timely"
-                  .table__col.table__col-1
-                    p!= "Name"
-                .table__row-body
-                  .table__col.table__col-2
-                    p!= "Speaker"
-                  .table__col.table__col-3
-                    p!= "Category"
-                  .table__col.table__col-4
-                    p!= "Length"
-                  .table__col.table__col-6
-                    p!= "Date"
-                  .table__col.table__col-5
-                    p!= "Action"
-
             .table__body
               -for(var i = 0; i < 20; i++)
                 .table__row(class!= "table__row-" + i)

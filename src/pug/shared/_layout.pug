@@ -9,13 +9,15 @@ html(lang="en")
   body(
     data-file!= dataPageName
   )
-    block header
-      include ../components/_header
+    if(bodyClassName !== "player")
+      block header
+        include ../components/_header
 
-      #barba-wrapper
-        .barba-container
-          block content
+    #barba-wrapper
+      .barba-container
+        block content
 
+    if(bodyClassName !== "player")
       block footer
         include ../components/_footer
 

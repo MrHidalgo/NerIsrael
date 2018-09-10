@@ -201,7 +201,8 @@
     &--playlist,
     &--result,
     &--mains,
-    &--speaker {
+    &--speaker,
+    &--player {
       max-width: 100%;
       margin-left: 0;
       margin-right: 0;
@@ -217,7 +218,8 @@
     &--individual,
     &--playlist,
     &--result,
-    &--speaker {
+    &--speaker,
+    &--player {
       max-width: 100%;
     }
   }
@@ -227,7 +229,8 @@
   &--playlist,
   &--result,
   &--mains,
-  &--speaker {
+  &--speaker,
+  &--player {
     border-radius: 0;
     box-shadow: none;
   }
@@ -326,7 +329,8 @@
         }
 
 
-        .table--mains & {
+        .table--mains &,
+        .table--player & {
           background-color: $c-charcoal;
         }
 
@@ -362,7 +366,8 @@
         }
 
 
-        .table--mains & {
+        .table--mains &,
+        .table--player & {
           background-color: $c-eclipse;
         }
 
@@ -512,7 +517,8 @@
           @include transition(color);
 
 
-          .table--mains & {
+          .table--mains &,
+          .table--player & {
             color: rgba($c-white, 0.75);
           }
 
@@ -523,7 +529,8 @@
             @include transition(color);
 
 
-            .table--mains & {
+            .table--mains &,
+            .table--player & {
               color: $c-white;
             }
           }
@@ -602,6 +609,14 @@
           width: calc(211px + 204px);
         }
       }
+      .table--player & {
+        @include respond(m) {
+          width: calc(91px + 228px);
+        }
+        @include respond(l) {
+          width: calc(131px + 228px);
+        }
+      }
     }
 
 
@@ -636,6 +651,14 @@
         }
         @include respond(l) {
           width: calc(100% - (211px + 204px));
+        }
+      }
+      .table--player & {
+        @include respond(m) {
+          width: calc(100% - (91px + 228px));
+        }
+        @include respond(l) {
+          width: calc(100% - (131px + 228px));
         }
       }
     }
@@ -677,7 +700,6 @@
           padding-left: 33px;
         }
       }
-
       .table--speaker & {
         @include respond(m) {
           max-width: 152px;
@@ -733,6 +755,9 @@
         @include respond(m_m) {
           max-width: 100%;
         }
+      }
+      .table--player & {
+        max-width: 228px;
       }
     }
 

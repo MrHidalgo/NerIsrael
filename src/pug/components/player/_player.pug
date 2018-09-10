@@ -1,0 +1,96 @@
+// PLAYER :: START
+
+section#player.player
+  .c-grid
+    .player__wrapper
+
+      .player__info
+        .player__info-left
+          .player__info-ava
+            img(
+              src="./img/img-ava-1__featured.png"
+              srcset="./img/img-ava-1__featured@2x.png 2x"
+              title=""
+              alt=""
+              objectFit-js
+            )
+
+          .player__info-data
+            p.player__info-title!= "Difference Between Noach and Avraham"
+            p.player__info-name!= "Rabbi Aaron Feldman"
+
+            .player__info-btn--wrap
+              a.player__info-btn.player__info-btn--add(href="#" title="" class="")
+                i
+              a.player__info-btn.player__info-btn--download(href="#" title="" class="")
+                i
+              a.player__info-btn.player__info-btn--send(href="#" title="" class="")
+                i
+              a.player__info-btn.player__info-btn--share(href="#" title="" class="")
+                i
+
+        .player__info-right
+          p!= "<span>Language:</span> English"
+          p!= "<span>Length:</span> 13 min"
+          p!= "<span>Date Recorded:</span> 12/21/2018"
+          p!= "<span>Category:</span> Lech Lecha"
+          p!= "<span>Audio Quality:</span> Analog/Cassette"
+          p!= "<span>Statistics:</span> 100 Plays | 32 Downloads"
+
+
+      .player__control
+        .player__control-btn--wrap
+          a.player__control-btn(href="#" title="" class="")
+            i
+          a.player__control-btn(href="#" title="" class="")
+            i
+          a.player__control-btn(href="#" title="" class="")
+            i
+
+        .player__control-progress
+          a(href="#" title="" class="")
+          a(href="#" title="" class="")
+
+        a.player__control-sound(href="#" title="" class="")
+          i
+          div
+            span
+            span
+
+
+      .player__table
+        .player__table-head
+          .player__table-head--left
+            a.is-active(href="#" title="" class="")!= "More from this"
+
+          .player__table-head--right
+            a.is-active(href="#" title="" class="")!= "Category"
+            a(href="#" title="" class="")!= "Speaker"
+            a(href="#" title="" class="")!= "Series"
+
+        .player__table-body
+          .table(class="table--player")
+            .table__body
+              -for(var i = 0; i < 5; i++)
+                .table__row(class="table__row-" + i)
+                  .table__row-head(table-head-js class!= (i === 0) ? "is-open" : "" )
+                    .table__col.table__col-0
+                      a.table__play(href="#" title="" class="")
+                        i
+                      a.table__add.table__add--white(href="#" title="" class="")
+                        i
+                    .table__col.table__col-1
+                      p
+                        a(href="#" title!="" class!="")!= "Protecting Intellectual Property In Jewish Law (2017 - 02 - 15) (B)"
+                  .table__row-body(talbe-body-js class!= (i === 0) ? "is-show" : "" )
+                    .table__col.table__col-2
+                      span!= "Speaker"
+                      p
+                        a(href="#" title!="" class!="")!= "Rabbi Aron Feldman"
+                    .table__col.table__col-3
+                      span!= "Category"
+                      p
+                        a(href="#" title!="" class!="")!= "Halacha"
+
+
+// PLAYER :: END
