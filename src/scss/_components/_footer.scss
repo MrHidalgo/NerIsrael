@@ -3,6 +3,10 @@
 .footer {
   min-height: 176px;
 
+  [data-file="players"] & {
+    display: none;
+  }
+
 
   &__bar {
     height: 8px;

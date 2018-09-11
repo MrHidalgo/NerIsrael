@@ -16,21 +16,125 @@
     <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
     <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script><![endif]-->
   </head>
-  <body data-file="player">
+  <body data-file="players">
+    <!-- HEADER :: START-->
+    <header class="header" id="header">
+      <div class="c-grid">
+        <div class="header__wrapper">
+          <div class="header__left">
+            <!-- LOGOTYPE :: START-->
+            <div class="logo"><a class="logo__link" href="/" title=""><img class="logo__img logo__img--desktop" src="./img/img-logotype.png" srcset="./img/img-logotype@2x.png 2x" title="" alt=""><img class="logo__img logo__img--mobile" src="./img/img-logotype--mobile.png" srcset="./img/img-logotype--mobile@2x.png 2x" title="" alt=""></a></div>
+            <!-- LOGOTYPE :: END-->
+          </div>
+          <div class="header__middle">
+            <div class="header__top"><a class="button button__speakers button--primary" href="speakerList.html" title="" role="button">All Speakers</a>
+              <!-- SEARCH :: START-->
+              <div class="search" search-wrap-js>
+                <form class="search__form" action="" method="" autocomplete="off">
+                  <div class="search__field">
+                    <input class="search__input" type="text" name="search" id="" placeholder="Search">
+                    <label class="search__label" search-keyboard-js><i class="search__label-icon"></i></label>
+                  </div>
+                  <div class="search__field">
+                    <button class="search__btn" type="button"><i class="search__btn-icon"></i></button>
+                  </div>
+                  <div class="search__keyboard">
+                    <div class="search__keyboard-top">
+                      <ul class="search__keyboard-list search__keyboard-list--0">
+                        <li><a href="#" title=""><span>י</span></a></li>
+                        <li><a href="#" title=""><span>ט</span></a></li>
+                        <li><a href="#" title=""><span>ח</span></a></li>
+                        <li><a href="#" title=""><span>ז</span></a></li>
+                        <li><a href="#" title=""><span>ו</span></a></li>
+                        <li><a href="#" title=""><span>ה</span></a></li>
+                        <li><a href="#" title=""><span>ד</span></a></li>
+                        <li><a href="#" title=""><span>ג</span></a></li>
+                        <li><a href="#" title=""><span>ב</span></a></li>
+                        <li><a href="#" title=""><span>א</span></a></li>
+                      </ul>
+                      <ul class="search__keyboard-list search__keyboard-list--1">
+                        <li><a href="#" title=""><span>ע</span></a></li>
+                        <li><a href="#" title=""><span>ס</span></a></li>
+                        <li><a href="#" title=""><span>ן</span></a></li>
+                        <li><a href="#" title=""><span>נ</span></a></li>
+                        <li><a href="#" title=""><span>ם</span></a></li>
+                        <li><a href="#" title=""><span>מ</span></a></li>
+                        <li><a href="#" title=""><span>ל</span></a></li>
+                        <li><a href="#" title=""><span>ך</span></a></li>
+                        <li><a href="#" title=""><span>כ</span></a></li>
+                      </ul>
+                      <ul class="search__keyboard-list search__keyboard-list--2">
+                        <li><a href="#" title=""><span>ת</span></a></li>
+                        <li><a href="#" title=""><span>ש</span></a></li>
+                        <li><a href="#" title=""><span>ר</span></a></li>
+                        <li><a href="#" title=""><span>ק</span></a></li>
+                        <li><a href="#" title=""><span>ץ</span></a></li>
+                        <li><a href="#" title=""><span>צ</span></a></li>
+                        <li><a href="#" title=""><span>ף</span></a></li>
+                        <li><a href="#" title=""><span>פ</span></a></li>
+                      </ul>
+                    </div>
+                    <div class="search__keyboard-bottom"><a class="search__keyboard-clean" href="#" title=""><i></i></a><a class="search__keyboard-space" href="#" title=""><i></i></a><a class="search__keyboard-enter" href="#" title="">Enter</a></div>
+                  </div>
+                </form>
+              </div>
+              <!-- SEARCH :: END--><a class="button button__donate button--primary" href="#" title="" role="button">Donate</a>
+            </div>
+            <div class="header__bottom">
+              <!-- NAV :: START-->
+              <nav class="nav">
+                <ul class="nav__list">
+                  <li class="nav__item is-active" menu-item-js><a class="nav__link" href="#" title="">Gemara</a></li>
+                  <li class="nav__item" menu-item-js><a class="nav__link" href="#" title="">Halacha</a></li>
+                  <li class="nav__item" menu-item-js><a class="nav__link" href="#" title="">Moadim</a></li>
+                  <li class="nav__item" menu-item-js><a class="nav__link" href="#" title="">Parsha/Nach</a></li>
+                  <li class="nav__item" menu-item-js><a class="nav__link" href="#" title="">Machshava/Hashkafa</a></li>
+                  <li class="nav__item" menu-item-js><a class="nav__link" href="#" title="">Occasions</a></li>
+                </ul>
+              </nav>
+              <!-- NAV :: END-->
+              <div class="header__bottom--mobile"><a class="button button__playlist button--primary" href="myPlaylist.html" title="" role="button">My Playlists</a>
+                <!-- SUB LOGOTYPE :: START-->
+                <div class="logo"><a class="logo__link" href="#" title=""><img class="logo__img" src="./img/img-sublogotype.png" srcset="./img/img-sublogotype@2x.png 2x" title="" alt=""></a></div>
+                <!-- SUB LOGOTYPE :: END-->
+              </div>
+            </div>
+            <div class="header__middle-wrap"></div>
+          </div>
+          <div class="header__right">
+            <!-- SUB LOGOTYPE :: START-->
+            <div class="logo"><a class="logo__link" href="#" title=""><img class="logo__img" src="./img/img-sublogotype.png" srcset="./img/img-sublogotype@2x.png 2x" title="" alt=""></a></div>
+            <!-- SUB LOGOTYPE :: END-->
+          </div>
+          <div class="header__mobile">
+            <!-- HAMBURGER :: START-->
+            <div class="hamburger hamburger--squeeze" hamburger-btn-js>
+              <div class="hamburger-box">
+                <div class="hamburger-inner"></div>
+              </div>
+            </div>
+            <!-- HAMBURGER :: END-->
+          </div>
+        </div>
+      </div>
+    </header>
+    <!-- HEADER :: END-->
     <div id="barba-wrapper">
       <div class="barba-container">
-        <div class="player">
+        <div class="players">
           <!-- PLAYER :: START-->
           <section class="player" id="player">
             <div class="c-grid">
               <div class="player__wrapper">
                 <div class="player__info">
                   <div class="player__info-left">
+                    <p class="player__info-title player__info-title--mobile">Difference Between Noach and Avraham</p>
                     <div class="player__info-ava"><img src="./img/img-ava-1__featured.png" srcset="./img/img-ava-1__featured@2x.png 2x" title="" alt="" objectFit-js></div>
                     <div class="player__info-data">
-                      <p class="player__info-title">Difference Between Noach and Avraham</p>
+                      <p class="player__info-title player__info-title--desktop">Difference Between Noach and Avraham</p>
                       <p class="player__info-name">Rabbi Aaron Feldman</p>
-                      <div class="player__info-btn--wrap"><a class="player__info-btn player__info-btn--add" href="#" title=""><i></i></a><a class="player__info-btn player__info-btn--download" href="#" title=""><i></i></a><a class="player__info-btn player__info-btn--send" href="#" title=""><i></i></a><a class="player__info-btn player__info-btn--share" href="#" title=""><i></i></a></div>
+                      <p class="player__info--data">12/21/2018</p>
+                      <div class="player__info-btn--wrap player__info-btn--wrap--desktop"><a class="player__info-btn player__info-btn--add" href="#" title=""><i></i></a><a class="player__info-btn player__info-btn--download" href="#" title=""><i></i></a><a class="player__info-btn player__info-btn--send" href="#" title=""><i></i></a><a class="player__info-btn player__info-btn--share" href="#" title=""><i></i></a></div>
                     </div>
                   </div>
                   <div class="player__info-right">
@@ -47,6 +151,9 @@
                   <div class="player__control-progress"><a href="#" title=""></a><a href="#" title=""></a></div><a class="player__control-sound" href="#" title=""><i></i>
                     <div><span></span><span></span></div></a>
                 </div>
+                <div class="player__info-btn--wrap player__info-btn--wrap--mobile"><a class="player__info-btn player__info-btn--add" href="#" title=""><i></i></a><a class="player__info-btn player__info-btn--download" href="#" title=""><i></i></a><a class="player__info-btn player__info-btn--send" href="#" title=""><i></i></a><a class="player__info-btn player__info-btn--share" href="#" title=""><i></i></a></div>
+                <p class="player__details player__details-0">Lech Lecha <span></span> English <span></span> Cassette</p>
+                <p class="player__details player__details-1">100 Plays <span></span> 32 Downloads</p>
                 <div class="player__table">
                   <div class="player__table-head">
                     <div class="player__table-head--left"><a class="is-active" href="#" title="">More from this</a></div>
@@ -59,7 +166,7 @@
                           <div class="table__row-head is-open" table-head-js>
                             <div class="table__col table__col-0"><a class="table__play" href="#" title=""><i></i></a><a class="table__add table__add--white" href="#" title=""><i></i></a></div>
                             <div class="table__col table__col-1">
-                              <p><a href="#" title="">Protecting Intellectual Property In Jewish Law (2017 - 02 - 15) (B)</a></p>
+                              <p><a href="#" title="">Protecting Intellectual Property In Jewish Law (2017 - 02 - 15) (B)</a></p><a class="table__col-arr" href="#" title=""><i></i></a>
                             </div>
                           </div>
                           <div class="table__row-body is-show" talbe-body-js>
@@ -75,7 +182,7 @@
                           <div class="table__row-head" table-head-js>
                             <div class="table__col table__col-0"><a class="table__play" href="#" title=""><i></i></a><a class="table__add table__add--white" href="#" title=""><i></i></a></div>
                             <div class="table__col table__col-1">
-                              <p><a href="#" title="">Protecting Intellectual Property In Jewish Law (2017 - 02 - 15) (B)</a></p>
+                              <p><a href="#" title="">Protecting Intellectual Property In Jewish Law (2017 - 02 - 15) (B)</a></p><a class="table__col-arr" href="#" title=""><i></i></a>
                             </div>
                           </div>
                           <div class="table__row-body" talbe-body-js>
@@ -91,7 +198,7 @@
                           <div class="table__row-head" table-head-js>
                             <div class="table__col table__col-0"><a class="table__play" href="#" title=""><i></i></a><a class="table__add table__add--white" href="#" title=""><i></i></a></div>
                             <div class="table__col table__col-1">
-                              <p><a href="#" title="">Protecting Intellectual Property In Jewish Law (2017 - 02 - 15) (B)</a></p>
+                              <p><a href="#" title="">Protecting Intellectual Property In Jewish Law (2017 - 02 - 15) (B)</a></p><a class="table__col-arr" href="#" title=""><i></i></a>
                             </div>
                           </div>
                           <div class="table__row-body" talbe-body-js>
@@ -107,7 +214,7 @@
                           <div class="table__row-head" table-head-js>
                             <div class="table__col table__col-0"><a class="table__play" href="#" title=""><i></i></a><a class="table__add table__add--white" href="#" title=""><i></i></a></div>
                             <div class="table__col table__col-1">
-                              <p><a href="#" title="">Protecting Intellectual Property In Jewish Law (2017 - 02 - 15) (B)</a></p>
+                              <p><a href="#" title="">Protecting Intellectual Property In Jewish Law (2017 - 02 - 15) (B)</a></p><a class="table__col-arr" href="#" title=""><i></i></a>
                             </div>
                           </div>
                           <div class="table__row-body" talbe-body-js>
@@ -123,7 +230,7 @@
                           <div class="table__row-head" table-head-js>
                             <div class="table__col table__col-0"><a class="table__play" href="#" title=""><i></i></a><a class="table__add table__add--white" href="#" title=""><i></i></a></div>
                             <div class="table__col table__col-1">
-                              <p><a href="#" title="">Protecting Intellectual Property In Jewish Law (2017 - 02 - 15) (B)</a></p>
+                              <p><a href="#" title="">Protecting Intellectual Property In Jewish Law (2017 - 02 - 15) (B)</a></p><a class="table__col-arr" href="#" title=""><i></i></a>
                             </div>
                           </div>
                           <div class="table__row-body" talbe-body-js>
@@ -146,6 +253,44 @@
         </div>
       </div>
     </div>
+    <!-- FOOTER :: START-->
+    <footer class="footer" id="footer">
+      <div class="c-grid">
+        <div class="footer__bar"></div>
+        <div class="footer__wrapper">
+          <div class="footer__left col-3 col-md-3">
+            <p class="footer__title">site map</p>
+            <div class="footer__menu">
+              <ul class="footer__menu-list">
+                <li class="footer__menu-item"><a class="footer__menu-link" href="#" title="">Speakers</a></li>
+                <li class="footer__menu-item"><a class="footer__menu-link" href="#" title="">Donate</a></li>
+              </ul>
+            </div>
+          </div>
+          <div class="footer__middle col-9 col-md-4">
+            <p class="footer__title">contact us</p>
+            <p class="footer__text">If you are in the market for a computer, there are a number of factors to consider. Will it be used for your home, your office or perhaps even your home office combo? First off, you will need to set a budget for your new purchase before deciding whether to shop for notebook...</p>
+          </div>
+          <div class="footer__right col-12 col-md-5">
+            <form class="footer__form" action="" method="" autocomplete="off">
+              <div class="footer__form-field">
+                <input type="text" name="name" placeholder="Name">
+              </div>
+              <div class="footer__form-field">
+                <input type="text" name="email" placeholder="E-mail">
+              </div>
+              <div class="footer__form-field">
+                <input type="text" name="text" placeholder="Put your text here">
+              </div>
+              <div class="footer__form-field">
+                <button class="footer__form-btn" type="submit">Send</button>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <!-- FOOTER :: END-->
   </body>
   <!-- SCRIPT :: START-->
   <script src="js/vendor.js"></script>

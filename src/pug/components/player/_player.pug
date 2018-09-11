@@ -6,6 +6,8 @@ section#player.player
 
       .player__info
         .player__info-left
+          p.player__info-title.player__info-title--mobile!= "Difference Between Noach and Avraham"
+
           .player__info-ava
             img(
               src="./img/img-ava-1__featured.png"
@@ -16,10 +18,11 @@ section#player.player
             )
 
           .player__info-data
-            p.player__info-title!= "Difference Between Noach and Avraham"
+            p.player__info-title.player__info-title--desktop!= "Difference Between Noach and Avraham"
             p.player__info-name!= "Rabbi Aaron Feldman"
+            p.player__info--data!= "12/21/2018"
 
-            .player__info-btn--wrap
+            .player__info-btn--wrap.player__info-btn--wrap--desktop
               a.player__info-btn.player__info-btn--add(href="#" title="" class="")
                 i
               a.player__info-btn.player__info-btn--download(href="#" title="" class="")
@@ -57,6 +60,19 @@ section#player.player
             span
             span
 
+      .player__info-btn--wrap.player__info-btn--wrap--mobile
+        a.player__info-btn.player__info-btn--add(href="#" title="" class="")
+          i
+        a.player__info-btn.player__info-btn--download(href="#" title="" class="")
+          i
+        a.player__info-btn.player__info-btn--send(href="#" title="" class="")
+          i
+        a.player__info-btn.player__info-btn--share(href="#" title="" class="")
+          i
+
+      p.player__details.player__details-0!= "Lech Lecha <span></span> English <span></span> Cassette"
+      p.player__details.player__details-1!= "100 Plays <span></span> 32 Downloads"
+
 
       .player__table
         .player__table-head
@@ -82,6 +98,8 @@ section#player.player
                     .table__col.table__col-1
                       p
                         a(href="#" title!="" class!="")!= "Protecting Intellectual Property In Jewish Law (2017 - 02 - 15) (B)"
+                      a.table__col-arr(href="#" title!="" class!="")
+                        i
                   .table__row-body(talbe-body-js class!= (i === 0) ? "is-show" : "" )
                     .table__col.table__col-2
                       span!= "Speaker"

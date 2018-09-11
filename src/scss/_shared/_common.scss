@@ -408,6 +408,10 @@
           @include respond(m_m) {
             display: block;
             font-size: 12px;
+
+            .table--player & {
+              color: rgba($c-white, 0.93);
+            }
           }
         }
         @include respond(m_m) {
@@ -758,6 +762,9 @@
       }
       .table--player & {
         max-width: 228px;
+        @include respond(m_m) {
+          max-width: 100%;
+        }
       }
     }
 

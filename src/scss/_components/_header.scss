@@ -1,6 +1,13 @@
 // HEADER :: START
 
 .header {
+
+  [data-file="players"] & {
+    @include respond(m) {
+      display: none;
+    }
+  }
+
   &__wrapper {
     z-index: 1;
     position: relative;
