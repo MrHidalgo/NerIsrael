@@ -382,6 +382,13 @@
         @include respond(m_m) {
           cursor: pointer;
           min-height: 62px;
+
+          .table--speaker & {
+            @include respond(m_s) {
+              padding-top: 10px;
+              padding-bottom: 10px;
+            }
+          }
         }
 
         &.is-open {
@@ -443,6 +450,11 @@
 
       &-1 {
         position: relative;
+
+
+        p {
+          font-weight: 600;
+        }
 
 
         .table__col-arr {
@@ -509,11 +521,21 @@
           min-height: 30px;
           text-align: left !important;
         }
+
+        p {
+          font-weight: 500;
+        }
       }
 
 
       p {
         font-size: 12px;
+
+
+        br {
+          display: none;
+        }
+
 
 
         a {
@@ -701,15 +723,18 @@
       .table--mains & {
         @include respond(s) {
           max-width: 131px;
-          padding-left: 33px;
+          padding-left: 23px;
         }
       }
       .table--speaker & {
+        @include respond(es) {
+          max-width: 111px;
+        }
         @include respond(m) {
           max-width: 152px;
         }
         @include respond(l) {
-          max-width: 211px;
+          max-width: 171px;
         }
 
         .table__add {
@@ -755,7 +780,7 @@
         }
       }
       .table--speaker & {
-        max-width: 204px;
+        max-width: 244px;
         @include respond(m_m) {
           max-width: 100%;
         }
@@ -785,6 +810,9 @@
       }
       .table--speaker & {
         max-width: 168px;
+        @include respond(m_s) {
+          margin-top: 10px;
+        }
       }
     }
 

@@ -35,7 +35,7 @@
       p {
         white-space: nowrap;
         padding-right: 14px;
-        font-size: 12px;
+        font-size: 14px;
         font-weight: bold;
         @include respond(m_l) {
           width: 100%;
@@ -55,17 +55,16 @@
 
   &__select {
     margin-right: 10px;
-    margin-bottom: 10px;
-    @include respond(m_l) {
-      margin-right: 0;
-    }
     @include respond(m_s) {
       width: 100%;
+      margin-bottom: 10px;
     }
 
     &:last-child {
       margin-right: 0;
-      margin-bottom: 0;
+      @include respond(m_s) {
+        margin-bottom: 0;
+      }
     }
 
     &-wrap {

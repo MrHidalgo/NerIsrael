@@ -52,13 +52,15 @@
 
 
     &-body {
-      overflow-y: auto;
-      max-height: 153px;
+      overflow-y: scroll;
       padding-left: 22px;
       padding-right: 22px;
       @include respond(m_m) {
         padding-left: 15px;
         padding-right: 15px;
+      }
+      @include respond(m) {
+        max-height: 169px;
       }
     }
 
@@ -142,7 +144,7 @@
 
       p {
         color: $c-white;
-        font-size: 12px;
+        font-size: 14px;
         font-weight: bold;
       }
     }
@@ -152,7 +154,7 @@
       overflow-y: auto;
       z-index: 2;
       position: relative;
-      max-height: (344px - 50px);
+      //max-height: (344px - 50px);
     }
   }
 }
