@@ -454,6 +454,16 @@
 
         p {
           font-weight: 600;
+
+          a {
+            .table--speaker & {
+              color: rgba(#061437, 0.93);
+
+              &:hover {
+                color: #515151;
+              }
+            }
+          }
         }
 
 
