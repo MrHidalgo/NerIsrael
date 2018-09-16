@@ -6174,6 +6174,7 @@ input[type="text"] {
 @media screen and (max-width: 767px) {
   
   .mains__user-body {
+    overflow: auto;
     padding-left: 15px;
     padding-right: 15px;
   }
