@@ -37,6 +37,7 @@
       @include respond(m_m) {
         padding-left: 15px;
         padding-right: 15px;
+        padding-bottom: 20px;
       }
 
 
@@ -56,6 +57,7 @@
         color: $c-matterhorn;
         font-size: 12px;
         font-weight: 500;
+        @include transition(background-color, color);
         @include respond(m_el) {
           max-width: calc((100% / 3) - 10px);
           margin-left: 5px;
@@ -77,6 +79,25 @@
           max-width: 100%;
           margin-left: 0 !important;
           margin-right: 0 !important;
+        }
+
+        &:hover {
+          background-color: $c-darkCerulean;
+          color: $c-white;
+          @include transition(background-color, color);
+        }
+
+        &.is-hide-mobile {
+          @include respond(m_m) {
+            display: none;
+
+            &.is-show {
+              display: flex;
+              animation-fill-mode: both;
+              animation-duration: 1s;
+              animation-name: fadeIn;
+            }
+          }
         }
       }
     }
@@ -100,7 +121,40 @@
         width: 37px;
         height: 5px;
         background-color: $c-putty;
+
+        .categoryB & {
+          display: none;
+        }
       }
+    }
+  }
+
+  &__more {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    padding-bottom: 15px;
+    color: $c-matterhorn;
+    @include respond(m) {
+      display: none;
+    }
+
+    &.is-active {
+      i {
+        transform: rotate(-180deg) translateY(35px);
+        @include transition(transform);
+      }
+    }
+
+    span {
+      padding-bottom: 5px;
+      text-transform: uppercase;
+      font-size: 12px;
+    }
+
+    i {
+      @include retina-sprite($sp-arrow-group);
+      @include transition(transform);
     }
   }
 }

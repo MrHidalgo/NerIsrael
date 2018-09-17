@@ -7,29 +7,47 @@ section#mainc.mainc
 
       .mainc__block
         .mainc__block-head
-          a(
+          if(bodyClassName === "categoryB")
+            a(
             href="#"
             title=""
             class="mainc__block-link"
-          )!= "Machshava/Hashkafa"
+            )!= "Emunah"
+          else
+            a(
+              href="#"
+              title=""
+              class="mainc__block-link"
+            )!= "Machshava/Hashkafa"
 
         .mainc__block-body(maincBlock-body-js)
 
-          a(href="#" title="" class="")!= "Questions and Answers"
-          a(href="#" title="" class="")!= "Limud HaTorah"
-          a(href="#" title="" class="")!= "Life and Mourning"
-          a(href="#" title="" class="")!= "Philosophy"
-          a(href="#" title="" class="")!= "Emunah"
-          a(href="#" title="" class="")!= "Middos"
-          a(href="#" title="" class="")!= "Bitachon"
-          a(href="#" title="" class="")!= "Da Ma Shetashiv"
-          a(href="#" title="" class="")!= "Chizuk"
-          a(href="#" title="" class="")!= "Nisyonos"
-          a(href="#" title="" class="")!= "Mysticism"
-          a(href="#" title="" class="")!= "Moshiach"
-          a(href="#" title="" class="")!= "Kiruv"
-          a(href="#" title="" class="")!= "Chassidus"
-          a(href="#" title="" class="")!= "Religion"
+          if(bodyClassName === "categoryB")
+            a(href="#" title="" class="")!= "Return to Machshava"
+          else
+            a(href="#" title="" class="")!= "Questions and Answers"
+            a(href="#" title="" class="")!= "Limud HaTorah"
+            a(href="#" title="" class="")!= "Life and Mourning"
+            a(href="#" title="" class="")!= "Philosophy"
+            a.is-hide-mobile(href="#" title="" class="")!= "Emunah"
+            a.is-hide-mobile(href="#" title="" class="")!= "Middos"
+            a.is-hide-mobile(href="#" title="" class="")!= "Bitachon"
+            a.is-hide-mobile(href="#" title="" class="")!= "Da Ma Shetashiv"
+            a.is-hide-mobile(href="#" title="" class="")!= "Chizuk"
+            a.is-hide-mobile(href="#" title="" class="")!= "Nisyonos"
+            a.is-hide-mobile(href="#" title="" class="")!= "Mysticism"
+            a.is-hide-mobile(href="#" title="" class="")!= "Moshiach"
+            a.is-hide-mobile(href="#" title="" class="")!= "Kiruv"
+            a.is-hide-mobile(href="#" title="" class="")!= "Chassidus"
+            a.is-hide-mobile(href="#" title="" class="")!= "Religion"
+
+        if(bodyClassName !== "categoryB")
+          a.mainc__more(
+            href="#" title="" class=""
+            maincBlock-btn-js
+          )
+            span!= "SEE MORE"
+            i
 
 
 // MAIN CATEGORY :: END

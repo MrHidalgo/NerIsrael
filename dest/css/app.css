@@ -6372,6 +6372,27 @@ input[type="text"] {
     padding-top: 15px;
     padding-bottom: 10px;
   }
+  
+  .category .spreadsheet__block-top p {
+    width: auto;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  
+  .spreadsheet__block-top p {
+    position: relative;
+  }
+  
+  .spreadsheet__block-top p:after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: 7px;
+    width: 19px;
+    height: 3px;
+    background-color: #cbae6a;
+  }
 }
 
 
@@ -6408,6 +6429,10 @@ input[type="text"] {
   
   .spreadsheet__select {
     margin-bottom: 10px;
+  }
+  
+  .category .spreadsheet__select {
+    margin-top: 15px;
   }
 }
 
@@ -6598,6 +6623,7 @@ input[type="text"] {
   .mainc__block-body {
     padding-left: 15px;
     padding-right: 15px;
+    padding-bottom: 20px;
   }
 }
 
@@ -6626,6 +6652,9 @@ input[type="text"] {
   color: #515151;
   font-size: 12px;
   font-weight: 500;
+  -webkit-transition: background-color 0.3s ease-in-out, color 0.3s ease-in-out;
+  -o-transition: background-color 0.3s ease-in-out, color 0.3s ease-in-out;
+  transition: background-color 0.3s ease-in-out, color 0.3s ease-in-out;
 }
 
 @media screen and (max-width: 1199px) {
@@ -6666,6 +6695,35 @@ input[type="text"] {
 }
 
 
+.mainc__block-body a:hover {
+  background-color: #184478;
+  color: #fff;
+  -webkit-transition: background-color 0.3s ease-in-out, color 0.3s ease-in-out;
+  -o-transition: background-color 0.3s ease-in-out, color 0.3s ease-in-out;
+  transition: background-color 0.3s ease-in-out, color 0.3s ease-in-out;
+}
+
+@media screen and (max-width: 767px) {
+  
+  .mainc__block-body a.is-hide-mobile {
+    display: none;
+  }
+  
+  .mainc__block-body a.is-hide-mobile.is-show {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-animation-fill-mode: both;
+            animation-fill-mode: both;
+    -webkit-animation-duration: 1s;
+            animation-duration: 1s;
+    -webkit-animation-name: fadeIn;
+            animation-name: fadeIn;
+  }
+}
+
+
 .mainc__block-link {
   position: relative;
   display: block;
@@ -6690,6 +6748,78 @@ input[type="text"] {
   width: 37px;
   height: 5px;
   background-color: #cbae6a;
+}
+
+
+.categoryB .mainc__block-link:after {
+  display: none;
+}
+
+
+.mainc__more {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: column;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  padding-bottom: 15px;
+  color: #515151;
+}
+
+@media screen and (min-width: 768px) {
+  
+  .mainc__more {
+    display: none;
+  }
+}
+
+
+.mainc__more.is-active i {
+  -webkit-transform: rotate(-180deg) translateY(35px);
+      -ms-transform: rotate(-180deg) translateY(35px);
+          transform: rotate(-180deg) translateY(35px);
+  -webkit-transition: -webkit-transform 0.3s ease-in-out;
+  transition: -webkit-transform 0.3s ease-in-out;
+  -o-transition: transform 0.3s ease-in-out;
+  transition: transform 0.3s ease-in-out;
+  transition: transform 0.3s ease-in-out, -webkit-transform 0.3s ease-in-out;
+}
+
+
+.mainc__more span {
+  padding-bottom: 5px;
+  text-transform: uppercase;
+  font-size: 12px;
+}
+
+
+.mainc__more i {
+  background-image: url(../img/sprite.png);
+  background-position: -77px -37px;
+  width: 11px;
+  height: 7px;
+  -webkit-transition: -webkit-transform 0.3s ease-in-out;
+  transition: -webkit-transform 0.3s ease-in-out;
+  -o-transition: transform 0.3s ease-in-out;
+  transition: transform 0.3s ease-in-out;
+  transition: transform 0.3s ease-in-out, -webkit-transform 0.3s ease-in-out;
+}
+
+@media (-webkit-min-device-pixel-ratio: 2), (-o-min-device-pixel-ratio: 2/1), (min-resolution: 192dpi) {
+  
+  .mainc__more i {
+    background-image: url(../img/sprite@2x.png);
+    -webkit-background-size: 151px 107px;
+            background-size: 151px 107px;
+  }
 }
 
 

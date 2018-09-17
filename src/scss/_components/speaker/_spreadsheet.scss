@@ -41,6 +41,23 @@
           width: 100%;
           padding-top: 15px;
           padding-bottom: 10px;
+
+          .category & {
+            width: auto;
+          }
+        }
+        @include respond(m_m) {
+          position: relative;
+
+          &:after {
+            content: "";
+            position: absolute;
+            left: 0;
+            bottom: 7px;
+            width: 19px;
+            height: 3px;
+            background-color: $c-putty;
+          }
         }
       }
     }
@@ -61,6 +78,10 @@
     }
     @include respond(m_l) {
       margin-bottom: 10px;
+
+      .category & {
+        margin-top: 15px;
+      }
     }
 
 

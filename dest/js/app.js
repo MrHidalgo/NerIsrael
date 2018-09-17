@@ -310,6 +310,18 @@ $(document).ready(function (ev) {
 
     mainCategoryDataWrap.slideToggle(300);
   });
+  $("[maincBlock-btn-js]").on("click", function (e) {
+    var elem = $(e.currentTarget);
+
+    if (!elem.hasClass("is-active")) {
+      elem.find("span").html("hide more");
+    } else {
+      elem.find("span").html("show more");
+    }
+
+    elem.toggleClass("is-active");
+    $(".is-hide-mobile").toggleClass("is-show");
+  });
 });
 
 /*!
