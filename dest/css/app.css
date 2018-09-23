@@ -1229,6 +1229,10 @@ input[type="text"] {
     max-width: 91px;
     padding-left: 15px;
   }
+  
+  .table--player .table__col-0 {
+    max-width: 106px;
+  }
 }
 
 @media screen and (min-width: 992px) {
@@ -1236,6 +1240,10 @@ input[type="text"] {
   .table__col-0 {
     max-width: 131px;
     padding-left: 33px;
+  }
+  
+  .table--player .table__col-0 {
+    max-width: 131px;
   }
 }
 
@@ -1417,6 +1425,11 @@ input[type="text"] {
 }
 
 
+.table--player .table__col-2 {
+  max-width: 198px;
+}
+
+
 .table__col-3 {
   max-width: 118px;
 }
@@ -1431,6 +1444,11 @@ input[type="text"] {
 
 
 .table--speaker .table__col-3 {
+  max-width: 98px;
+}
+
+
+.table--player .table__col-3 {
   max-width: 98px;
 }
 
@@ -6945,7 +6963,7 @@ input[type="text"] {
   height: calc(100% / 6);
   padding: 5px 19px;
   color: #fff;
-  font-size: 10px;
+  font-size: 12px;
 }
 
 
@@ -7583,7 +7601,6 @@ input[type="text"] {
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
-  margin-right: 20px;
   color: #fff;
   font-size: 12px;
   font-weight: bold;
@@ -7593,6 +7610,20 @@ input[type="text"] {
   
   .player__table-head a {
     margin-right: 5px;
+  }
+}
+
+@media screen and (min-width: 375px) {
+  
+  .player__table-head a {
+    margin-right: 17px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  
+  .player__table-head a {
+    margin-right: 20px;
   }
 }
 

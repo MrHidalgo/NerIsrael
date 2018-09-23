@@ -62,7 +62,7 @@
         height: calc(100% / 6);
         padding: 5px 19px;
         color: #fff;
-        font-size: 10px;
+        font-size: 12px;
 
         &:nth-child(odd) {
 
@@ -425,13 +425,20 @@
         opacity: 0.22;
         position: relative;
         display: flex;
-        margin-right: 20px;
+
         color: $c-white;
         font-size: 12px;
         font-weight: bold;
         @include respond(m_m) {
           margin-right: 5px;
         }
+        @media screen and (min-width: 375px) {
+          margin-right: 17px;
+        }
+        @media screen and (min-width: 768px) {
+          margin-right: 20px;
+        }
+
 
         &:after {
           content: "";

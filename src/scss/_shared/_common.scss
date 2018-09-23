@@ -710,10 +710,18 @@
       @include respond(es) {
         max-width: 91px;
         padding-left: 15px;
+
+        .table--player & {
+          max-width: 106px;
+        }
       }
       @include respond(l) {
         max-width: 131px;
         padding-left: 33px;
+
+        .table--player & {
+          max-width: 131px;
+        }
       }
 
       .table--individual & {
@@ -824,6 +832,9 @@
           margin-top: 10px;
         }
       }
+      .table--player & {
+        max-width: 198px;
+      }
     }
 
 
@@ -835,6 +846,9 @@
         }
       }
       .table--speaker & {
+        max-width: 98px;
+      }
+      .table--player & {
         max-width: 98px;
       }
     }
