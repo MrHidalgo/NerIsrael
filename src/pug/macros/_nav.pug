@@ -32,13 +32,113 @@ nav.nav
   ul.nav__list
     each val, idx in navItem
       li.nav__item(
-        class!= (idx === 0) ? "is-active": ""
         menu-item-js
       )
         a.nav__link(
           href!= navItem[idx].href
           title!= ""
         )!= navItem[idx].name
+
+        .nav__link-drop
+          .nav__link-drop--head
+            p!= navItem[idx].name
+          .nav__link-drop--body
+            ul
+              li
+                h2!= "סדר זרעים"
+              li
+                a(href="#")!= "(4) ברכות "
+
+            ul
+              li
+                h2!= "סדר נשים"
+              li
+                a(href="#")!= "(4) יבמות"
+              li
+                a(href="#")!= "(4) כתובות"
+              li
+                a(href="#")!= "(4) נדרים"
+              li
+                a(href="#")!= "(4) נזיר"
+              li
+                a(href="#")!= "(4) סוטה"
+              li
+                a(href="#")!= "(4) גיטין"
+              li
+                a(href="#")!= "(4) קידושין"
+
+            ul
+              li
+                h2!= "סדר קדשים"
+              li
+                a(href="#")!= "זבחים"
+              li
+                a(href="#")!= "מנחות"
+              li
+                a(href="#")!= "חולין"
+              li
+                a(href="#")!= "בכורות"
+              li
+                a(href="#")!= "ערכין"
+              li
+                a(href="#")!= "תמורה"
+              li
+                a(href="#")!= "כריתות"
+              li
+                a(href="#")!= "מעילה"
+              li
+                a(href="#")!= "תמיד"
+
+            ul
+              li
+                h2!= "סדר מועד"
+              li
+                a(href="#")!= "נדה"
+            ul
+              li
+                h2!= "סדר נזיקין"
+              li
+                a(href="#")!= "בבא קמא"
+              li
+                a(href="#")!= "בבא מציעא"
+              li
+                a(href="#")!= "בבא בתרא"
+              li
+                a(href="#")!= "סנהדרין"
+              li
+                a(href="#")!= "מכות"
+              li
+                a(href="#")!= "שבועות"
+              li
+                a(href="#")!= "עבודה זרה"
+              li
+                a(href="#")!= "הוריות"
+
+            ul
+              li
+                h2!= "סדר טהרות"
+              li
+                a(href="#")!= "שבת"
+              li
+                a(href="#")!= "עירובין"
+              li
+                a(href="#")!= "פסחים"
+              li
+                a(href="#")!= "ראש השנה"
+              li
+                a(href="#")!= "יומא"
+              li
+                a(href="#")!= "סוכה"
+              li
+                a(href="#")!= "ביצה"
+              li
+                a(href="#")!= "תענית"
+              li
+                a(href="#")!= "מגילה"
+              li
+                a(href="#")!= "מועד קטן"
+              li
+                a(href="#")!= "חגיגה"
 
     li.nav__item
       a.nav__btn(

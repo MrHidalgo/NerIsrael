@@ -125,8 +125,25 @@ $(document).ready(function (ev) {
   $("[menu-item-js]").on("click", function (e) {
     var elem = $(e.currentTarget);
 
-    $("[menu-item-js]").removeClass("is-active");
-    elem.addClass("is-active");
+    if (_window.width() < 778) {
+      if (elem.hasClass("is-active")) {
+        console.log('if drop');
+        elem.find(".nav__link-drop").slideUp(300);
+      } else {
+        console.log('else drop');
+        $(".nav__link-drop").hide();
+        elem.find(".nav__link-drop").slideDown(300);
+      }
+    }
+
+    if (elem.hasClass("is-active")) {
+      console.log('if btn');
+      elem.removeClass("is-active");
+    } else {
+      console.log('else btn');
+      $("[menu-item-js]").removeClass("is-active");
+      elem.addClass("is-active");
+    }
   });
 
   /**

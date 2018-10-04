@@ -15,13 +15,52 @@
 
 
   &__item {
+    position: relative;
     @include respond(m_l) {
       width: 100%;
-      height: 40px;
+      min-height: 40px;
     }
     @include respond(m_l) {
       &:last-child {
         display: none;
+      }
+
+      &.is-active {
+        .nav__link {
+          color: $c-black;
+          @include transition(color);
+          @include respond(m_l) {
+            color: $c-white;
+          }
+
+          &:after {
+            background-color: $c-putty;
+            @include transition(background-color);
+          }
+        }
+      }
+    }
+    @include respond(l) {
+      &:hover {
+        .nav__link {
+          color: $c-black;
+          @include transition(color);
+          @include respond(m_l) {
+            color: $c-white;
+          }
+
+          &:after {
+            background-color: $c-putty;
+            @include transition(background-color);
+          }
+        }
+
+        .nav__link-drop {
+          display: block;
+          animation-fill-mode: both;
+          animation-duration: 0.5s;
+          animation-name: fadeIn;
+        }
       }
     }
   }
@@ -37,7 +76,115 @@
       font-size: 14px;
     }
 
-    .is-active & {
+    &-drop {
+      display: none;
+      z-index: 1000;
+      position: absolute;
+      top: 100%;
+      left: -38px;
+      width: 473px;
+      padding-top: 19px;
+      @include respond(m_l) {
+        position: static;
+        width: calc(100% + 30px);
+        margin-left: -15px;
+        margin-top: 15px;
+        margin-bottom: 15px;
+        padding-top: 0;
+        background-color: #4a4a4a;
+      }
+
+      &:before {
+        content: "";
+        position: absolute;
+        top: 0;
+        left: 38px;
+        width: 0;
+        height: 0;
+        border-width: 10px;
+        border-style: solid;
+        border-color: transparent transparent $c-darkCerulean transparent;
+        @include respond(m_l) {
+          display: none;
+        }
+      }
+
+      &--head {
+        position: relative;
+        display: flex;
+        align-items: center;
+        min-height: 58px;
+        padding-left: 33px;
+        border-radius: 4px;
+        background-color: $c-darkCerulean;
+        box-shadow: 0 2px 10px 0 rgba($c-black, 0.27);
+        @include respond(m_l) {
+          display: none;
+        }
+
+        p {
+          color: $c-white;
+          font-size: 25px;
+          font-weight: bold;
+        }
+      }
+
+      &--body {
+        display: flex;
+        align-items: flex-start;
+        flex-wrap: wrap;
+        padding: 22px 50px 48px;
+        border-bottom-left-radius: 4px;
+        border-bottom-right-radius: 4px;
+        background-color: $c-white;
+        box-shadow: 0 2px 10px 0 rgba($c-black, 0.27);
+        @include respond(m_l) {
+          padding: 10px 25px 0;
+          box-shadow: none;
+          border-radius: 0;
+          background-color: transparent;
+        }
+
+        ul {
+          width: calc(100% / 3);
+          padding-bottom: 20px;
+          text-align: right;
+          @include respond(m_l) {
+            width: 100%;
+            padding-bottom: 10px;
+          }
+
+          li {
+            line-height: 1.2;
+          }
+
+          h2 {
+            font-size: 16px;
+            font-weight: bold;
+            @include respond(m_l) {
+              color: #d1cfcf;
+            }
+          }
+
+          a {
+            color: rgba(#303133, 0.36);
+            text-decoration: none;
+            font-size: 12px;
+            @include transition(color);
+            @include respond(m_l) {
+              color: rgba($c-white, 0.36);
+            }
+
+            &:hover {
+              color: rgba(#303133, 1);
+              @include transition(color);
+            }
+          }
+        }
+      }
+    }
+
+    &:hover {
       color: $c-black;
       @include transition(color);
       @include respond(m_l) {
