@@ -3,6 +3,7 @@
 .nav {
   &__list {
     display: flex;
+    align-items: center;
     justify-content: space-between;
     width: 100%;
     height: 24px;
@@ -17,6 +18,11 @@
     @include respond(m_l) {
       width: 100%;
       height: 40px;
+    }
+    @include respond(m_l) {
+      &:last-child {
+        display: none;
+      }
     }
   }
 
@@ -63,6 +69,19 @@
       height: 4px;
       background-color: transparent;
       @include transition(background-color);
+    }
+  }
+
+  &__btn {
+    display: flex;
+    align-items: center;
+    color: $c-darkCerulean;
+    font-size: 12px;
+    font-weight: bold;
+
+    i {
+      @include retina-sprite($sp-my-playlists-group);
+      margin-right: 2px;
     }
   }
 }

@@ -910,7 +910,7 @@ input[type="text"] {
 
 .table__body .table__col-1 .table__col-arr i {
   background-image: url(../img/sprite.png);
-  background-position: -77px -37px;
+  background-position: -32px -123px;
   width: 11px;
   height: 7px;
   -webkit-transition: -webkit-transform 0.3s ease-in-out;
@@ -924,8 +924,8 @@ input[type="text"] {
   
   .table__body .table__col-1 .table__col-arr i {
     background-image: url(../img/sprite@2x.png);
-    -webkit-background-size: 151px 107px;
-            background-size: 151px 107px;
+    -webkit-background-size: 137px 131px;
+            background-size: 137px 131px;
   }
 }
 
@@ -1551,8 +1551,8 @@ input[type="text"] {
   
   .table__play i {
     background-image: url(../img/sprite@2x.png);
-    -webkit-background-size: 151px 107px;
-            background-size: 151px 107px;
+    -webkit-background-size: 137px 131px;
+            background-size: 137px 131px;
   }
 }
 
@@ -1581,8 +1581,8 @@ input[type="text"] {
   
   .table__add i {
     background-image: url(../img/sprite@2x.png);
-    -webkit-background-size: 151px 107px;
-            background-size: 151px 107px;
+    -webkit-background-size: 137px 131px;
+            background-size: 137px 131px;
   }
 }
 
@@ -1594,7 +1594,7 @@ input[type="text"] {
 
 .table__add--white i {
   background-image: url(../img/sprite.png);
-  background-position: 0px -91px;
+  background-position: -23px -91px;
   width: 16px;
   height: 16px;
 }
@@ -1603,8 +1603,8 @@ input[type="text"] {
   
   .table__add--white i {
     background-image: url(../img/sprite@2x.png);
-    -webkit-background-size: 151px 107px;
-            background-size: 151px 107px;
+    -webkit-background-size: 137px 131px;
+            background-size: 137px 131px;
   }
 }
 
@@ -1619,7 +1619,7 @@ input[type="text"] {
 
 .table__download i {
   background-image: url(../img/sprite.png);
-  background-position: -41px -91px;
+  background-position: -44px -91px;
   width: 15px;
   height: 16px;
 }
@@ -1628,8 +1628,8 @@ input[type="text"] {
   
   .table__download i {
     background-image: url(../img/sprite@2x.png);
-    -webkit-background-size: 151px 107px;
-            background-size: 151px 107px;
+    -webkit-background-size: 137px 131px;
+            background-size: 137px 131px;
   }
 }
 
@@ -1657,8 +1657,8 @@ input[type="text"] {
   
   .table__download--big i {
     background-image: url(../img/sprite@2x.png);
-    -webkit-background-size: 151px 107px;
-            background-size: 151px 107px;
+    -webkit-background-size: 137px 131px;
+            background-size: 137px 131px;
   }
 }
 
@@ -1673,7 +1673,7 @@ input[type="text"] {
 
 .table__share i {
   background-image: url(../img/sprite.png);
-  background-position: -21px -91px;
+  background-position: -64px -91px;
   width: 15px;
   height: 16px;
 }
@@ -1682,8 +1682,8 @@ input[type="text"] {
   
   .table__share i {
     background-image: url(../img/sprite@2x.png);
-    -webkit-background-size: 151px 107px;
-            background-size: 151px 107px;
+    -webkit-background-size: 137px 131px;
+            background-size: 137px 131px;
   }
 }
 
@@ -1698,7 +1698,7 @@ input[type="text"] {
 
 .table__send i {
   background-image: url(../img/sprite.png);
-  background-position: -61px -91px;
+  background-position: -84px -91px;
   width: 16px;
   height: 13px;
 }
@@ -1707,8 +1707,8 @@ input[type="text"] {
   
   .table__send i {
     background-image: url(../img/sprite@2x.png);
-    -webkit-background-size: 151px 107px;
-            background-size: 151px 107px;
+    -webkit-background-size: 137px 131px;
+            background-size: 137px 131px;
   }
 }
 
@@ -1891,7 +1891,7 @@ input[type="text"] {
 
 .table__drop ul li:nth-child(1) a i {
   background-image: url(../img/sprite.png);
-  background-position: -41px -91px;
+  background-position: -44px -91px;
   width: 15px;
   height: 16px;
 }
@@ -1900,15 +1900,15 @@ input[type="text"] {
   
   .table__drop ul li:nth-child(1) a i {
     background-image: url(../img/sprite@2x.png);
-    -webkit-background-size: 151px 107px;
-            background-size: 151px 107px;
+    -webkit-background-size: 137px 131px;
+            background-size: 137px 131px;
   }
 }
 
 
 .table__drop ul li:nth-child(2) a i {
   background-image: url(../img/sprite.png);
-  background-position: -21px -91px;
+  background-position: -64px -91px;
   width: 15px;
   height: 16px;
 }
@@ -1917,15 +1917,15 @@ input[type="text"] {
   
   .table__drop ul li:nth-child(2) a i {
     background-image: url(../img/sprite@2x.png);
-    -webkit-background-size: 151px 107px;
-            background-size: 151px 107px;
+    -webkit-background-size: 137px 131px;
+            background-size: 137px 131px;
   }
 }
 
 
 .table__drop ul li:nth-child(3) a i {
   background-image: url(../img/sprite.png);
-  background-position: -61px -91px;
+  background-position: -84px -91px;
   width: 16px;
   height: 13px;
 }
@@ -1934,8 +1934,8 @@ input[type="text"] {
   
   .table__drop ul li:nth-child(3) a i {
     background-image: url(../img/sprite@2x.png);
-    -webkit-background-size: 151px 107px;
-            background-size: 151px 107px;
+    -webkit-background-size: 137px 131px;
+            background-size: 137px 131px;
   }
 }
 
@@ -2400,15 +2400,15 @@ input[type="text"] {
   
   .swiper-slide-drop ul li:nth-child(1) a i {
     background-image: url(../img/sprite@2x.png);
-    -webkit-background-size: 151px 107px;
-            background-size: 151px 107px;
+    -webkit-background-size: 137px 131px;
+            background-size: 137px 131px;
   }
 }
 
 
 .swiper-slide-drop ul li:nth-child(2) a i {
   background-image: url(../img/sprite.png);
-  background-position: -41px -91px;
+  background-position: -44px -91px;
   width: 15px;
   height: 16px;
 }
@@ -2417,15 +2417,15 @@ input[type="text"] {
   
   .swiper-slide-drop ul li:nth-child(2) a i {
     background-image: url(../img/sprite@2x.png);
-    -webkit-background-size: 151px 107px;
-            background-size: 151px 107px;
+    -webkit-background-size: 137px 131px;
+            background-size: 137px 131px;
   }
 }
 
 
 .swiper-slide-drop ul li:nth-child(3) a i {
   background-image: url(../img/sprite.png);
-  background-position: -21px -91px;
+  background-position: -64px -91px;
   width: 15px;
   height: 16px;
 }
@@ -2434,15 +2434,15 @@ input[type="text"] {
   
   .swiper-slide-drop ul li:nth-child(3) a i {
     background-image: url(../img/sprite@2x.png);
-    -webkit-background-size: 151px 107px;
-            background-size: 151px 107px;
+    -webkit-background-size: 137px 131px;
+            background-size: 137px 131px;
   }
 }
 
 
 .swiper-slide-drop ul li:nth-child(4) a i {
   background-image: url(../img/sprite.png);
-  background-position: -61px -91px;
+  background-position: -84px -91px;
   width: 16px;
   height: 13px;
 }
@@ -2451,8 +2451,8 @@ input[type="text"] {
   
   .swiper-slide-drop ul li:nth-child(4) a i {
     background-image: url(../img/sprite@2x.png);
-    -webkit-background-size: 151px 107px;
-            background-size: 151px 107px;
+    -webkit-background-size: 137px 131px;
+            background-size: 137px 131px;
   }
 }
 
@@ -2566,8 +2566,8 @@ input[type="text"] {
   
   .swiper-slide-play i {
     background-image: url(../img/sprite@2x.png);
-    -webkit-background-size: 151px 107px;
-            background-size: 151px 107px;
+    -webkit-background-size: 137px 131px;
+            background-size: 137px 131px;
   }
 }
 
@@ -2654,8 +2654,8 @@ input[type="text"] {
   
   .swiper-button-next i {
     background-image: url(../img/sprite@2x.png);
-    -webkit-background-size: 151px 107px;
-            background-size: 151px 107px;
+    -webkit-background-size: 137px 131px;
+            background-size: 137px 131px;
   }
 }
 
@@ -2676,8 +2676,8 @@ input[type="text"] {
   
   .swiper-button-prev i {
     background-image: url(../img/sprite@2x.png);
-    -webkit-background-size: 151px 107px;
-            background-size: 151px 107px;
+    -webkit-background-size: 137px 131px;
+            background-size: 137px 131px;
   }
 }
 
@@ -2713,6 +2713,10 @@ input[type="text"] {
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
   -webkit-box-pack: justify;
   -webkit-justify-content: space-between;
       -ms-flex-pack: justify;
@@ -2736,6 +2740,13 @@ input[type="text"] {
   .nav__item {
     width: 100%;
     height: 40px;
+  }
+}
+
+@media screen and (max-width: 991px) {
+  
+  .nav__item:last-child {
+    display: none;
   }
 }
 
@@ -2808,6 +2819,39 @@ input[type="text"] {
   -webkit-transition: background-color 0.3s ease-in-out;
   -o-transition: background-color 0.3s ease-in-out;
   transition: background-color 0.3s ease-in-out;
+}
+
+
+.nav__btn {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+  color: #184478;
+  font-size: 12px;
+  font-weight: bold;
+}
+
+
+.nav__btn i {
+  background-image: url(../img/sprite.png);
+  background-position: 0px -91px;
+  width: 18px;
+  height: 17px;
+  margin-right: 2px;
+}
+
+@media (-webkit-min-device-pixel-ratio: 2), (-o-min-device-pixel-ratio: 2/1), (min-resolution: 192dpi) {
+  
+  .nav__btn i {
+    background-image: url(../img/sprite@2x.png);
+    -webkit-background-size: 137px 131px;
+            background-size: 137px 131px;
+  }
 }
 
 
@@ -2962,7 +3006,7 @@ input[type="text"] {
 
 .search__keyboard-clean i {
   background-image: url(../img/sprite.png);
-  background-position: -82px -91px;
+  background-position: -120px 0px;
   width: 17px;
   height: 12px;
 }
@@ -2971,8 +3015,8 @@ input[type="text"] {
   
   .search__keyboard-clean i {
     background-image: url(../img/sprite@2x.png);
-    -webkit-background-size: 151px 107px;
-            background-size: 151px 107px;
+    -webkit-background-size: 137px 131px;
+            background-size: 137px 131px;
   }
 }
 
@@ -2987,7 +3031,7 @@ input[type="text"] {
 
 .search__keyboard-space i {
   background-image: url(../img/sprite.png);
-  background-position: -120px 0px;
+  background-position: 0px -113px;
   width: 31px;
   height: 5px;
 }
@@ -2996,8 +3040,8 @@ input[type="text"] {
   
   .search__keyboard-space i {
     background-image: url(../img/sprite@2x.png);
-    -webkit-background-size: 151px 107px;
-            background-size: 151px 107px;
+    -webkit-background-size: 137px 131px;
+            background-size: 137px 131px;
   }
 }
 
@@ -3190,7 +3234,7 @@ input[type="text"] {
 
 .search__label-icon {
   background-image: url(../img/sprite.png);
-  background-position: -136px -89px;
+  background-position: 0px -123px;
   width: 11px;
   height: 8px;
 }
@@ -3199,8 +3243,8 @@ input[type="text"] {
   
   .search__label-icon {
     background-image: url(../img/sprite@2x.png);
-    -webkit-background-size: 151px 107px;
-            background-size: 151px 107px;
+    -webkit-background-size: 137px 131px;
+            background-size: 137px 131px;
   }
 }
 
@@ -3215,7 +3259,7 @@ input[type="text"] {
 
 .search__label.is-active i {
   background-image: url(../img/sprite.png);
-  background-position: -120px -89px;
+  background-position: -16px -123px;
   width: 11px;
   height: 8px;
 }
@@ -3224,8 +3268,8 @@ input[type="text"] {
   
   .search__label.is-active i {
     background-image: url(../img/sprite@2x.png);
-    -webkit-background-size: 151px 107px;
-            background-size: 151px 107px;
+    -webkit-background-size: 137px 131px;
+            background-size: 137px 131px;
   }
 }
 
@@ -3264,7 +3308,7 @@ input[type="text"] {
 
 .search__btn-icon {
   background-image: url(../img/sprite.png);
-  background-position: -120px -72px;
+  background-position: -77px -37px;
   width: 12px;
   height: 12px;
 }
@@ -3273,8 +3317,8 @@ input[type="text"] {
   
   .search__btn-icon {
     background-image: url(../img/sprite@2x.png);
-    -webkit-background-size: 151px 107px;
-            background-size: 151px 107px;
+    -webkit-background-size: 137px 131px;
+            background-size: 137px 131px;
   }
 }
 
@@ -3328,7 +3372,7 @@ input[type="text"] {
           justify-content: center;
   width: 100%;
   max-width: 165px;
-  padding-left: 40px;
+  padding-left: 30px;
 }
 
 @media screen and (max-width: 767px) {
@@ -3350,7 +3394,14 @@ input[type="text"] {
 @media screen and (min-width: 992px) {
   
   .header__left {
-    padding-left: 40px;
+    padding-left: 30px;
+  }
+}
+
+@media screen and (max-width: 1199px) {
+  
+  .header__left {
+    padding-left: 15px;
   }
 }
 
@@ -3365,8 +3416,8 @@ input[type="text"] {
   max-width: -webkit-calc(100% - (165px + 203px));
   max-width: calc(100% - (165px + 203px));
   padding-top: 24px;
-  padding-left: 40px;
-  padding-right: 52px;
+  padding-left: 30px;
+  padding-right: 30px;
 }
 
 @media screen and (min-width: 320px) {
@@ -3428,6 +3479,14 @@ input[type="text"] {
     right: 0;
     width: 100%;
     height: 100%;
+  }
+}
+
+@media screen and (max-width: 1199px) {
+  
+  .header__middle {
+    padding-left: 15px;
+    padding-right: 15px;
   }
 }
 
@@ -4172,7 +4231,7 @@ input[type="text"] {
       -ms-transform: rotate(-180deg);
           transform: rotate(-180deg);
   background-image: url(../img/sprite.png);
-  background-position: -77px -37px;
+  background-position: -32px -123px;
   width: 11px;
   height: 7px;
   -webkit-transition: -webkit-transform 0.3s ease-in-out;
@@ -4186,8 +4245,8 @@ input[type="text"] {
   
   .list__row-title i {
     background-image: url(../img/sprite@2x.png);
-    -webkit-background-size: 151px 107px;
-            background-size: 151px 107px;
+    -webkit-background-size: 137px 131px;
+            background-size: 137px 131px;
   }
 }
 
@@ -4711,8 +4770,8 @@ input[type="text"] {
   
   .user__btn i {
     background-image: url(../img/sprite@2x.png);
-    -webkit-background-size: 151px 107px;
-            background-size: 151px 107px;
+    -webkit-background-size: 137px 131px;
+            background-size: 137px 131px;
   }
 }
 
@@ -4937,15 +4996,15 @@ input[type="text"] {
   
   .user__link--add i {
     background-image: url(../img/sprite@2x.png);
-    -webkit-background-size: 151px 107px;
-            background-size: 151px 107px;
+    -webkit-background-size: 137px 131px;
+            background-size: 137px 131px;
   }
 }
 
 
 .user__link--download i {
   background-image: url(../img/sprite.png);
-  background-position: -41px -91px;
+  background-position: -44px -91px;
   width: 15px;
   height: 16px;
 }
@@ -4954,15 +5013,15 @@ input[type="text"] {
   
   .user__link--download i {
     background-image: url(../img/sprite@2x.png);
-    -webkit-background-size: 151px 107px;
-            background-size: 151px 107px;
+    -webkit-background-size: 137px 131px;
+            background-size: 137px 131px;
   }
 }
 
 
 .user__link--share i {
   background-image: url(../img/sprite.png);
-  background-position: -21px -91px;
+  background-position: -64px -91px;
   width: 15px;
   height: 16px;
 }
@@ -4971,15 +5030,15 @@ input[type="text"] {
   
   .user__link--share i {
     background-image: url(../img/sprite@2x.png);
-    -webkit-background-size: 151px 107px;
-            background-size: 151px 107px;
+    -webkit-background-size: 137px 131px;
+            background-size: 137px 131px;
   }
 }
 
 
 .user__link--send i {
   background-image: url(../img/sprite.png);
-  background-position: -61px -91px;
+  background-position: -84px -91px;
   width: 16px;
   height: 13px;
 }
@@ -4988,8 +5047,8 @@ input[type="text"] {
   
   .user__link--send i {
     background-image: url(../img/sprite@2x.png);
-    -webkit-background-size: 151px 107px;
-            background-size: 151px 107px;
+    -webkit-background-size: 137px 131px;
+            background-size: 137px 131px;
   }
 }
 
@@ -5361,7 +5420,7 @@ input[type="text"] {
 .mainp__btn i {
   margin-right: 5px;
   background-image: url(../img/sprite.png);
-  background-position: 0px -91px;
+  background-position: -23px -91px;
   width: 16px;
   height: 16px;
 }
@@ -5370,8 +5429,8 @@ input[type="text"] {
   
   .mainp__btn i {
     background-image: url(../img/sprite@2x.png);
-    -webkit-background-size: 151px 107px;
-            background-size: 151px 107px;
+    -webkit-background-size: 137px 131px;
+            background-size: 137px 131px;
   }
 }
 
@@ -5530,7 +5589,7 @@ input[type="text"] {
 
 .playlist__title i {
   background-image: url(../img/sprite.png);
-  background-position: -140px -28px;
+  background-position: -105px -91px;
   width: 10px;
   height: 10px;
   -webkit-transform: rotate(90deg);
@@ -5547,8 +5606,8 @@ input[type="text"] {
   
   .playlist__title i {
     background-image: url(../img/sprite@2x.png);
-    -webkit-background-size: 151px 107px;
-            background-size: 151px 107px;
+    -webkit-background-size: 137px 131px;
+            background-size: 137px 131px;
   }
 }
 
@@ -5635,8 +5694,8 @@ input[type="text"] {
   
   .playlist__btn-0 i {
     background-image: url(../img/sprite@2x.png);
-    -webkit-background-size: 151px 107px;
-            background-size: 151px 107px;
+    -webkit-background-size: 137px 131px;
+            background-size: 137px 131px;
   }
 }
 
@@ -5657,7 +5716,7 @@ input[type="text"] {
 
 .playlist__btn-1 i {
   background-image: url(../img/sprite.png);
-  background-position: 0px -91px;
+  background-position: -23px -91px;
   width: 16px;
   height: 16px;
   -webkit-transform: rotate(45deg);
@@ -5670,8 +5729,8 @@ input[type="text"] {
   
   .playlist__btn-1 i {
     background-image: url(../img/sprite@2x.png);
-    -webkit-background-size: 151px 107px;
-            background-size: 151px 107px;
+    -webkit-background-size: 137px 131px;
+            background-size: 137px 131px;
   }
 }
 
@@ -5850,7 +5909,7 @@ input[type="text"] {
 
 .mainr__search-label i {
   background-image: url(../img/sprite.png);
-  background-position: -136px -89px;
+  background-position: 0px -123px;
   width: 11px;
   height: 8px;
 }
@@ -5859,8 +5918,8 @@ input[type="text"] {
   
   .mainr__search-label i {
     background-image: url(../img/sprite@2x.png);
-    -webkit-background-size: 151px 107px;
-            background-size: 151px 107px;
+    -webkit-background-size: 137px 131px;
+            background-size: 137px 131px;
   }
 }
 
@@ -5875,7 +5934,7 @@ input[type="text"] {
 
 .mainr__search-label.is-active i {
   background-image: url(../img/sprite.png);
-  background-position: -120px -89px;
+  background-position: -16px -123px;
   width: 11px;
   height: 8px;
 }
@@ -5884,8 +5943,8 @@ input[type="text"] {
   
   .mainr__search-label.is-active i {
     background-image: url(../img/sprite@2x.png);
-    -webkit-background-size: 151px 107px;
-            background-size: 151px 107px;
+    -webkit-background-size: 137px 131px;
+            background-size: 137px 131px;
   }
 }
 
@@ -6821,7 +6880,7 @@ input[type="text"] {
 
 .mainc__more i {
   background-image: url(../img/sprite.png);
-  background-position: -77px -37px;
+  background-position: -32px -123px;
   width: 11px;
   height: 7px;
   -webkit-transition: -webkit-transform 0.3s ease-in-out;
@@ -6835,8 +6894,8 @@ input[type="text"] {
   
   .mainc__more i {
     background-image: url(../img/sprite@2x.png);
-    -webkit-background-size: 151px 107px;
-            background-size: 151px 107px;
+    -webkit-background-size: 137px 131px;
+            background-size: 137px 131px;
   }
 }
 
@@ -7153,7 +7212,7 @@ input[type="text"] {
 
 .player__info-btn--add i {
   background-image: url(../img/sprite.png);
-  background-position: 0px -91px;
+  background-position: -23px -91px;
   width: 16px;
   height: 16px;
 }
@@ -7162,15 +7221,15 @@ input[type="text"] {
   
   .player__info-btn--add i {
     background-image: url(../img/sprite@2x.png);
-    -webkit-background-size: 151px 107px;
-            background-size: 151px 107px;
+    -webkit-background-size: 137px 131px;
+            background-size: 137px 131px;
   }
 }
 
 
 .player__info-btn--download i {
   background-image: url(../img/sprite.png);
-  background-position: -120px -10px;
+  background-position: -120px -17px;
   width: 13px;
   height: 13px;
 }
@@ -7179,15 +7238,15 @@ input[type="text"] {
   
   .player__info-btn--download i {
     background-image: url(../img/sprite@2x.png);
-    -webkit-background-size: 151px 107px;
-            background-size: 151px 107px;
+    -webkit-background-size: 137px 131px;
+            background-size: 137px 131px;
   }
 }
 
 
 .player__info-btn--send i {
   background-image: url(../img/sprite.png);
-  background-position: -120px -28px;
+  background-position: -120px -53px;
   width: 15px;
   height: 11px;
 }
@@ -7196,15 +7255,15 @@ input[type="text"] {
   
   .player__info-btn--send i {
     background-image: url(../img/sprite@2x.png);
-    -webkit-background-size: 151px 107px;
-            background-size: 151px 107px;
+    -webkit-background-size: 137px 131px;
+            background-size: 137px 131px;
   }
 }
 
 
 .player__info-btn--share i {
   background-image: url(../img/sprite.png);
-  background-position: -138px -10px;
+  background-position: -120px -35px;
   width: 13px;
   height: 13px;
 }
@@ -7213,8 +7272,8 @@ input[type="text"] {
   
   .player__info-btn--share i {
     background-image: url(../img/sprite@2x.png);
-    -webkit-background-size: 151px 107px;
-            background-size: 151px 107px;
+    -webkit-background-size: 137px 131px;
+            background-size: 137px 131px;
   }
 }
 
@@ -7278,7 +7337,7 @@ input[type="text"] {
 
 .player__control-btn:nth-child(1) i {
   background-image: url(../img/sprite.png);
-  background-position: -120px -44px;
+  background-position: -120px -83px;
   width: 16px;
   height: 9px;
 }
@@ -7287,8 +7346,8 @@ input[type="text"] {
   
   .player__control-btn:nth-child(1) i {
     background-image: url(../img/sprite@2x.png);
-    -webkit-background-size: 151px 107px;
-            background-size: 151px 107px;
+    -webkit-background-size: 137px 131px;
+            background-size: 137px 131px;
   }
 }
 
@@ -7346,15 +7405,15 @@ input[type="text"] {
   
   .player__control-btn:nth-child(2) i {
     background-image: url(../img/sprite@2x.png);
-    -webkit-background-size: 151px 107px;
-            background-size: 151px 107px;
+    -webkit-background-size: 137px 131px;
+            background-size: 137px 131px;
   }
 }
 
 
 .player__control-btn:nth-child(3) i {
   background-image: url(../img/sprite.png);
-  background-position: -120px -58px;
+  background-position: -120px -69px;
   width: 16px;
   height: 9px;
 }
@@ -7363,8 +7422,8 @@ input[type="text"] {
   
   .player__control-btn:nth-child(3) i {
     background-image: url(../img/sprite@2x.png);
-    -webkit-background-size: 151px 107px;
-            background-size: 151px 107px;
+    -webkit-background-size: 137px 131px;
+            background-size: 137px 131px;
   }
 }
 
@@ -7444,7 +7503,7 @@ input[type="text"] {
 
 .player__control-sound i {
   background-image: url(../img/sprite.png);
-  background-position: -137px -72px;
+  background-position: -120px -97px;
   width: 12px;
   height: 10px;
 }
@@ -7453,8 +7512,8 @@ input[type="text"] {
   
   .player__control-sound i {
     background-image: url(../img/sprite@2x.png);
-    -webkit-background-size: 151px 107px;
-            background-size: 151px 107px;
+    -webkit-background-size: 137px 131px;
+            background-size: 137px 131px;
   }
 }
 

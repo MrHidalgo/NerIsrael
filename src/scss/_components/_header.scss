@@ -32,7 +32,7 @@
     justify-content: center;
     width: 100%;
     max-width: 165px;
-    padding-left: 40px;
+    padding-left: 30px;
     @include respond(m_m) {
       max-width: 100px;
       padding-left: 0;
@@ -42,7 +42,10 @@
       padding-left: 0;
     }
     @include respond(l) {
-      padding-left: 40px;
+      padding-left: 30px;
+    }
+    @include respond(m_el) {
+      padding-left: 15px;
     }
   }
 
@@ -52,8 +55,8 @@
     width: 100%;
     max-width: calc(100% - (165px + 203px));
     padding-top: 24px;
-    padding-left: 40px;
-    padding-right: 52px;
+    padding-left: 30px;
+    padding-right: 30px;
     @include respond(es) {
       display: none;
     }
@@ -97,6 +100,10 @@
           height: 100%;
         }
       }
+    }
+    @include respond(m_el) {
+      padding-left: 15px;
+      padding-right: 15px;
     }
   }
 
