@@ -78,10 +78,22 @@
     color: $c-darkCerulean;
     font-size: 12px;
     font-weight: bold;
+    @include transition(color);
+
+    &:hover {
+      color: $c-putty;
+      @include transition(color);
+
+      i {
+        @include retina-sprite($sp-my-playlists-color-group);
+        @include transition(background);
+      }
+    }
 
     i {
       @include retina-sprite($sp-my-playlists-group);
       margin-right: 2px;
+      @include transition(background);
     }
   }
 }
