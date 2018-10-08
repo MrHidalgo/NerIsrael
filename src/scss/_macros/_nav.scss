@@ -156,13 +156,20 @@
 
           li {
             line-height: 1.2;
-          }
 
-          h2 {
-            font-size: 16px;
-            font-weight: bold;
-            @include respond(m_l) {
-              color: #d1cfcf;
+            &:nth-of-type(1) {
+              a {
+                color: rgba(#303133, 1);
+                font-size: 16px;
+                font-weight: bold;
+                @include respond(m_l) {
+                  color: #d1cfcf;
+                }
+
+                &:hover {
+                  color: $c-darkCerulean;
+                }
+              }
             }
           }
 

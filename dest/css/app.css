@@ -2970,16 +2970,22 @@ input[type="text"] {
 }
 
 
-.nav__link-drop--body ul h2 {
+.nav__link-drop--body ul li:nth-of-type(1) a {
+  color: #303133;
   font-size: 16px;
   font-weight: bold;
 }
 
 @media screen and (max-width: 991px) {
   
-  .nav__link-drop--body ul h2 {
+  .nav__link-drop--body ul li:nth-of-type(1) a {
     color: #d1cfcf;
   }
+}
+
+
+.nav__link-drop--body ul li:nth-of-type(1) a:hover {
+  color: #184478;
 }
 
 
