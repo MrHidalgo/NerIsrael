@@ -298,6 +298,12 @@
     }
 
 
+    &--attach {
+      i {
+        margin-left: 4px;
+        @include retina-sprite($sp-attach-group );
+      }
+    }
     &--add {
       i {
         @include retina-sprite($sp-add-group);
