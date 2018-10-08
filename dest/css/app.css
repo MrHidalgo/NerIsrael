@@ -7702,7 +7702,6 @@ input[type="text"] {
 
 
 .player__control-progress {
-  overflow: hidden;
   position: relative;
   width: -webkit-calc(100% - 119px);
   width: calc(100% - 119px);
@@ -7749,6 +7748,32 @@ input[type="text"] {
 .player__control-progress > a:nth-child(2) {
   width: 50%;
   background-color: #cbae6a;
+}
+
+
+.player__control-progress > span {
+  position: absolute;
+  bottom: -20px;
+  color: #fff;
+  font-size: 12px;
+  font-weight: 500;
+}
+
+
+.player__control-progress > span:nth-of-type(1) {
+  left: 17px;
+}
+
+@media screen and (max-width: 767px) {
+  
+  .player__control-progress > span:nth-of-type(1) {
+    left: 0;
+  }
+}
+
+
+.player__control-progress > span:nth-of-type(2) {
+  right: 0;
 }
 
 
